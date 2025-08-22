@@ -127,8 +127,13 @@ export default function PropertiesPage() {
       setProperties(updatedProperties)
       console.log("[v0] Local state updated with fresh database data")
     } catch (error) {
-      console.error("[v0] Failed to update visit status:", error)
-      alert("Failed to update visit status. Please make sure you're logged in and try again.")
+      console.error("[v0] Full error object:", error)
+      console.error("[v0] Error message:", error instanceof Error ? error.message : String(error))
+      console.error("[v0] Error stack:", error instanceof Error ? error.stack : "No stack trace")
+
+      // Show more specific error message
+      const errorMessage = error instanceof Error ? error.message : String(error)
+      alert(`Failed to update visit status: ${errorMessage}. Please check the console for more details.`)
     }
   }
 
