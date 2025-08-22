@@ -102,20 +102,30 @@ export default function PropertiesPage() {
     })
 
     try {
-      await updatePropertyVisit(propertyId, property.name, property.county, property.type, visited, visitDate)
+      const updatedVisitData = await updatePropertyVisit(
+        propertyId,
+        property.name,
+        property.county,
+        property.type,
+        visited,
+        visitDate,
+      )
       console.log("[v0] Database update successful")
 
-      // Update local state immediately for better UX
-      const updatedProperties = properties.map((prop) =>
-        prop.id === propertyId ? { ...prop, visited, visitDate } : prop,
-      )
-      setProperties(updatedProperties)
-      console.log("[v0] Local state updated")
-
-      // Reload visits from database to ensure consistency
-      const updatedVisitData = await loadVisitsFromDatabase()
       setVisitData(updatedVisitData)
-      console.log("[v0] Visit data reloaded from database")
+
+      // Merge fresh visit data with properties
+      const updatedProperties = HERITAGE_PROPERTIES.map((prop) => {
+        const visit = updatedVisitData.find((v) => v.propertyId === prop.id)
+        return {
+          ...prop,
+          visited: visit?.visited || false,
+          visitDate: visit?.visitDate,
+          notes: visit?.notes,
+        }
+      })
+      setProperties(updatedProperties)
+      console.log("[v0] Local state updated with fresh database data")
     } catch (error) {
       console.error("[v0] Failed to update visit status:", error)
       alert("Failed to update visit status. Please make sure you're logged in and try again.")
