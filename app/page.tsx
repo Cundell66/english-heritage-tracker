@@ -83,17 +83,17 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-4xl">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-primary mb-2">English Heritage Tracker</h1>
-          <p className="text-muted-foreground">Track your visits to England's historic sites</p>
+        <div className="text-center mb-6 sm:mb-8">
+          <h1 className="text-2xl sm:text-3xl font-bold text-primary mb-2">English Heritage Tracker</h1>
+          <p className="text-sm sm:text-base text-muted-foreground">Track your visits to England's historic sites</p>
         </div>
 
         {/* Progress Overview */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+        <Card className="mb-6 sm:mb-8">
+          <CardHeader className="pb-4">
+            <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
               <Trophy className="h-5 w-5 text-accent" />
               Your Progress
             </CardTitle>
@@ -101,15 +101,15 @@ export default function HomePage() {
           <CardContent>
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-primary">
+                <span className="text-xl sm:text-2xl font-bold text-primary">
                   {visitedCount} / {totalCount}
                 </span>
-                <Badge variant="secondary" className="bg-accent text-accent-foreground">
+                <Badge variant="secondary" className="bg-accent text-accent-foreground text-xs sm:text-sm">
                   {progressPercentage.toFixed(1)}% Complete
                 </Badge>
               </div>
               <Progress value={progressPercentage} className="h-3" />
-              <p className="text-sm text-muted-foreground">
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 You've visited {visitedCount} English Heritage properties out of {totalCount} total sites.
               </p>
             </div>
@@ -117,29 +117,31 @@ export default function HomePage() {
         </Card>
 
         {/* Property Types Overview */}
-        <Card className="mb-8">
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
+        <Card className="mb-6 sm:mb-8">
+          <CardHeader className="pb-4">
+            <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
               <MapPin className="h-5 w-5 text-primary" />
               Property Types
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {typeStats.map(({ type, total, visited }) => (
-                <div key={type} className="flex items-center justify-between p-3 rounded-lg border bg-card">
+                <div key={type} className="flex items-center justify-between p-4 rounded-lg border bg-card">
                   <div className="flex items-center gap-3">
                     {getTypeIcon(type)}
                     <div>
-                      <p className="font-medium">{type}</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="font-medium text-sm sm:text-base">{type}</p>
+                      <p className="text-xs sm:text-sm text-muted-foreground">
                         {visited} / {total} visited
                       </p>
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-sm font-medium">{total > 0 ? Math.round((visited / total) * 100) : 0}%</div>
-                    <Progress value={total > 0 ? (visited / total) * 100 : 0} className="h-2 w-16" />
+                    <div className="text-xs sm:text-sm font-medium">
+                      {total > 0 ? Math.round((visited / total) * 100) : 0}%
+                    </div>
+                    <Progress value={total > 0 ? (visited / total) * 100 : 0} className="h-2 w-12 sm:w-16 mt-1" />
                   </div>
                 </div>
               ))}
@@ -148,15 +150,19 @@ export default function HomePage() {
         </Card>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <Button size="lg" className="h-16 text-lg" onClick={() => (window.location.href = "/properties")}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <Button
+            size="lg"
+            className="h-14 sm:h-16 text-base sm:text-lg"
+            onClick={() => (window.location.href = "/properties")}
+          >
             <MapPin className="h-5 w-5 mr-2" />
             Browse All Properties
           </Button>
           <Button
             variant="outline"
             size="lg"
-            className="h-16 text-lg bg-transparent"
+            className="h-14 sm:h-16 text-base sm:text-lg bg-transparent"
             onClick={() => (window.location.href = "/visited")}
           >
             <Trophy className="h-5 w-5 mr-2" />

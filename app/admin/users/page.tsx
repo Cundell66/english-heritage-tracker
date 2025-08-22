@@ -23,29 +23,47 @@ export default function AdminUsersPage() {
     setUserInfo(null)
 
     try {
-      // Check if user exists in auth.users (requires service role, so this is a simplified check)
-      // We'll check if they can sign in instead
-      const { data, error } = await supabase.auth.signInWithPassword({
+      const { error } = await supabase.auth.resend({
+        type: "signup",
         email,
-        password: "dummy-password-check",
+        options: {
+          emailRedirectTo: window.location.origin,
+        },
       })
 
       if (error) {
-        if (error.message.includes("Invalid login credentials")) {
+        if (error.message.includes("User not found") || error.message.includes("Unable to validate email address")) {
           setUserInfo({
             email,
-            status: "Account exists but not confirmed or wrong password",
-            confirmed: "Unknown - try having them reset password if account exists",
+            status: "Account does not exist",
+            confirmed: "N/A - No account found",
           })
-        } else if (error.message.includes("Email not confirmed")) {
+        } else if (error.message.includes("Email rate limit exceeded")) {
           setUserInfo({
             email,
-            status: "Account exists but email not confirmed",
-            confirmed: false,
+            status: "Account exists (rate limited - too many recent emails)",
+            confirmed: "Unknown - account exists but confirmation status unclear",
+          })
+        } else if (error.message.includes("Signup is disabled")) {
+          setUserInfo({
+            email,
+            status: "Account exists but signup disabled",
+            confirmed: "Unknown",
           })
         } else {
-          setError(`Error: ${error.message}`)
+          setUserInfo({
+            email,
+            status: "Account likely exists but status unclear",
+            confirmed: `Error checking: ${error.message}`,
+          })
         }
+      } else {
+        // No error means the resend was successful, so account exists
+        setUserInfo({
+          email,
+          status: "Account exists - confirmation email sent",
+          confirmed: "Likely unconfirmed (resend was successful)",
+        })
       }
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : "An error occurred")

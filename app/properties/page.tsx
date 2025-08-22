@@ -156,18 +156,18 @@ export default function PropertiesPage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-8 max-w-6xl">
+      <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-6xl">
         {/* Header */}
-        <div className="flex items-center gap-4 mb-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-6">
           <Link href="/">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="w-full sm:w-auto bg-transparent">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Dashboard
             </Button>
           </Link>
-          <div>
-            <h1 className="text-3xl font-bold text-primary">All Properties</h1>
-            <p className="text-muted-foreground">
+          <div className="w-full sm:w-auto">
+            <h1 className="text-2xl sm:text-3xl font-bold text-primary">All Properties</h1>
+            <p className="text-sm sm:text-base text-muted-foreground">
               Browse and track your visits to {HERITAGE_PROPERTIES.length} English Heritage sites
             </p>
           </div>
@@ -175,25 +175,25 @@ export default function PropertiesPage() {
 
         {/* Filters */}
         <Card className="mb-6">
-          <CardHeader>
-            <CardTitle className="text-lg">Filters & Search</CardTitle>
+          <CardHeader className="pb-4">
+            <CardTitle className="text-base sm:text-lg">Filters & Search</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4">
               {/* Search */}
-              <div className="relative">
+              <div className="relative sm:col-span-2 lg:col-span-1">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                 <Input
                   placeholder="Search properties..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="pl-10"
+                  className="pl-10 h-10 sm:h-9"
                 />
               </div>
 
               {/* County Filter */}
               <Select value={selectedCounty} onValueChange={setSelectedCounty}>
-                <SelectTrigger>
+                <SelectTrigger className="h-10 sm:h-9">
                   <SelectValue placeholder="All Counties" />
                 </SelectTrigger>
                 <SelectContent>
@@ -208,7 +208,7 @@ export default function PropertiesPage() {
 
               {/* Type Filter */}
               <Select value={selectedType} onValueChange={setSelectedType}>
-                <SelectTrigger>
+                <SelectTrigger className="h-10 sm:h-9">
                   <SelectValue placeholder="All Types" />
                 </SelectTrigger>
                 <SelectContent>
@@ -223,7 +223,7 @@ export default function PropertiesPage() {
 
               {/* Visit Status Filter */}
               <Select value={visitFilter} onValueChange={setVisitFilter}>
-                <SelectTrigger>
+                <SelectTrigger className="h-10 sm:h-9">
                   <SelectValue placeholder="All Sites" />
                 </SelectTrigger>
                 <SelectContent>
@@ -234,8 +234,8 @@ export default function PropertiesPage() {
               </Select>
 
               {/* Results Count */}
-              <div className="flex items-center justify-center">
-                <Badge variant="outline" className="text-sm">
+              <div className="flex items-center justify-center sm:justify-start">
+                <Badge variant="outline" className="text-xs sm:text-sm">
                   {filteredProperties.length} properties
                 </Badge>
               </div>
@@ -244,7 +244,7 @@ export default function PropertiesPage() {
         </Card>
 
         {/* Properties Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredProperties.map((property) => (
             <Card
               key={property.id}
@@ -252,24 +252,24 @@ export default function PropertiesPage() {
             >
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
-                  <div className="flex-1">
-                    <CardTitle className="text-lg leading-tight mb-2">{property.name}</CardTitle>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                      <MapPin className="h-3 w-3" />
-                      {property.county}
+                  <div className="flex-1 min-w-0">
+                    <CardTitle className="text-base sm:text-lg leading-tight mb-2 pr-2">{property.name}</CardTitle>
+                    <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground mb-2">
+                      <MapPin className="h-3 w-3 flex-shrink-0" />
+                      <span className="truncate">{property.county}</span>
                     </div>
-                    <Badge className={getTypeColor(property.type)} variant="outline">
+                    <Badge className={`${getTypeColor(property.type)} text-xs`} variant="outline">
                       {property.type}
                     </Badge>
                   </div>
-                  <div className="flex flex-col items-end gap-2">
+                  <div className="flex flex-col items-end gap-2 flex-shrink-0">
                     {property.visited ? (
-                      <Badge className="bg-accent text-accent-foreground">
+                      <Badge className="bg-accent text-accent-foreground text-xs">
                         <Check className="h-3 w-3 mr-1" />
                         Visited
                       </Badge>
                     ) : (
-                      <Badge variant="outline" className="text-muted-foreground">
+                      <Badge variant="outline" className="text-muted-foreground text-xs">
                         <X className="h-3 w-3 mr-1" />
                         Not Visited
                       </Badge>
@@ -279,9 +279,9 @@ export default function PropertiesPage() {
               </CardHeader>
               <CardContent className="pt-0">
                 {property.visited && property.visitDate && (
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-3 w-3" />
-                    Visited on {new Date(property.visitDate).toLocaleDateString()}
+                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground mb-3">
+                    <Calendar className="h-3 w-3 flex-shrink-0" />
+                    <span className="truncate">Visited on {new Date(property.visitDate).toLocaleDateString()}</span>
                   </div>
                 )}
                 <div className="flex gap-2">
@@ -290,7 +290,7 @@ export default function PropertiesPage() {
                       variant="outline"
                       size="sm"
                       onClick={() => handleVisitToggle(property.id, false)}
-                      className="flex-1"
+                      className="flex-1 h-9 text-xs sm:text-sm"
                     >
                       Mark as Not Visited
                     </Button>
@@ -298,23 +298,25 @@ export default function PropertiesPage() {
                     <Button
                       size="sm"
                       onClick={() => handleVisitToggle(property.id, true)}
-                      className="flex-1 bg-accent hover:bg-accent/90 text-accent-foreground"
+                      className="flex-1 h-9 text-xs sm:text-sm bg-accent hover:bg-accent/90 text-accent-foreground"
                     >
                       Mark as Visited
                     </Button>
                   )}
                   <Dialog>
                     <DialogTrigger asChild>
-                      <Button variant="outline" size="sm" className="px-3 bg-transparent">
+                      <Button variant="outline" size="sm" className="px-3 h-9 bg-transparent flex-shrink-0">
                         <Info className="h-4 w-4" />
                       </Button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
                       <DialogHeader>
-                        <DialogTitle className="text-xl font-bold text-primary">{property.name}</DialogTitle>
+                        <DialogTitle className="text-lg sm:text-xl font-bold text-primary pr-8">
+                          {property.name}
+                        </DialogTitle>
                       </DialogHeader>
                       <div className="space-y-4">
-                        <div className="flex items-center gap-4">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">
                             <MapPin className="h-4 w-4" />
                             {property.county}
@@ -326,12 +328,14 @@ export default function PropertiesPage() {
                         {property.description ? (
                           <div>
                             <h3 className="font-semibold text-heritage-blue mb-2">Historical Information</h3>
-                            <p className="text-muted-foreground leading-relaxed">{property.description}</p>
+                            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                              {property.description}
+                            </p>
                           </div>
                         ) : (
                           <div>
                             <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
-                            <p className="text-muted-foreground leading-relaxed">
+                            <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                               This {property.type.toLowerCase()} is located in {property.county} and is part of English
                               Heritage's collection of historic sites spanning over 5,000 years of history.
                             </p>
@@ -361,7 +365,7 @@ export default function PropertiesPage() {
 
         {filteredProperties.length === 0 && (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">No properties found matching your filters.</p>
+            <p className="text-muted-foreground text-base sm:text-lg">No properties found matching your filters.</p>
             <Button
               variant="outline"
               onClick={() => {
