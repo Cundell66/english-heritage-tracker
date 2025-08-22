@@ -35,16 +35,63 @@ export type PropertyType =
 
 export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   // Bedfordshire (4 properties)
-  { id: "bed-1", name: "Bushmead Priory", county: "Bedfordshire", type: "Priory", visited: false },
-  { id: "bed-2", name: "De Grey Mausoleum", county: "Bedfordshire", type: "Other", visited: false },
-  { id: "bed-3", name: "Houghton House", county: "Bedfordshire", type: "Country House", visited: false },
-  { id: "bed-4", name: "Wrest Park House and Gardens", county: "Bedfordshire", type: "Country House", visited: false },
+  {
+    id: "bed-1",
+    name: "Bushmead Priory",
+    county: "Bedfordshire",
+    type: "Priory",
+    visited: false,
+    description:
+      "A medieval Augustinian priory founded in the 12th century, featuring well-preserved refectory and other monastic buildings.",
+  },
+  {
+    id: "bed-2",
+    name: "De Grey Mausoleum",
+    county: "Bedfordshire",
+    type: "Other",
+    visited: false,
+    description: "An 18th-century mausoleum built for the de Grey family, showcasing neoclassical architecture.",
+  },
+  {
+    id: "bed-3",
+    name: "Houghton House",
+    county: "Bedfordshire",
+    type: "Country House",
+    visited: false,
+    description:
+      "A 17th-century mansion ruins, once known as the 'English Versailles', built for the Countess of Pembroke.",
+  },
+  {
+    id: "bed-4",
+    name: "Wrest Park House and Gardens",
+    county: "Bedfordshire",
+    type: "Country House",
+    visited: false,
+    description:
+      "An 18th-century mansion with spectacular formal gardens, featuring a French-style château and landscaped grounds.",
+  },
 
   // Berkshire (1 property)
-  { id: "ber-1", name: "Donnington Castle", county: "Berkshire", type: "Castle", visited: false },
+  {
+    id: "ber-1",
+    name: "Donnington Castle",
+    county: "Berkshire",
+    type: "Castle",
+    visited: false,
+    description:
+      "A 14th-century castle built by Sir Richard Abberbury, featuring twin-towered gatehouse that survived the English Civil War.",
+  },
 
   // Bristol (1 property)
-  { id: "bri-1", name: "Temple Church", county: "Bristol", type: "Church", visited: false },
+  {
+    id: "bri-1",
+    name: "Temple Church",
+    county: "Bristol",
+    type: "Church",
+    visited: false,
+    description:
+      "A medieval church built by the Knights Templar in the 12th century, featuring a distinctive leaning tower.",
+  },
 
   // Cambridgeshire (4 properties)
   { id: "cam-1", name: "Denny Abbey and Farmland Museum", county: "Cambridgeshire", type: "Abbey", visited: false },
@@ -79,7 +126,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   { id: "cor-12", name: "St Breock Downs Monolith", county: "Cornwall", type: "Other", visited: false },
   { id: "cor-13", name: "St Catherine's Castle", county: "Cornwall", type: "Device Fort", visited: false },
   { id: "cor-14", name: "St Mawes Castle", county: "Cornwall", type: "Device Fort", visited: false },
-  { id: "cor-15", name: "Tintagel Castle", county: "Cornwall", type: "Castle", visited: false },
+  {
+    id: "cor-15",
+    name: "Tintagel Castle",
+    county: "Cornwall",
+    type: "Castle",
+    visited: false,
+    description:
+      "A 13th-century medieval fortification built by Richard, Earl of Cornwall, on a site with early medieval settlement. Legendary birthplace of King Arthur, perched dramatically on Cornwall's rugged coastline.",
+  },
   { id: "cor-16", name: "Tregiffian Burial Chamber", county: "Cornwall", type: "Megalithic tomb", visited: false },
   { id: "cor-17", name: "Trethevy Quoit", county: "Cornwall", type: "Megalithic tomb", visited: false },
 
@@ -144,7 +199,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Stone circle",
     visited: false,
   },
-  { id: "der-2", name: "Bolsover Castle", county: "Derbyshire", type: "Castle", visited: false },
+  {
+    id: "der-2",
+    name: "Bolsover Castle",
+    county: "Derbyshire",
+    type: "Castle",
+    visited: false,
+    description:
+      "Built between 1612 and 1617 by Sir Charles Cavendish, it stands on the earthworks of a 12th-century medieval castle. Designed by Robert Smythson, it's a masterpiece of Jacobean architecture.",
+  },
   { id: "der-3", name: "Bolsover Cundy House", county: "Derbyshire", type: "Other", visited: false },
   { id: "der-4", name: "Hardwick Hall", county: "Derbyshire", type: "Country House", visited: false },
   { id: "der-5", name: "Hob Hurst's House", county: "Derbyshire", type: "Other", visited: false },
@@ -203,20 +266,44 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
 
   // East Sussex (5 properties)
   { id: "ess-1", name: "Bayham Old Abbey", county: "East Sussex", type: "Abbey", visited: false },
-  { id: "ess-2", name: "Battle Abbey", county: "East Sussex", type: "Abbey", visited: false },
+  {
+    id: "ess-2",
+    name: "Battle Abbey",
+    county: "East Sussex",
+    type: "Abbey",
+    visited: false,
+    description:
+      "A partially ruined abbey complex built on the scene of the Battle of Hastings in 1066. Founded by William the Conqueror to commemorate his victory, with the high altar marking the spot where King Harold fell.",
+  },
   { id: "ess-3", name: "Battle of Hastings Battlefield", county: "East Sussex", type: "Other", visited: false },
   { id: "ess-4", name: "Camber Castle", county: "East Sussex", type: "Device Fort", visited: false },
   { id: "ess-5", name: "Pevensey Castle", county: "East Sussex", type: "Castle", visited: false },
 
   // Essex (9 properties)
-  { id: "esx-1", name: "Audley End House", county: "Essex", type: "Country House", visited: false },
+  {
+    id: "esx-1",
+    name: "Audley End House",
+    county: "Essex",
+    type: "Country House",
+    visited: false,
+    description:
+      "An early-17th-century country house, once a palace and now one-third of its original size. Built by Thomas Howard, 1st Earl of Suffolk, it was once one of the largest houses in England.",
+  },
   { id: "esx-2", name: "Hadleigh Castle", county: "Essex", type: "Castle", visited: false },
   { id: "esx-3", name: "Lexden Earthworks and Bluebottle Grove", county: "Essex", type: "Other", visited: false },
   { id: "esx-4", name: "Mistley Towers", county: "Essex", type: "Other", visited: false },
   { id: "esx-5", name: "Prior's Hall Barn", county: "Essex", type: "Other", visited: false },
   { id: "esx-6", name: "St. Botolph's Priory", county: "Essex", type: "Priory", visited: false },
   { id: "esx-7", name: "St John's Abbey Gate, Colchester", county: "Essex", type: "Gatehouse", visited: false },
-  { id: "esx-8", name: "Tilbury Fort", county: "Essex", type: "Device Fort", visited: false },
+  {
+    id: "esx-8",
+    name: "Tilbury Fort",
+    county: "Essex",
+    type: "Device Fort",
+    visited: false,
+    description:
+      "A Device Fort built in 1539 on the north bank of the River Thames to defend London from sea attacks. Famous as the site where Elizabeth I delivered her speech to troops before the Spanish Armada.",
+  },
   { id: "esx-9", name: "Waltham Abbey Gatehouse and Bridge", county: "Essex", type: "Gatehouse", visited: false },
 
   // Gloucestershire (16 properties)
@@ -294,8 +381,24 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
 
   // Isle of Wight (5 properties)
   { id: "iow-1", name: "Appuldurcombe House", county: "Isle of Wight", type: "Country House", visited: false },
-  { id: "iow-2", name: "Carisbrooke Castle", county: "Isle of Wight", type: "Castle", visited: false },
-  { id: "iow-3", name: "Osborne House", county: "Isle of Wight", type: "Country House", visited: false },
+  {
+    id: "iow-2",
+    name: "Carisbrooke Castle",
+    county: "Isle of Wight",
+    type: "Castle",
+    visited: false,
+    description:
+      "An 11th-century motte-and-bailey castle with traces of a Roman fort underneath. Famous as the prison of Charles I before his execution, featuring a unique donkey-powered well wheel.",
+  },
+  {
+    id: "iow-3",
+    name: "Osborne House",
+    county: "Isle of Wight",
+    type: "Country House",
+    visited: false,
+    description:
+      "A former royal residence built for Queen Victoria and Prince Albert between 1845 and 1851. Designed by Prince Albert in the style of an Italian Renaissance palazzo, it was the Queen's beloved retreat.",
+  },
   { id: "iow-4", name: "St. Catherine's Oratory", county: "Isle of Wight", type: "Other", visited: false },
   { id: "iow-5", name: "Yarmouth Castle", county: "Isle of Wight", type: "Device Fort", visited: false },
 
@@ -330,7 +433,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
 
   // Kent (25 properties)
   { id: "ken-1", name: "Deal Castle", county: "Kent", type: "Device Fort", visited: false },
-  { id: "ken-2", name: "Dover Castle", county: "Kent", type: "Castle", visited: false },
+  {
+    id: "ken-2",
+    name: "Dover Castle",
+    county: "Kent",
+    type: "Castle",
+    visited: false,
+    description:
+      "Founded in the 12th century, Dover Castle is known as the 'Key to England' due to its defensive significance. It's the largest castle in England, with a Great Tower built by Henry II and extensive medieval tunnels.",
+  },
   { id: "ken-3", name: "Dymchurch Martello Tower", county: "Kent", type: "Tower", visited: false },
   { id: "ken-4", name: "Eynsford Castle", county: "Kent", type: "Castle", visited: false },
   { id: "ken-5", name: "Faversham Stone Chapel", county: "Kent", type: "Church", visited: false },
@@ -388,7 +499,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   { id: "lon-2", name: "Chapter House and Pyx Chamber", county: "London", type: "Other", visited: false },
   { id: "lon-3", name: "Chiswick House", county: "London", type: "Other", visited: false },
   { id: "lon-4", name: "Coombe Conduit", county: "London", type: "Other", visited: false },
-  { id: "lon-5", name: "Down House", county: "London", type: "Country House", visited: false },
+  {
+    id: "lon-5",
+    name: "Down House",
+    county: "London",
+    type: "Country House",
+    visited: false,
+    description:
+      "The home of Charles Darwin from 1842 to 1882, where he wrote 'On the Origin of Species'. The house and gardens remain much as Darwin left them, including his famous 'thinking path'.",
+  },
   { id: "lon-6", name: "Eltham Palace", county: "London", type: "Palace", visited: false },
   { id: "lon-7", name: "Harmondsworth Great Barn", county: "London", type: "Other", visited: false },
   { id: "lon-8", name: "Jewel Tower", county: "London", type: "Tower", visited: false },
@@ -429,7 +548,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   { id: "ny-3", name: "Byland Abbey", county: "North Yorkshire", type: "Abbey", visited: false },
   { id: "ny-4", name: "Clifford's Tower", county: "North Yorkshire", type: "Tower", visited: false },
   { id: "ny-5", name: "Easby Abbey", county: "North Yorkshire", type: "Abbey", visited: false },
-  { id: "ny-6", name: "Fountains Abbey", county: "North Yorkshire", type: "Abbey", visited: false },
+  {
+    id: "ny-6",
+    name: "Fountains Abbey",
+    county: "North Yorkshire",
+    type: "Abbey",
+    visited: false,
+    description:
+      "A Cistercian monastery founded in 1132, it's one of the largest and best-preserved ruined Cistercian monasteries in England. The abbey features stunning Gothic architecture and beautiful water gardens.",
+  },
   { id: "ny-7", name: "Gisborough Priory", county: "North Yorkshire", type: "Priory", visited: false },
   { id: "ny-8", name: "Helmsley Castle", county: "North Yorkshire", type: "Castle", visited: false },
   { id: "ny-9", name: "Kirkham Priory", county: "North Yorkshire", type: "Priory", visited: false },
@@ -572,9 +699,17 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   { id: "shr-4", name: "Cantlop Bridge", county: "Shropshire", type: "Bridge", visited: false },
   { id: "shr-5", name: "Clun Castle", county: "Shropshire", type: "Castle", visited: false },
   { id: "shr-6", name: "Haughmond Abbey", county: "Shropshire", type: "Abbey", visited: false },
-  { id: "shr-7", name: "Iron Bridge", county: "Shropshire", type: "Bridge", visited: false },
+  {
+    id: "shr-7",
+    name: "Iron Bridge",
+    county: "Shropshire",
+    type: "Bridge",
+    visited: false,
+    description:
+      "Constructed between 1777 and 1781, it was the first major bridge in the world to be made of cast iron. A symbol of the Industrial Revolution, it spans the River Severn in the Ironbridge Gorge.",
+  },
   { id: "shr-8", name: "Langley Chapel", county: "Shropshire", type: "Church", visited: false },
-  { id: "shr-9", name: "Lilleshall Abbey", county: "Shropshire", type: "Abbey", visited: false },
+  { id: "shr-9", name: "Lilleshall Abbey", county: "Shropshire", type: "Priory", visited: false },
   { id: "shr-10", name: "Mitchell's Fold Stone Circle", county: "Shropshire", type: "Stone circle", visited: false },
   { id: "shr-11", name: "Moreton Corbet Castle", county: "Shropshire", type: "Castle", visited: false },
   { id: "shr-12", name: "Old Oswestry Hill Fort", county: "Shropshire", type: "Hillfort", visited: false },
@@ -659,8 +794,24 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   { id: "wil-10", name: "Old Sarum Castle", county: "Wiltshire", type: "Castle", visited: false },
   { id: "wil-11", name: "Old Wardour Castle", county: "Wiltshire", type: "Castle", visited: false },
   { id: "wil-12", name: "The Sanctuary", county: "Wiltshire", type: "Stone circle", visited: false },
-  { id: "wil-13", name: "Silbury Hill", county: "Wiltshire", type: "Other", visited: false },
-  { id: "wil-14", name: "Stonehenge", county: "Wiltshire", type: "Henge", visited: false },
+  {
+    id: "wil-13",
+    name: "Silbury Hill",
+    county: "Wiltshire",
+    type: "Other",
+    visited: false,
+    description:
+      "A Neolithic artificial hill, one of the largest man-made monuments in Europe, constructed around 2400 BC.",
+  },
+  {
+    id: "wil-14",
+    name: "Stonehenge",
+    county: "Wiltshire",
+    type: "Henge",
+    visited: false,
+    description:
+      "A Neolithic henge and timber circle monument consisting of an outer ring of Sarsen standing stones and an inner ring of bluestones, oriented towards the summer solstice sunrise. One of the world's most famous prehistoric monuments, built around 3100-1600 BC.",
+  },
   { id: "wil-15", name: "West Kennet Avenue", county: "Wiltshire", type: "Other", visited: false },
   { id: "wil-16", name: "West Kennet Long Barrow", county: "Wiltshire", type: "Megalithic tomb", visited: false },
   { id: "wil-17", name: "Westbury White Horse", county: "Wiltshire", type: "Other", visited: false },
@@ -669,7 +820,15 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
 
   // Worcestershire (2 properties)
   { id: "wor-1", name: "Leigh Court Barn", county: "Worcestershire", type: "Other", visited: false },
-  { id: "wor-2", name: "Witley Court", county: "Worcestershire", type: "Country House", visited: false },
+  {
+    id: "wor-2",
+    name: "Witley Court",
+    county: "Worcestershire",
+    type: "Country House",
+    visited: false,
+    description:
+      "An Italianate mansion built in 1655, enormously expanded in the early 19th century and later underwent massive reconstruction in the mid-19th century. Famous for its spectacular fountain and formal gardens.",
+  },
 ]
 
 export const getPropertiesByCounty = () => {

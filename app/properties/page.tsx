@@ -6,9 +6,10 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { HERITAGE_PROPERTIES, type HeritageProperty, type PropertyType } from "@/lib/heritage-data"
 import { loadVisitsFromDatabase, updatePropertyVisit, type VisitData } from "@/lib/storage"
-import { ArrowLeft, MapPin, Calendar, Check, X, Search } from "lucide-react"
+import { ArrowLeft, MapPin, Calendar, Check, X, Search, Info } from "lucide-react"
 import Link from "next/link"
 
 export default function PropertiesPage() {
@@ -302,6 +303,56 @@ export default function PropertiesPage() {
                       Mark as Visited
                     </Button>
                   )}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <Button variant="outline" size="sm" className="px-3 bg-transparent">
+                        <Info className="h-4 w-4" />
+                      </Button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+                      <DialogHeader>
+                        <DialogTitle className="text-xl font-bold text-primary">{property.name}</DialogTitle>
+                      </DialogHeader>
+                      <div className="space-y-4">
+                        <div className="flex items-center gap-4">
+                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <MapPin className="h-4 w-4" />
+                            {property.county}
+                          </div>
+                          <Badge className={getTypeColor(property.type)} variant="outline">
+                            {property.type}
+                          </Badge>
+                        </div>
+                        {property.description ? (
+                          <div>
+                            <h3 className="font-semibold text-heritage-blue mb-2">Historical Information</h3>
+                            <p className="text-muted-foreground leading-relaxed">{property.description}</p>
+                          </div>
+                        ) : (
+                          <div>
+                            <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
+                            <p className="text-muted-foreground leading-relaxed">
+                              This {property.type.toLowerCase()} is located in {property.county} and is part of English
+                              Heritage's collection of historic sites spanning over 5,000 years of history.
+                            </p>
+                          </div>
+                        )}
+                        {property.visited && property.visitDate && (
+                          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                            <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
+                            <div className="flex items-center gap-2 text-sm">
+                              <Calendar className="h-4 w-4" />
+                              Visited on {new Date(property.visitDate).toLocaleDateString()}
+                            </div>
+                            {property.notes && <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>}
+                          </div>
+                        )}
+                        <div className="text-xs text-muted-foreground border-t pt-4">
+                          Information sourced from Wikipedia and English Heritage records.
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </CardContent>
             </Card>
