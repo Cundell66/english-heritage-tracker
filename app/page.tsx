@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { HERITAGE_PROPERTIES, getPropertiesByType, type HeritageProperty } from "@/lib/heritage-data"
-import { loadVisitData, type VisitData } from "@/lib/storage"
+import { loadVisitsFromDatabase, type VisitData } from "@/lib/storage"
 import { Castle, Church, Home, MapPin, Trophy } from "lucide-react"
 
 export default function HomePage() {
@@ -17,20 +17,31 @@ export default function HomePage() {
   useEffect(() => {
     setMounted(true)
 
-    const visits = loadVisitData()
-    setVisitData(visits)
+    const loadVisits = async () => {
+      try {
+        const visits = await loadVisitsFromDatabase()
+        setVisitData(visits)
 
-    // Merge visit data with properties
-    const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
-      const visit = visits.find((v) => v.propertyId === property.id)
-      return {
-        ...property,
-        visited: visit?.visited || false,
-        visitDate: visit?.visitDate,
-        notes: visit?.notes,
+        // Merge visit data with properties
+        const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
+          const visit = visits.find((v) => v.propertyId === property.id)
+          return {
+            ...property,
+            visited: visit?.visited || false,
+            visitDate: visit?.visitDate,
+            notes: visit?.notes,
+          }
+        })
+        setProperties(updatedProperties)
+      } catch (error) {
+        console.error("[v0] Failed to load visits:", error)
+        // Fallback to empty array if database fails
+        setVisitData([])
+        setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
       }
-    })
-    setProperties(updatedProperties)
+    }
+
+    loadVisits()
   }, [])
 
   if (!mounted) {

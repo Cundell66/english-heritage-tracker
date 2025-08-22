@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { HERITAGE_PROPERTIES, type HeritageProperty } from "@/lib/heritage-data"
-import { loadVisitData, type VisitData } from "@/lib/storage"
+import { loadVisitsFromDatabase, type VisitData } from "@/lib/storage"
 import { ArrowLeft, MapPin, Calendar, Trophy } from "lucide-react"
 import Link from "next/link"
 
@@ -14,32 +14,43 @@ export default function VisitedPage() {
   const [visitData, setVisitData] = useState<VisitData[]>([])
 
   useEffect(() => {
-    const visits = loadVisitData()
-    setVisitData(visits)
+    const loadVisits = async () => {
+      try {
+        const visits = await loadVisitsFromDatabase()
+        setVisitData(visits)
 
-    // Get only visited properties with their visit data
-    const visited = HERITAGE_PROPERTIES.filter((property) => {
-      const visit = visits.find((v) => v.propertyId === property.id)
-      return visit?.visited
-    }).map((property) => {
-      const visit = visits.find((v) => v.propertyId === property.id)
-      return {
-        ...property,
-        visited: true,
-        visitDate: visit?.visitDate,
-        notes: visit?.notes,
+        // Get only visited properties with their visit data
+        const visited = HERITAGE_PROPERTIES.filter((property) => {
+          const visit = visits.find((v) => v.propertyId === property.id)
+          return visit?.visited
+        }).map((property) => {
+          const visit = visits.find((v) => v.propertyId === property.id)
+          return {
+            ...property,
+            visited: true,
+            visitDate: visit?.visitDate,
+            notes: visit?.notes,
+          }
+        })
+
+        // Sort by visit date (most recent first)
+        visited.sort((a, b) => {
+          if (!a.visitDate && !b.visitDate) return 0
+          if (!a.visitDate) return 1
+          if (!b.visitDate) return -1
+          return new Date(b.visitDate).getTime() - new Date(a.visitDate).getTime()
+        })
+
+        setVisitedProperties(visited)
+      } catch (error) {
+        console.error("[v0] Failed to load visits:", error)
+        // Fallback to empty array if database fails
+        setVisitData([])
+        setVisitedProperties([])
       }
-    })
+    }
 
-    // Sort by visit date (most recent first)
-    visited.sort((a, b) => {
-      if (!a.visitDate && !b.visitDate) return 0
-      if (!a.visitDate) return 1
-      if (!b.visitDate) return -1
-      return new Date(b.visitDate).getTime() - new Date(a.visitDate).getTime()
-    })
-
-    setVisitedProperties(visited)
+    loadVisits()
   }, [])
 
   const getTypeColor = (type: string) => {
