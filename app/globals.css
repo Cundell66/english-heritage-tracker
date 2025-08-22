@@ -76,6 +76,10 @@
 }
 
 @theme inline {
+  /* Added font family configuration for Google Fonts */
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

@@ -12,8 +12,11 @@ import { Castle, Church, Home, MapPin, Trophy } from "lucide-react"
 export default function HomePage() {
   const [visitData, setVisitData] = useState<VisitData[]>([])
   const [properties, setProperties] = useState<HeritageProperty[]>([])
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
+
     const visits = loadVisitData()
     setVisitData(visits)
 
@@ -29,6 +32,19 @@ export default function HomePage() {
     })
     setProperties(updatedProperties)
   }, [])
+
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto px-4 py-8 max-w-4xl">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold text-primary mb-2">English Heritage Tracker</h1>
+            <p className="text-muted-foreground">Loading your heritage journey...</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   const visitedCount = visitData.filter((v) => v.visited).length
   const totalCount = HERITAGE_PROPERTIES.length
