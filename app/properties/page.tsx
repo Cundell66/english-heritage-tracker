@@ -83,27 +83,42 @@ export default function PropertiesPage() {
   }, [properties, searchTerm, selectedCounty, selectedType, visitFilter])
 
   const handleVisitToggle = async (propertyId: string, visited: boolean) => {
+    console.log("[v0] Visit toggle clicked:", { propertyId, visited })
+
     const property = properties.find((p) => p.id === propertyId)
-    if (!property) return
+    if (!property) {
+      console.log("[v0] Property not found:", propertyId)
+      return
+    }
 
     const visitDate = visited ? new Date().toISOString().split("T")[0] : undefined
+    console.log("[v0] Attempting to update visit:", {
+      propertyId,
+      name: property.name,
+      county: property.county,
+      type: property.type,
+      visited,
+      visitDate,
+    })
 
     try {
-      // Update database with all required parameters
       await updatePropertyVisit(propertyId, property.name, property.county, property.type, visited, visitDate)
+      console.log("[v0] Database update successful")
 
       // Update local state immediately for better UX
       const updatedProperties = properties.map((prop) =>
         prop.id === propertyId ? { ...prop, visited, visitDate } : prop,
       )
       setProperties(updatedProperties)
+      console.log("[v0] Local state updated")
 
       // Reload visits from database to ensure consistency
       const updatedVisitData = await loadVisitsFromDatabase()
       setVisitData(updatedVisitData)
+      console.log("[v0] Visit data reloaded from database")
     } catch (error) {
-      console.error("Failed to update visit status:", error)
-      // Could add user notification here
+      console.error("[v0] Failed to update visit status:", error)
+      alert("Failed to update visit status. Please make sure you're logged in and try again.")
     }
   }
 
