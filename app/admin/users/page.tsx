@@ -57,6 +57,9 @@ export default function AdminUsersPage() {
   const resendConfirmation = async () => {
     const supabase = createClient()
     setIsLoading(true)
+    setError(null) // Clear previous errors
+
+    console.log("[v0] Attempting to resend confirmation email to:", email) // Added debugging
 
     try {
       const { error } = await supabase.auth.resend({
@@ -67,10 +70,22 @@ export default function AdminUsersPage() {
         },
       })
 
-      if (error) throw error
-      setUserInfo({ ...userInfo, message: "Confirmation email resent!" })
+      console.log("[v0] Resend response - error:", error) // Added debugging
+
+      if (error) {
+        console.log("[v0] Resend failed with error:", error.message) // Added debugging
+        throw error
+      }
+
+      console.log("[v0] Resend successful") // Added debugging
+      setUserInfo({
+        ...userInfo,
+        message: "Confirmation email resent successfully! Check spam folder if not received.",
+      }) // Improved success message
     } catch (error: unknown) {
-      setError(error instanceof Error ? error.message : "Failed to resend email")
+      const errorMessage = error instanceof Error ? error.message : "Failed to resend email"
+      console.log("[v0] Resend error caught:", errorMessage) // Added debugging
+      setError(`Failed to resend confirmation email: ${errorMessage}`) // Improved error message
     } finally {
       setIsLoading(false)
     }
