@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { HERITAGE_PROPERTIES, type HeritageProperty, type PropertyType } from "@/lib/heritage-data"
-import { loadVisitData, updatePropertyVisit, type VisitData } from "@/lib/storage"
+import { loadVisitsFromDatabase, updatePropertyVisit, type VisitData } from "@/lib/storage"
 import { ArrowLeft, MapPin, Calendar, Check, X, Search } from "lucide-react"
 import Link from "next/link"
 
@@ -21,21 +21,32 @@ export default function PropertiesPage() {
   const [visitFilter, setVisitFilter] = useState<string>("all")
 
   useEffect(() => {
-    const visits = loadVisitData()
-    setVisitData(visits)
+    const loadVisits = async () => {
+      try {
+        const visits = await loadVisitsFromDatabase()
+        setVisitData(visits)
 
-    // Merge visit data with properties
-    const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
-      const visit = visits.find((v) => v.propertyId === property.id)
-      return {
-        ...property,
-        visited: visit?.visited || false,
-        visitDate: visit?.visitDate,
-        notes: visit?.notes,
+        // Merge visit data with properties
+        const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
+          const visit = visits.find((v) => v.propertyId === property.id)
+          return {
+            ...property,
+            visited: visit?.visited || false,
+            visitDate: visit?.visitDate,
+            notes: visit?.notes,
+          }
+        })
+        setProperties(updatedProperties)
+        setFilteredProperties(updatedProperties)
+      } catch (error) {
+        console.error("Failed to load visits:", error)
+        // Fallback to empty state if database fails
+        setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+        setFilteredProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
       }
-    })
-    setProperties(updatedProperties)
-    setFilteredProperties(updatedProperties)
+    }
+
+    loadVisits()
   }, [])
 
   // Filter properties based on search and filters
@@ -71,19 +82,29 @@ export default function PropertiesPage() {
     setFilteredProperties(filtered)
   }, [properties, searchTerm, selectedCounty, selectedType, visitFilter])
 
-  const handleVisitToggle = (propertyId: string, visited: boolean) => {
+  const handleVisitToggle = async (propertyId: string, visited: boolean) => {
+    const property = properties.find((p) => p.id === propertyId)
+    if (!property) return
+
     const visitDate = visited ? new Date().toISOString().split("T")[0] : undefined
-    updatePropertyVisit(propertyId, visited, visitDate)
 
-    // Update local state
-    const updatedProperties = properties.map((property) =>
-      property.id === propertyId ? { ...property, visited, visitDate } : property,
-    )
-    setProperties(updatedProperties)
+    try {
+      // Update database with all required parameters
+      await updatePropertyVisit(propertyId, property.name, property.county, property.type, visited, visitDate)
 
-    // Update visit data
-    const updatedVisitData = loadVisitData()
-    setVisitData(updatedVisitData)
+      // Update local state immediately for better UX
+      const updatedProperties = properties.map((prop) =>
+        prop.id === propertyId ? { ...prop, visited, visitDate } : prop,
+      )
+      setProperties(updatedProperties)
+
+      // Reload visits from database to ensure consistency
+      const updatedVisitData = await loadVisitsFromDatabase()
+      setVisitData(updatedVisitData)
+    } catch (error) {
+      console.error("Failed to update visit status:", error)
+      // Could add user notification here
+    }
   }
 
   const counties = Array.from(new Set(HERITAGE_PROPERTIES.map((p) => p.county))).sort()
