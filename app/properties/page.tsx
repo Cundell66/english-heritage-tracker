@@ -155,6 +155,38 @@ export default function PropertiesPage() {
     return colorMap[type] || "bg-muted text-muted-foreground"
   }
 
+  const getPropertyImage = (property: HeritageProperty) => {
+    if (property.imageUrl) {
+      return property.imageUrl
+    }
+
+    // Return type-based placeholder images
+    const typeImageMap: Record<string, string> = {
+      Castle: "/placeholder-qspyo.png",
+      Abbey: "/abbey-ruins-gothic-arches-monastery.png",
+      Priory: "/priory-ruins.png",
+      Church: "/historic-stone-church.png",
+      "Roman fort": "/roman-fort-walls.png",
+      "Roman villa": "/roman-villa-ruins-mosaic.png",
+      "Country House": "/historic-mansion-estate.png",
+      Palace: "/historic-royal-palace.png",
+      "Manor house": "/historic-manor-estate.png",
+      "Megalithic tomb": "/ancient-megalithic-chamber.png",
+      "Stone circle": "/placeholder-awr8t.png",
+      Henge: "/ancient-henge-earthwork.png",
+      Hillfort: "/iron-age-hillfort.png",
+      "Device Fort": "/tudor-coastal-fort.png",
+      Tower: "/historic-stone-tower.png",
+      Bridge: "/placeholder.svg?height=200&width=300",
+      Village: "/placeholder.svg?height=200&width=300",
+      Amphitheatre: "/placeholder.svg?height=200&width=300",
+      Wall: "/placeholder.svg?height=200&width=300",
+      Gatehouse: "/placeholder.svg?height=200&width=300",
+    }
+
+    return typeImageMap[property.type] || "/placeholder.svg?height=200&width=300"
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-6xl">
@@ -251,18 +283,16 @@ export default function PropertiesPage() {
               key={property.id}
               className={`transition-all hover:shadow-md overflow-hidden ${property.visited ? "ring-2 ring-accent/20" : ""}`}
             >
-              {property.imageUrl && (
-                <div className="relative h-48 w-full overflow-hidden">
-                  <Image
-                    src={property.imageUrl || "/placeholder.svg"}
-                    alt={property.name}
-                    fill
-                    className="object-cover transition-transform hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                </div>
-              )}
+              <div className="relative h-48 w-full overflow-hidden">
+                <Image
+                  src={getPropertyImage(property) || "/placeholder.svg"}
+                  alt={property.name}
+                  fill
+                  className="object-cover transition-transform hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              </div>
 
               <CardHeader className="pb-3">
                 <div className="flex items-start justify-between">
@@ -330,17 +360,15 @@ export default function PropertiesPage() {
                         </DialogTitle>
                       </DialogHeader>
                       <div className="space-y-4">
-                        {property.imageUrl && (
-                          <div className="relative h-64 w-full overflow-hidden rounded-lg">
-                            <Image
-                              src={property.imageUrl || "/placeholder.svg"}
-                              alt={property.name}
-                              fill
-                              className="object-cover"
-                              sizes="(max-width: 768px) 100vw, 600px"
-                            />
-                          </div>
-                        )}
+                        <div className="relative h-64 w-full overflow-hidden rounded-lg">
+                          <Image
+                            src={getPropertyImage(property) || "/placeholder.svg"}
+                            alt={property.name}
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 768px) 100vw, 600px"
+                          />
+                        </div>
 
                         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">

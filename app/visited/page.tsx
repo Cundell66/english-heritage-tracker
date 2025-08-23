@@ -4,9 +4,10 @@ import { useState, useEffect } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { HERITAGE_PROPERTIES, type HeritageProperty } from "@/lib/heritage-data"
 import { loadVisitsFromDatabase, type VisitData } from "@/lib/storage"
-import { ArrowLeft, MapPin, Calendar, Trophy } from "lucide-react"
+import { ArrowLeft, MapPin, Calendar, Trophy, Info } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -67,6 +68,38 @@ export default function VisitedPage() {
     return colorMap[type] || "bg-muted text-muted-foreground"
   }
 
+  const getPropertyImage = (property: HeritageProperty) => {
+    if (property.imageUrl) {
+      return property.imageUrl
+    }
+
+    // Return type-based placeholder images
+    const typeImageMap: Record<string, string> = {
+      Castle: "/placeholder.svg?height=200&width=300&text=Castle",
+      Abbey: "/abbey-ruins-gothic-arches-monastery.png",
+      Priory: "/priory-ruins.png",
+      Church: "/historic-stone-church.png",
+      "Roman fort": "/roman-fort-walls.png",
+      "Roman villa": "/roman-villa-ruins-mosaic.png",
+      "Country House": "/historic-mansion-estate.png",
+      Palace: "/historic-royal-palace.png",
+      "Manor house": "/historic-manor-estate.png",
+      "Megalithic tomb": "/ancient-megalithic-chamber.png",
+      "Stone circle": "/placeholder.svg?height=200&width=300&text=Stone+Circle",
+      Henge: "/ancient-henge-earthwork.png",
+      Hillfort: "/iron-age-hillfort.png",
+      "Device Fort": "/tudor-coastal-fort.png",
+      Tower: "/historic-stone-tower.png",
+      Bridge: "/placeholder.svg?height=200&width=300&text=Historic+Bridge",
+      Village: "/placeholder.svg?height=200&width=300&text=Ancient+Village",
+      Amphitheatre: "/placeholder.svg?height=200&width=300&text=Roman+Amphitheatre",
+      Wall: "/placeholder.svg?height=200&width=300&text=Ancient+Wall",
+      Gatehouse: "/placeholder.svg?height=200&width=300&text=Medieval+Gatehouse",
+    }
+
+    return typeImageMap[property.type] || "/placeholder.svg?height=200&width=300&text=Heritage+Site"
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -105,17 +138,15 @@ export default function VisitedPage() {
             {visitedProperties.map((property) => (
               <Card key={property.id} className="ring-2 ring-accent/20 overflow-hidden">
                 <div className="flex flex-col sm:flex-row">
-                  {property.imageUrl && (
-                    <div className="relative h-48 sm:h-32 sm:w-48 flex-shrink-0 overflow-hidden">
-                      <Image
-                        src={property.imageUrl || "/placeholder.svg"}
-                        alt={property.name}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 192px"
-                      />
-                    </div>
-                  )}
+                  <div className="relative h-48 sm:h-32 sm:w-48 flex-shrink-0 overflow-hidden">
+                    <Image
+                      src={getPropertyImage(property) || "/placeholder.svg"}
+                      alt={property.name}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 192px"
+                    />
+                  </div>
 
                   <div className="flex-1">
                     <CardHeader>
@@ -134,9 +165,79 @@ export default function VisitedPage() {
                               </div>
                             )}
                           </div>
-                          <Badge className={getTypeColor(property.type)} variant="outline">
-                            {property.type}
-                          </Badge>
+                          <div className="flex items-center gap-2">
+                            <Badge className={getTypeColor(property.type)} variant="outline">
+                              {property.type}
+                            </Badge>
+                            <Dialog>
+                              <DialogTrigger asChild>
+                                <Button variant="outline" size="sm" className="px-3 h-8 bg-transparent">
+                                  <Info className="h-3 w-3 mr-1" />
+                                  More Info
+                                </Button>
+                              </DialogTrigger>
+                              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
+                                <DialogHeader>
+                                  <DialogTitle className="text-lg sm:text-xl font-bold text-primary pr-8">
+                                    {property.name}
+                                  </DialogTitle>
+                                </DialogHeader>
+                                <div className="space-y-4">
+                                  <div className="relative h-64 w-full overflow-hidden rounded-lg">
+                                    <Image
+                                      src={getPropertyImage(property) || "/placeholder.svg"}
+                                      alt={property.name}
+                                      fill
+                                      className="object-cover"
+                                      sizes="(max-width: 768px) 100vw, 600px"
+                                    />
+                                  </div>
+
+                                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                      <MapPin className="h-4 w-4" />
+                                      {property.county}
+                                    </div>
+                                    <Badge className={getTypeColor(property.type)} variant="outline">
+                                      {property.type}
+                                    </Badge>
+                                  </div>
+                                  {property.description ? (
+                                    <div>
+                                      <h3 className="font-semibold text-heritage-blue mb-2">Historical Information</h3>
+                                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                                        {property.description}
+                                      </p>
+                                    </div>
+                                  ) : (
+                                    <div>
+                                      <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
+                                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                                        This {property.type.toLowerCase()} is located in {property.county} and is part
+                                        of English Heritage's collection of historic sites spanning over 5,000 years of
+                                        history.
+                                      </p>
+                                    </div>
+                                  )}
+                                  {property.visited && property.visitDate && (
+                                    <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                                      <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
+                                      <div className="flex items-center gap-2 text-sm">
+                                        <Calendar className="h-4 w-4" />
+                                        Visited on {new Date(property.visitDate).toLocaleDateString()}
+                                      </div>
+                                      {property.notes && (
+                                        <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>
+                                      )}
+                                    </div>
+                                  )}
+                                  <div className="text-xs text-muted-foreground border-t pt-4">
+                                    Information sourced from Wikipedia and English Heritage records.
+                                  </div>
+                                </div>
+                              </DialogContent>
+                            </Dialog>
+                          </div>
                         </div>
                         <Badge className="bg-accent text-accent-foreground">Visited</Badge>
                       </div>
