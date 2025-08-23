@@ -8,6 +8,7 @@ import { HERITAGE_PROPERTIES, type HeritageProperty } from "@/lib/heritage-data"
 import { loadVisitsFromDatabase, type VisitData } from "@/lib/storage"
 import { ArrowLeft, MapPin, Calendar, Trophy } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function VisitedPage() {
   const [visitedProperties, setVisitedProperties] = useState<HeritageProperty[]>([])
@@ -102,38 +103,54 @@ export default function VisitedPage() {
         ) : (
           <div className="space-y-4">
             {visitedProperties.map((property) => (
-              <Card key={property.id} className="ring-2 ring-accent/20">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <CardTitle className="text-xl mb-2">{property.name}</CardTitle>
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                        <div className="flex items-center gap-1">
-                          <MapPin className="h-4 w-4" />
-                          {property.county}
-                        </div>
-                        {property.visitDate && (
-                          <div className="flex items-center gap-1">
-                            <Calendar className="h-4 w-4" />
-                            Visited {new Date(property.visitDate).toLocaleDateString()}
+              <Card key={property.id} className="ring-2 ring-accent/20 overflow-hidden">
+                <div className="flex flex-col sm:flex-row">
+                  {property.imageUrl && (
+                    <div className="relative h-48 sm:h-32 sm:w-48 flex-shrink-0 overflow-hidden">
+                      <Image
+                        src={property.imageUrl || "/placeholder.svg"}
+                        alt={property.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 192px"
+                      />
+                    </div>
+                  )}
+
+                  <div className="flex-1">
+                    <CardHeader>
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <CardTitle className="text-xl mb-2">{property.name}</CardTitle>
+                          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
+                            <div className="flex items-center gap-1">
+                              <MapPin className="h-4 w-4" />
+                              {property.county}
+                            </div>
+                            {property.visitDate && (
+                              <div className="flex items-center gap-1">
+                                <Calendar className="h-4 w-4" />
+                                Visited {new Date(property.visitDate).toLocaleDateString()}
+                              </div>
+                            )}
                           </div>
-                        )}
+                          <Badge className={getTypeColor(property.type)} variant="outline">
+                            {property.type}
+                          </Badge>
+                        </div>
+                        <Badge className="bg-accent text-accent-foreground">Visited</Badge>
                       </div>
-                      <Badge className={getTypeColor(property.type)} variant="outline">
-                        {property.type}
-                      </Badge>
-                    </div>
-                    <Badge className="bg-accent text-accent-foreground">Visited</Badge>
+                    </CardHeader>
+                    {property.notes && (
+                      <CardContent>
+                        <div className="bg-muted/50 rounded-lg p-3">
+                          <p className="text-sm font-medium mb-1">Your Notes:</p>
+                          <p className="text-sm text-muted-foreground">{property.notes}</p>
+                        </div>
+                      </CardContent>
+                    )}
                   </div>
-                </CardHeader>
-                {property.notes && (
-                  <CardContent>
-                    <div className="bg-muted/50 rounded-lg p-3">
-                      <p className="text-sm font-medium mb-1">Your Notes:</p>
-                      <p className="text-sm text-muted-foreground">{property.notes}</p>
-                    </div>
-                  </CardContent>
-                )}
+                </div>
               </Card>
             ))}
           </div>

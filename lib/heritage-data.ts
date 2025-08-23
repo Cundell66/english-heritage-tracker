@@ -42,7 +42,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Priory",
     visited: false,
     description:
-      "A medieval Augustinian priory founded in the 12th century, featuring well-preserved refectory and other monastic buildings.",
+      "The Priory Church of Saint Mary, Bushmead, commonly called Bushmead Priory, was a monastic foundation for Augustinian Canons, located at Bushmead in the County of Bedfordshire in England.",
+    imageUrl: "/medieval-priory-ruins.png",
   },
   {
     id: "bed-2",
@@ -50,7 +51,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     county: "Bedfordshire",
     type: "Other",
     visited: false,
-    description: "An 18th-century mausoleum built for the de Grey family, showcasing neoclassical architecture.",
+    description:
+      "The de Grey Mausoleum in Flitton, Bedfordshire, England, is one of the largest sepulchral chapels in the country.",
+    imageUrl: "/georgian-mausoleum-chapel.png",
   },
   {
     id: "bed-3",
@@ -59,7 +62,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Country House",
     visited: false,
     description:
-      "A 17th-century mansion ruins, once known as the 'English Versailles', built for the Countess of Pembroke.",
+      "Houghton House is a ruined house located near Houghton Conquest in Bedfordshire, on the ridge just north of Ampthill, and about 8 miles south of Bedford. The house was built for the writer, translator, and literary patron Mary Sidney Herbert, Dowager Countess of Pembroke.",
+    imageUrl: "/ruined-jacobean-mansion.png",
   },
   {
     id: "bed-4",
@@ -68,7 +72,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Country House",
     visited: false,
     description:
-      "An 18th-century mansion with spectacular formal gardens, featuring a French-style château and landscaped grounds.",
+      "Wrest Park is a country estate located near Silsoe, Bedfordshire, England. It comprises Wrest Park, a Grade I listed country house, and Wrest Park Gardens, also Grade I listed, formal gardens surrounding the mansion.",
+    imageUrl: "/french-chateau-gardens.png",
   },
 
   // Berkshire (1 property)
@@ -79,7 +84,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Castle",
     visited: false,
     description:
-      "A 14th-century castle built by Sir Richard Abberbury, featuring twin-towered gatehouse that survived the English Civil War.",
+      "Donnington Castle is a ruined medieval castle, situated in the small village of Donnington, just north of the town of Newbury. It was destroyed in the English Civil War in 1646.",
+    imageUrl: "/medieval-castle-ruins-twin-towers-gatehouse.png",
   },
 
   // Bristol (1 property)
@@ -90,14 +96,51 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Church",
     visited: false,
     description:
-      "A medieval church built by the Knights Templar in the 12th century, featuring a distinctive leaning tower.",
+      "A ruined church building in central Bristol, which was founded in the mid-12th century by Robert of Gloucester and the Knights Templar. It served as the site for the famous exorcism of George Lukins conducted by Methodist and Anglican clergymen. It was bombed in the Second World War and largely destroyed.",
+    imageUrl: "/bristol-church-ruins.png",
   },
 
   // Cambridgeshire (4 properties)
-  { id: "cam-1", name: "Denny Abbey and Farmland Museum", county: "Cambridgeshire", type: "Abbey", visited: false },
-  { id: "cam-2", name: "Duxford Chapel", county: "Cambridgeshire", type: "Church", visited: false },
-  { id: "cam-3", name: "Isleham Priory Church", county: "Cambridgeshire", type: "Church", visited: false },
-  { id: "cam-4", name: "Longthorpe Tower", county: "Cambridgeshire", type: "Tower", visited: false },
+  {
+    id: "cam-1",
+    name: "Denny Abbey and Farmland Museum",
+    county: "Cambridgeshire",
+    type: "Abbey",
+    visited: false,
+    description:
+      "A former abbey near Waterbeach, north of Cambridge. A group of Benedictine monks, governed from Ely, moved here in the 1150s. They built a church, Denny Priory, which opened in 1159. The crossing and transepts are the only parts of the original Priory that remain today.",
+    imageUrl: "/medieval-abbey-ruins-museum.png",
+  },
+  {
+    id: "cam-2",
+    name: "Duxford Chapel",
+    county: "Cambridgeshire",
+    type: "Church",
+    visited: false,
+    description:
+      "A chapel that was once part of the Hospital of St. John at Duxford, in Cambridgeshire, England, the hospital since demolished. Built using flint rubble for the walls and limestone for the doorways and windows.",
+    imageUrl: "/medieval-chapel.png",
+  },
+  {
+    id: "cam-3",
+    name: "Isleham Priory Church",
+    county: "Cambridgeshire",
+    type: "Church",
+    visited: false,
+    description:
+      "A Norman church, Located in Isleham, and part of the former St Margaret's Benedictine Alien Priory. Later converted into a barn, but it remains in an unaltered state.",
+    imageUrl: "/norman-priory.png",
+  },
+  {
+    id: "cam-4",
+    name: "Longthorpe Tower",
+    county: "Cambridgeshire",
+    type: "Tower",
+    visited: false,
+    description:
+      "A fourteenth-century, three-storey tower, originally part of a fortified manor house. Situated in the village of Longthorpe, now a residential area of Peterborough.",
+    imageUrl: "/medieval-manor.png",
+  },
 
   // Cheshire (4 properties)
   { id: "che-1", name: "Beeston Castle", county: "Cheshire", type: "Castle", visited: false },
@@ -133,7 +176,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Castle",
     visited: false,
     description:
-      "A 13th-century medieval fortification built by Richard, Earl of Cornwall, on a site with early medieval settlement. Legendary birthplace of King Arthur, perched dramatically on Cornwall's rugged coastline.",
+      "A medieval fortification located on the peninsula of Tintagel Island. It saw settlement during the early medieval period, when it was probably one of the seasonal residences of the regional king of Dumnonia. After Cornwall had been subsumed into the kingdom of England, a castle was built on the site by Richard, Earl of Cornwall.",
+    imageUrl: "/tintagel-castle-ruins.png",
   },
   { id: "cor-16", name: "Tregiffian Burial Chamber", county: "Cornwall", type: "Megalithic tomb", visited: false },
   { id: "cor-17", name: "Trethevy Quoit", county: "Cornwall", type: "Megalithic tomb", visited: false },
@@ -810,7 +854,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Henge",
     visited: false,
     description:
-      "A Neolithic henge and timber circle monument consisting of an outer ring of Sarsen standing stones and an inner ring of bluestones, oriented towards the summer solstice sunrise. One of the world's most famous prehistoric monuments, built around 3100-1600 BC.",
+      "Consists of an outer ring of vertical Sarsen standing stones, weighing around 25 tons, topped by connecting horizontal lintel stones. Inside is a ring of smaller bluestones. Inside these are free-standing trilithons, two bulkier vertical Sarsens joined by one lintel. It is oriented towards the sunrise on the summer solstice. The stones are set within earthworks in the middle of the most dense complex of Neolithic and Bronze Age monuments.",
+    imageUrl: "/stonehenge-trilithons.png",
   },
   { id: "wil-15", name: "West Kennet Avenue", county: "Wiltshire", type: "Other", visited: false },
   { id: "wil-16", name: "West Kennet Long Barrow", county: "Wiltshire", type: "Megalithic tomb", visited: false },
