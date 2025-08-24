@@ -5,7 +5,7 @@ export interface VisitData {
   visited: boolean
   visitDate?: string
   notes?: string
-  rating?: number
+  rating?: number | null // Allow null ratings
   photos?: string[]
   visitDuration?: number
   weather?: string
@@ -22,7 +22,7 @@ export const saveVisitToDatabase = async (
   visited: boolean,
   visitDate?: string,
   notes?: string,
-  rating?: number,
+  rating?: number | null, // Allow null ratings
   photos?: string[],
   visitDuration?: number,
   weather?: string,
@@ -71,7 +71,7 @@ export const saveVisitToDatabase = async (
         user_id: user.id,
         updated_at: new Date().toISOString(),
         notes,
-        rating,
+        rating: rating && rating > 0 ? rating : null, // Send null for invalid ratings
         photos: photos || [],
         visit_duration: visitDuration || 60, // Default to 1 hour if not specified
         weather,
@@ -121,7 +121,7 @@ export const loadVisitsFromDatabase = async (): Promise<VisitData[]> => {
       visited: true,
       visitDate: visit.visited_date,
       notes: visit.notes || undefined,
-      rating: visit.rating || undefined,
+      rating: visit.rating || null, // Allow null ratings
       photos: visit.photos || undefined,
       visitDuration: visit.visit_duration || undefined,
       weather: visit.weather || undefined,
@@ -140,7 +140,7 @@ export const updatePropertyVisit = async (
   visited: boolean,
   visitDate?: string,
   notes?: string,
-  rating?: number,
+  rating?: number | null, // Allow null ratings
   photos?: string[],
   visitDuration?: number,
   weather?: string,

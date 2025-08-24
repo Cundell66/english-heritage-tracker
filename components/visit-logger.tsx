@@ -3,7 +3,14 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogDescription,
+} from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -45,7 +52,7 @@ export function VisitLogger({
   const [isLoading, setIsLoading] = useState(false)
   const [visitDate, setVisitDate] = useState(currentVisit?.visitDate || new Date().toISOString().split("T")[0])
   const [notes, setNotes] = useState(currentVisit?.notes || "")
-  const [rating, setRating] = useState(currentVisit?.rating || 0)
+  const [rating, setRating] = useState(currentVisit?.rating || null)
   const [photos, setPhotos] = useState<string[]>(currentVisit?.photos || [])
   const [visitDuration, setVisitDuration] = useState(currentVisit?.visitDuration || 0)
   const [weather, setWeather] = useState(currentVisit?.weather || "")
@@ -109,7 +116,7 @@ export function VisitLogger({
     }
   }
 
-  const renderStars = (currentRating: number, onRatingChange: (rating: number) => void) => {
+  const renderStars = (currentRating: number | null, onRatingChange: (rating: number | null) => void) => {
     return (
       <div className="flex gap-1">
         {[1, 2, 3, 4, 5].map((star) => (
@@ -118,12 +125,22 @@ export function VisitLogger({
             type="button"
             onClick={() => onRatingChange(star)}
             className={`p-1 rounded transition-colors ${
-              star <= currentRating ? "text-yellow-500" : "text-gray-300 hover:text-yellow-400"
+              star <= (currentRating || 0) ? "text-yellow-500" : "text-gray-300 hover:text-yellow-400"
             }`}
           >
             <Star className="h-5 w-5 fill-current" />
           </button>
         ))}
+        {currentRating && (
+          <button
+            type="button"
+            onClick={() => onRatingChange(null)}
+            className="p-1 rounded transition-colors text-gray-400 hover:text-gray-600 ml-2"
+            title="Clear rating"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        )}
       </div>
     )
   }
@@ -140,6 +157,9 @@ export function VisitLogger({
           <DialogTitle className="text-xl font-bold">
             {currentVisit?.visited ? "Edit Visit" : "Log Your Visit"}
           </DialogTitle>
+          <DialogDescription>
+            Record details about your visit to {propertyName}, including photos, rating, and notes.
+          </DialogDescription>
           <p className="text-sm text-muted-foreground">
             {propertyName}, {county}
           </p>
@@ -171,7 +191,7 @@ export function VisitLogger({
             <Label>Your Rating</Label>
             <div className="flex items-center gap-2 mt-1">
               {renderStars(rating, setRating)}
-              <span className="text-sm text-muted-foreground">{rating > 0 ? `${rating}/5 stars` : "No rating"}</span>
+              <span className="text-sm text-muted-foreground">{rating ? `${rating}/5 stars` : "No rating"}</span>
             </div>
           </div>
 
