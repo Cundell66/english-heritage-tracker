@@ -27,11 +27,9 @@ export default function AchievementsPage() {
       const userAchs = await getUserAchievements()
       setUserAchievements(userAchs)
 
-      // Load progress for locked achievements
       const progressData: Record<string, number> = {}
-      const lockedAchievements = ACHIEVEMENTS.filter((a) => !userAchs.some((ua) => ua.achievementId === a.id))
 
-      for (const achievement of lockedAchievements) {
+      for (const achievement of ACHIEVEMENTS) {
         const progress = await getAchievementProgress(achievement.id)
         progressData[achievement.id] = progress
       }
@@ -39,6 +37,19 @@ export default function AchievementsPage() {
       setAchievementProgress(progressData)
     } catch (error) {
       console.error("Failed to load achievements:", error)
+      const progressData: Record<string, number> = {}
+
+      for (const achievement of ACHIEVEMENTS) {
+        try {
+          const progress = await getAchievementProgress(achievement.id)
+          progressData[achievement.id] = progress
+        } catch (progressError) {
+          console.error(`Failed to get progress for ${achievement.id}:`, progressError)
+          progressData[achievement.id] = 0
+        }
+      }
+
+      setAchievementProgress(progressData)
     }
   }
 
@@ -55,8 +66,19 @@ export default function AchievementsPage() {
     )
   }
 
-  const unlockedAchievements = ACHIEVEMENTS.filter((a) => userAchievements.some((ua) => ua.achievementId === a.id))
-  const lockedAchievements = ACHIEVEMENTS.filter((a) => !userAchievements.some((ua) => ua.achievementId === a.id))
+  const unlockedAchievements = ACHIEVEMENTS.filter((a) => {
+    const hasDbRecord = userAchievements.some((ua) => ua.achievementId === a.id)
+    const progress = achievementProgress[a.id] || 0
+    const isProgressComplete = progress >= 100
+    return hasDbRecord || isProgressComplete
+  })
+
+  const lockedAchievements = ACHIEVEMENTS.filter((a) => {
+    const hasDbRecord = userAchievements.some((ua) => ua.achievementId === a.id)
+    const progress = achievementProgress[a.id] || 0
+    const isProgressComplete = progress >= 100
+    return !hasDbRecord && !isProgressComplete
+  })
 
   // Filter achievements
   let filteredAchievements = ACHIEVEMENTS
@@ -64,9 +86,17 @@ export default function AchievementsPage() {
     filteredAchievements = filteredAchievements.filter((a) => a.category === filterCategory)
   }
   if (filterStatus === "unlocked") {
-    filteredAchievements = filteredAchievements.filter((a) => userAchievements.some((ua) => ua.achievementId === a.id))
+    filteredAchievements = filteredAchievements.filter((a) => {
+      const hasDbRecord = userAchievements.some((ua) => ua.achievementId === a.id)
+      const progress = achievementProgress[a.id] || 0
+      return hasDbRecord || progress >= 100
+    })
   } else if (filterStatus === "locked") {
-    filteredAchievements = filteredAchievements.filter((a) => !userAchievements.some((ua) => ua.achievementId === a.id))
+    filteredAchievements = filteredAchievements.filter((a) => {
+      const hasDbRecord = userAchievements.some((ua) => ua.achievementId === a.id)
+      const progress = achievementProgress[a.id] || 0
+      return !hasDbRecord && progress < 100
+    })
   }
 
   const totalPoints = unlockedAchievements.reduce((sum, a) => sum + (a.reward?.points || 0), 0)
@@ -186,8 +216,8 @@ export default function AchievementsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {filteredAchievements.map((achievement) => {
             const userAchievement = userAchievements.find((ua) => ua.achievementId === achievement.id)
-            const isUnlocked = !!userAchievement
             const progress = achievementProgress[achievement.id] || 0
+            const isUnlocked = !!userAchievement || progress >= 100
 
             return (
               <AchievementCard
