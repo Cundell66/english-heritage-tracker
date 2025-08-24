@@ -472,6 +472,17 @@ export default function PropertiesPage() {
                             {property.notes && <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>}
                           </div>
                         ) : null}
+
+                        <div className="flex gap-2 mt-4">
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            onClick={() => handleVisitToggle(property.id, false)}
+                            className="flex-1"
+                          >
+                            Mark as Not Visited
+                          </Button>
+                        </div>
                       </>
                     )
                   })()
@@ -502,17 +513,13 @@ export default function PropertiesPage() {
                       </div>
                     )}
 
-                    <div className="bg-muted/50 p-4 rounded-lg border">
-                      <p className="text-sm text-muted-foreground text-center">
-                        Mark this property as visited to add photos, ratings, and personal notes about your experience.
-                      </p>
+                    <div className="flex gap-2 mt-4">
+                      <Button onClick={() => handleVisitToggle(property.id, true)} className="flex-1" size="sm">
+                        Mark as Visited
+                      </Button>
                     </div>
                   </>
                 )}
-
-                <div className="text-xs text-muted-foreground border-t pt-4">
-                  Information sourced from Wikipedia and English Heritage records.
-                </div>
               </CardContent>
             </Card>
           ))}
