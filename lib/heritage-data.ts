@@ -2642,7 +2642,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa in Beadlam, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://www.english-heritage.org.uk/contentassets/95a87011aa1e428eb87e72ba2761cec4/dsc00671.jpg?w=1024&h=533&mode=crop&scale=both&quality=60&anchor=&WebsiteVersion=20200219",
   },
   {
     id: "ny-3",
