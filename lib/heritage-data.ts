@@ -120,7 +120,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former abbey near Waterbeach, north of Cambridge. A group of Benedictine monks, governed from Ely, moved here in the 1150s. They built a church, Denny Priory, which opened in 1159. The crossing and transepts are the only parts of the original Priory that remain today. In 1169, the monks returned to Ely and the site was handed to the Knights Templar.",
     notes: "Founded 1159, parts survive condition. Originally Benedictine, later Knights Templar.",
-    imageUrl: "/placeholder-t7o6w.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Denny_Abbey_2.JPG/1024px-Denny_Abbey_2.JPG",
   },
   {
     id: "cam-2",
@@ -349,7 +349,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
       "A small fort commissioned by Henry VIII in the 1530s to protect Fowey Harbour. A twin battery of 64-pounder guns was added on a lower terrace in 1855.",
     notes:
       "Built 1530s, remains condition. Henry VIII fort protecting Fowey Harbour with Victorian gun battery additions.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/24/Stcatherinescastle.jpg",
   },
   {
     id: "cor-14",
@@ -361,7 +361,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
       "St Mawes Castle and its larger sister castle, Pendennis, were built as part of a defensive chain of fortresses by Henry VIII to protect the south coast of Cornwall in the 1540s.",
     notes:
       "Built 1540s, remains condition. Part of Henry VIII's defensive chain with Pendennis Castle protecting Carrick Roads.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c1/St_Mawes_Castle_-_geograph.org.uk_-_561873.jpg",
   },
   {
     id: "cor-15",
@@ -395,7 +395,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       'A well-preserved megalithic tomb located near St Cleer. It is known locally as "the giant\'s house" and stands 2.7m high, consisting of five standing stones capped by a large slab.',
     notes: "Neolithic, remains condition. Well-preserved megalithic tomb known as 'the giant's house', 2.7m high.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tintagel_DSC_7455.jpg/1024px-Tintagel_DSC_7455.jpg",
   },
 
   // Cumbria (27 properties)
@@ -2632,7 +2632,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman town of Isurium Brigantum in Aldborough, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c8/Isvrivm_at_Aldborough_-_geograph.org.uk_-_406828.jpg",
   },
   {
     id: "ny-2",
@@ -2652,7 +2652,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Coxwold, North Yorkshire.",
     notes: "Founded 1177, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Byland_Abbey_-_geograph.org.uk_-_7279.jpg",
   },
   {
     id: "ny-4",
@@ -2662,7 +2662,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval keep in York, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cliffords_Tower.JPG/1024px-Cliffords_Tower.JPG",
   },
   {
     id: "ny-5",
@@ -2672,7 +2672,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Richmond, North Yorkshire.",
     notes: "Founded 1152, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Easby_Abbey.jpg",
   },
   {
     id: "ny-6",
@@ -2683,7 +2683,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Cistercian monastery founded in 1132, it's one of the largest and best-preserved ruined Cistercian monasteries in England. The abbey features stunning Gothic architecture and beautiful water gardens.",
     notes: "Founded 1132, ruins condition. One of the largest and best-preserved Cistercian monasteries in England.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Fountains_Abbey_-_geograph.org.uk_-_384329.jpg",
   },
   {
     id: "ny-7",
@@ -2693,7 +2693,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory in Guisborough, North Yorkshire.",
     notes: "Founded 1119, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Gisborough_Priory_east_view.jpg/1024px-Gisborough_Priory_east_view.jpg",
   },
   {
     id: "ny-8",
@@ -2703,7 +2703,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Helmsley, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/52/Helmsley_Castle2.jpg",
   },
   {
     id: "ny-9",
@@ -2713,7 +2713,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Kirkham, North Yorkshire.",
     notes: "Founded 1120s, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/KirkhamPriory.JPG/1024px-KirkhamPriory.JPG",
   },
   {
     id: "ny-10",
@@ -2723,7 +2723,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 15th-century gatehouse near West Tanfield, North Yorkshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Marmion_Tower_-_geograph.org.uk_-_1690757.jpg/1024px-Marmion_Tower_-_geograph.org.uk_-_1690757.jpg",
   },
   {
     id: "ny-11",
@@ -2733,7 +2733,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Middleham, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Middleham_Castle_01.jpg",
   },
   {
     id: "ny-12",
@@ -2743,7 +2743,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Carthusian priory near Northallerton, North Yorkshire.",
     notes: "Founded 1398, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Mount_Grace_Priory_-_geograph.org.uk_-_276083.jpg",
   },
   {
     id: "ny-13",
@@ -2753,7 +2753,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A motte-and-bailey castle in Pickering, North Yorkshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Pickering_Castle_5.jpg",
   },
   {
     id: "ny-14",
@@ -2763,7 +2763,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman bridge near Piercebridge, North Yorkshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Cliffe_Roman_Bridge_1.jpg",
   },
   {
     id: "ny-15",
@@ -2773,7 +2773,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved Norman castle in Richmond, North Yorkshire.",
     notes: "Norman, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Richmond_Castle%2C_2009.jpg/1024px-Richmond_Castle%2C_2009.jpg",
   },
   {
     id: "ny-16",
@@ -2783,7 +2783,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Helmsley, North Yorkshire.",
     notes: "Founded 1132, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rievaulx_Abbey_MMB_23.jpg/1024px-Rievaulx_Abbey_MMB_23.jpg",
   },
   {
     id: "ny-17",
@@ -2793,7 +2793,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A church in the grounds of Studley Royal Park, North Yorkshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Victorian_Gothic_Splendour_-_St._Mary%2C_Studley_Royal_-_geograph.org.uk_-_349105.jpg",
   },
   {
     id: "ny-18",
@@ -2803,7 +2803,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Scarborough, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/de/Scarborough_Castle_-_geograph.org.uk_-_192391.jpg",
   },
   {
     id: "ny-19",
@@ -2813,7 +2813,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Spofforth, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Spofforth_Castle_%2819th_March_2013%29_004.JPG/1024px-Spofforth_Castle_%2819th_March_2013%29_004.JPG",
   },
   {
     id: "ny-20",
@@ -2823,7 +2823,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of an Iron Age hillfort near Aldborough, North Yorkshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/18/Stanwick_Ramparts_-_geograph.org.uk_-_1340032.jpg",
   },
   {
     id: "ny-21",
@@ -2833,7 +2833,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 14th-century gatehouse near South Milford, North Yorkshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Steeton_Hall_Gatehouse%2C_South_Milford_-_geograph.org.uk_-_243356.jpg",
   },
   {
     id: "ny-22",
@@ -2843,7 +2843,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Three large henges near Thornborough, North Yorkshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Thornborough_Henge.jpg",
   },
   {
     id: "ny-23",
@@ -2853,7 +2853,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a deserted medieval village near Wharram Percy, North Yorkshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Wharram_Percy_Geograph.jpg",
   },
   {
     id: "ny-24",
@@ -2863,7 +2863,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Roman road near Whitby, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/04/Wade%27s_Causeway.jpg",
   },
   {
     id: "ny-25",
@@ -2873,7 +2873,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Whitby, North Yorkshire.",
     notes: "Founded 657, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/70/Whitby_Abbey_-_geograph.org.uk_-_944153.jpg",
   },
   {
     id: "ny-26",
@@ -2883,7 +2883,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Cold War bunker in York, North Yorkshire.",
     notes: "Cold War, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/York_Cold_War_Bunker.jpg/1024px-York_Cold_War_Bunker.jpg",
   },
 
   // Northamptonshire (5 properties)
