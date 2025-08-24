@@ -6,10 +6,9 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { HERITAGE_PROPERTIES, type HeritageProperty, type PropertyType } from "@/lib/heritage-data"
 import { loadVisitsFromDatabase, updatePropertyVisit, type VisitData } from "@/lib/storage"
-import { ArrowLeft, MapPin, Calendar, Check, X, Search, Info } from "lucide-react"
+import { ArrowLeft, MapPin, Calendar, Check, X, Search } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -349,187 +348,170 @@ export default function PropertiesPage() {
                 </div>
               </CardHeader>
               <CardContent className="pt-0">
-                {property.visited && property.visitDate && (
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground mb-3">
-                    <Calendar className="h-3 w-3 flex-shrink-0" />
-                    <span className="truncate">Visited on {new Date(property.visitDate).toLocaleDateString()}</span>
-                  </div>
-                )}
-                <div className="flex gap-2">
-                  {property.visited ? (
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      onClick={() => handleVisitToggle(property.id, false)}
-                      className="flex-1 h-9 text-xs sm:text-sm"
-                    >
-                      Mark as Not Visited
-                    </Button>
-                  ) : (
-                    <Button
-                      size="sm"
-                      onClick={() => handleVisitToggle(property.id, true)}
-                      className="flex-1 h-9 text-xs sm:text-sm bg-accent hover:bg-accent/90 text-accent-foreground"
-                    >
-                      Mark as Visited
-                    </Button>
-                  )}
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <Button variant="outline" size="sm" className="px-3 h-9 bg-transparent flex-shrink-0">
-                        <Info className="h-4 w-4" />
-                      </Button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
-                      <DialogHeader>
-                        <DialogTitle className="text-lg sm:text-xl font-bold text-primary pr-8">
-                          {property.name}
-                        </DialogTitle>
-                      </DialogHeader>
-                      <div className="space-y-4">
-                        <div className="relative h-64 w-full overflow-hidden rounded-lg">
-                          <Image
-                            src={getPropertyImage(property) || "/placeholder.svg"}
-                            alt={property.name}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 600px"
-                          />
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
-                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <MapPin className="h-4 w-4" />
-                            {property.county}
-                          </div>
-                          <Badge className={getTypeColor(property.type)} variant="outline">
-                            {property.type}
-                          </Badge>
-                        </div>
+                {property.visited ? (
+                  // Visited property - show visit details
+                  (() => {
+                    const visitDetails = getVisitDetails(property.id)
+                    return (
+                      <>
+                        {/* Historical information for visited properties */}
                         {property.description ? (
                           <div>
-                            <h3 className="font-semibold text-heritage-blue mb-2">Historical Information</h3>
+                            <h3 className="font-semibold text-primary mb-2">Historical Information</h3>
                             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                               {property.description}
                             </p>
                           </div>
                         ) : (
                           <div>
-                            <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
+                            <h3 className="font-semibold text-primary mb-2">About this Property</h3>
                             <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                               This {property.type.toLowerCase()} is located in {property.county} and is part of English
                               Heritage's collection of historic sites spanning over 5,000 years of history.
                             </p>
                           </div>
                         )}
-                        {property.visited &&
-                          (() => {
-                            const visitDetails = getVisitDetails(property.id)
-                            return visitDetails ? (
-                              <div className="bg-accent/10 p-4 rounded-lg border border-accent/20 space-y-4">
-                                <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
 
-                                {/* Basic visit info */}
-                                <div className="flex items-center gap-2 text-sm">
-                                  <Calendar className="h-4 w-4" />
-                                  Visited on {new Date(visitDetails.visitDate || "").toLocaleDateString()}
-                                </div>
+                        {/* Visit details section */}
+                        {visitDetails ? (
+                          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20 space-y-4">
+                            <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
 
-                                {/* Rating */}
-                                {visitDetails.rating && (
-                                  <div>
-                                    <p className="text-sm font-medium mb-1">Your Rating:</p>
-                                    {renderStarRating(visitDetails.rating)}
-                                  </div>
-                                )}
+                            {/* Basic visit info */}
+                            <div className="flex items-center gap-2 text-sm">
+                              <Calendar className="h-4 w-4" />
+                              Visited on {new Date(visitDetails.visitDate || "").toLocaleDateString()}
+                            </div>
 
-                                {/* Photos */}
-                                {visitDetails.photos && visitDetails.photos.length > 0 && (
-                                  <div>
-                                    <p className="text-sm font-medium mb-2">Your Photos:</p>
-                                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                                      {visitDetails.photos.map((photo, index) => (
-                                        <div key={index} className="relative h-20 w-full overflow-hidden rounded-md">
-                                          <Image
-                                            src={photo || "/placeholder.svg"}
-                                            alt={`Visit photo ${index + 1}`}
-                                            fill
-                                            className="object-cover hover:scale-105 transition-transform cursor-pointer"
-                                            sizes="(max-width: 768px) 50vw, 33vw"
-                                          />
-                                        </div>
-                                      ))}
-                                    </div>
-                                  </div>
-                                )}
-
-                                {/* Visit notes */}
-                                {visitDetails.notes && (
-                                  <div>
-                                    <p className="text-sm font-medium mb-1">Your Notes:</p>
-                                    <p className="text-sm text-muted-foreground">{visitDetails.notes}</p>
-                                  </div>
-                                )}
-
-                                {/* Additional visit details */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                                  {visitDetails.weather && (
-                                    <div>
-                                      <span className="font-medium">Weather:</span> {visitDetails.weather}
-                                    </div>
-                                  )}
-                                  {visitDetails.visit_duration && (
-                                    <div>
-                                      <span className="font-medium">Duration:</span> {visitDetails.visit_duration}{" "}
-                                      minutes
-                                    </div>
-                                  )}
-                                  {visitDetails.companions && (
-                                    <div className="sm:col-span-2">
-                                      <span className="font-medium">Companions:</span> {visitDetails.companions}
-                                    </div>
-                                  )}
-                                </div>
-
-                                {/* Highlights */}
-                                {visitDetails.highlights && visitDetails.highlights.length > 0 && (
-                                  <div>
-                                    <p className="text-sm font-medium mb-1">Highlights:</p>
-                                    <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
-                                      {visitDetails.highlights.map((highlight, index) => (
-                                        <li key={index}>{highlight}</li>
-                                      ))}
-                                    </ul>
-                                  </div>
-                                )}
-
-                                {/* Recommendations */}
-                                {visitDetails.recommendations && (
-                                  <div>
-                                    <p className="text-sm font-medium mb-1">Your Recommendations:</p>
-                                    <p className="text-sm text-muted-foreground">{visitDetails.recommendations}</p>
-                                  </div>
-                                )}
+                            {/* Rating */}
+                            {visitDetails.rating && (
+                              <div>
+                                <p className="text-sm font-medium mb-1">Your Rating:</p>
+                                {renderStarRating(visitDetails.rating)}
                               </div>
-                            ) : property.visitDate ? (
-                              <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-                                <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
-                                <div className="flex items-center gap-2 text-sm">
-                                  <Calendar className="h-4 w-4" />
-                                  Visited on {new Date(property.visitDate).toLocaleDateString()}
+                            )}
+
+                            {/* Photos */}
+                            {visitDetails.photos &&
+                              Array.isArray(visitDetails.photos) &&
+                              visitDetails.photos.length > 0 && (
+                                <div>
+                                  <p className="text-sm font-medium mb-2">Your Photos:</p>
+                                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                                    {visitDetails.photos.map((photo, index) => (
+                                      <div key={index} className="relative h-20 w-full overflow-hidden rounded-md">
+                                        <Image
+                                          src={photo || "/placeholder.svg"}
+                                          alt={`Visit photo ${index + 1}`}
+                                          fill
+                                          className="object-cover hover:scale-105 transition-transform cursor-pointer"
+                                          sizes="(max-width: 768px) 50vw, 33vw"
+                                        />
+                                      </div>
+                                    ))}
+                                  </div>
                                 </div>
-                                {property.notes && (
-                                  <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>
-                                )}
+                              )}
+
+                            {/* Visit notes */}
+                            {visitDetails.notes && (
+                              <div>
+                                <p className="text-sm font-medium mb-1">Your Notes:</p>
+                                <p className="text-sm text-muted-foreground">{visitDetails.notes}</p>
                               </div>
-                            ) : null
-                          })()}
-                        <div className="text-xs text-muted-foreground border-t pt-4">
-                          Information sourced from Wikipedia and English Heritage records.
-                        </div>
+                            )}
+
+                            {/* Additional visit details */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                              {visitDetails.weather && (
+                                <div>
+                                  <span className="font-medium">Weather:</span> {visitDetails.weather}
+                                </div>
+                              )}
+                              {visitDetails.visit_duration && (
+                                <div>
+                                  <span className="font-medium">Duration:</span> {visitDetails.visit_duration} minutes
+                                </div>
+                              )}
+                              {visitDetails.companions && (
+                                <div className="sm:col-span-2">
+                                  <span className="font-medium">Companions:</span> {visitDetails.companions}
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Highlights */}
+                            {visitDetails.highlights &&
+                              Array.isArray(visitDetails.highlights) &&
+                              visitDetails.highlights.length > 0 && (
+                                <div>
+                                  <p className="text-sm font-medium mb-1">Highlights:</p>
+                                  <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+                                    {visitDetails.highlights.map((highlight, index) => (
+                                      <li key={index}>{highlight}</li>
+                                    ))}
+                                  </ul>
+                                </div>
+                              )}
+
+                            {/* Recommendations */}
+                            {visitDetails.recommendations && (
+                              <div>
+                                <p className="text-sm font-medium mb-1">Your Recommendations:</p>
+                                <p className="text-sm text-muted-foreground">{visitDetails.recommendations}</p>
+                              </div>
+                            )}
+                          </div>
+                        ) : property.visitDate ? (
+                          <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                            <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
+                            <div className="flex items-center gap-2 text-sm">
+                              <Calendar className="h-4 w-4" />
+                              Visited on {new Date(property.visitDate).toLocaleDateString()}
+                            </div>
+                            {property.notes && <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>}
+                          </div>
+                        ) : null}
+                      </>
+                    )
+                  })()
+                ) : (
+                  // Unvisited property - show only historical information
+                  <>
+                    {property.description ? (
+                      <div>
+                        <h3 className="font-semibold text-primary mb-2">Historical Information</h3>
+                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                          {property.description}
+                        </p>
                       </div>
-                    </DialogContent>
-                  </Dialog>
+                    ) : (
+                      <div>
+                        <h3 className="font-semibold text-primary mb-2">About this Property</h3>
+                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                          This {property.type.toLowerCase()} is located in {property.county} and is part of English
+                          Heritage's collection of historic sites spanning over 5,000 years of history.
+                        </p>
+                      </div>
+                    )}
+
+                    {property.notes && (
+                      <div>
+                        <h3 className="font-semibold text-primary mb-2">Additional Notes</h3>
+                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{property.notes}</p>
+                      </div>
+                    )}
+
+                    <div className="bg-muted/50 p-4 rounded-lg border">
+                      <p className="text-sm text-muted-foreground text-center">
+                        Mark this property as visited to add photos, ratings, and personal notes about your experience.
+                      </p>
+                    </div>
+                  </>
+                )}
+
+                <div className="text-xs text-muted-foreground border-t pt-4">
+                  Information sourced from Wikipedia and English Heritage records.
                 </div>
               </CardContent>
             </Card>

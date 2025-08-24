@@ -241,16 +241,14 @@ export default function VisitedPage() {
                                     </div>
                                     {property.description ? (
                                       <div>
-                                        <h3 className="font-semibold text-heritage-blue mb-2">
-                                          Historical Information
-                                        </h3>
+                                        <h3 className="font-semibold text-primary mb-2">Historical Information</h3>
                                         <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                                           {property.description}
                                         </p>
                                       </div>
                                     ) : (
                                       <div>
-                                        <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
+                                        <h3 className="font-semibold text-primary mb-2">About this Property</h3>
                                         <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                                           This {property.type.toLowerCase()} is located in {property.county} and is part
                                           of English Heritage's collection of historic sites spanning over 5,000 years
@@ -258,18 +256,114 @@ export default function VisitedPage() {
                                         </p>
                                       </div>
                                     )}
-                                    {property.visited && property.visitDate && (
+                                    {visitInfo && (
                                       <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-                                        <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
-                                        <div className="flex items-center gap-2 text-sm">
-                                          <Calendar className="h-4 w-4" />
-                                          Visited on {new Date(property.visitDate).toLocaleDateString()}
+                                        <h3 className="font-semibold text-accent mb-3">Your Visit Details</h3>
+
+                                        <div className="space-y-3">
+                                          <div className="flex items-center gap-2 text-sm">
+                                            <Calendar className="h-4 w-4" />
+                                            Visited on{" "}
+                                            {visitInfo.visitDate
+                                              ? new Date(visitInfo.visitDate).toLocaleDateString()
+                                              : "Unknown date"}
+                                          </div>
+
+                                          {visitInfo.rating && (
+                                            <div className="flex items-center gap-2">
+                                              <span className="text-sm font-medium">Rating:</span>
+                                              <div className="flex">
+                                                {[1, 2, 3, 4, 5].map((star) => (
+                                                  <span
+                                                    key={star}
+                                                    className={`text-lg ${
+                                                      star <= visitInfo.rating! ? "text-yellow-400" : "text-gray-300"
+                                                    }`}
+                                                  >
+                                                    ★
+                                                  </span>
+                                                ))}
+                                              </div>
+                                            </div>
+                                          )}
+
+                                          {visitInfo.visit_duration && (
+                                            <div className="text-sm">
+                                              <span className="font-medium">Duration:</span> {visitInfo.visit_duration}{" "}
+                                              minutes
+                                            </div>
+                                          )}
+
+                                          {visitInfo.weather && (
+                                            <div className="text-sm">
+                                              <span className="font-medium">Weather:</span> {visitInfo.weather}
+                                            </div>
+                                          )}
+
+                                          {visitInfo.companions &&
+                                            Array.isArray(visitInfo.companions) &&
+                                            visitInfo.companions.length > 0 && (
+                                              <div className="text-sm">
+                                                <span className="font-medium">Companions:</span>{" "}
+                                                {visitInfo.companions.join(", ")}
+                                              </div>
+                                            )}
+
+                                          {visitInfo.photos &&
+                                            Array.isArray(visitInfo.photos) &&
+                                            visitInfo.photos.length > 0 && (
+                                              <div>
+                                                <p className="text-sm font-medium mb-2">
+                                                  Photos ({visitInfo.photos.length}):
+                                                </p>
+                                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                                                  {visitInfo.photos.map((photo, index) => (
+                                                    <div key={index} className="relative h-20 rounded overflow-hidden">
+                                                      <Image
+                                                        src={photo || "/placeholder.svg"}
+                                                        alt={`Visit photo ${index + 1}`}
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="(max-width: 768px) 50vw, 33vw"
+                                                      />
+                                                    </div>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            )}
+
+                                          {visitInfo.highlights &&
+                                            Array.isArray(visitInfo.highlights) &&
+                                            visitInfo.highlights.length > 0 && (
+                                              <div>
+                                                <p className="text-sm font-medium mb-1">Highlights:</p>
+                                                <ul className="text-sm text-muted-foreground list-disc list-inside space-y-1">
+                                                  {visitInfo.highlights.map((highlight, index) => (
+                                                    <li key={index}>{highlight}</li>
+                                                  ))}
+                                                </ul>
+                                              </div>
+                                            )}
+
+                                          {visitInfo.notes && (
+                                            <div>
+                                              <p className="text-sm font-medium mb-1">Notes:</p>
+                                              <p className="text-sm text-muted-foreground">{visitInfo.notes}</p>
+                                            </div>
+                                          )}
+
+                                          {visitInfo.recommendations && (
+                                            <div>
+                                              <p className="text-sm font-medium mb-1">Recommendations:</p>
+                                              <p className="text-sm text-muted-foreground">
+                                                {visitInfo.recommendations}
+                                              </p>
+                                            </div>
+                                          )}
                                         </div>
-                                        {property.notes && (
-                                          <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>
-                                        )}
                                       </div>
                                     )}
+
                                     <div className="text-xs text-muted-foreground border-t pt-4">
                                       Information sourced from Wikipedia and English Heritage records.
                                     </div>
