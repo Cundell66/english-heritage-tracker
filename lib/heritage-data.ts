@@ -373,7 +373,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
       "A medieval fortification located on the peninsula of Tintagel Island. It saw settlement during the early medieval period, when it was probably one of the seasonal residences of the regional king of Dumnonia. After Cornwall had been subsumed into the kingdom of England, a castle was built on the site by Richard, Earl of Cornwall in the 13th century.",
     notes:
       "Built 13th century, ruins condition. Medieval fortification on Tintagel Island with legendary Arthurian connections.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Tintagel_DSC_7455.jpg/1024px-Tintagel_DSC_7455.jpg",
   },
   {
     id: "cor-16",
@@ -384,7 +384,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Neolithic or early Bronze Age chambered tomb, comprising an entrance passage, lined with stone slabs, leading to a central chamber, located near Lamorna in west Cornwall.",
     notes: "Neolithic/Bronze Age, remains condition. Chambered tomb with entrance passage near Lamorna.",
-    imageUrl: "/placeholder.svg?height=200&width=300",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Tregiffian_burial_chamber_-_geograph.org.uk_-_41048.jpg",
   },
   {
     id: "cor-17",
@@ -408,7 +408,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The remains of a Roman fort on the shore of Windermere at Waterhead, near Ambleside. The fort was built in the 1st century AD, and was occupied until the 5th century AD.",
     notes: "Built 1st century AD, remains condition. Roman fort on shore of Windermere, occupied until 5th century AD.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/16/Ambleside_Roman_Fort_excavation_-_geograph.org.uk_-_1339491.jpg",
   },
   {
     id: "cum-2",
@@ -419,7 +419,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A packhorse bridge over the River Derwent in Borrowdale, Cumbria. The bridge dates from the 17th century.",
     notes: "Built 17th century, complete condition. Packhorse bridge over River Derwent.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Bow_Bridge%2C_Barrow.jpg",
   },
   {
     id: "cum-3",
@@ -430,7 +430,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A ruined castle in Brough, Cumbria. The castle was built by the Normans in the 11th century, and was rebuilt in the 17th century by Lady Anne Clifford.",
     notes: "Built 11th century, ruins condition. Rebuilt in 17th century by Lady Anne Clifford.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Brough_Castle_-_geograph.org.uk_-_1477559.jpg",
   },
   {
     id: "cum-4",
@@ -441,7 +441,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A medieval castle north of Penrith, Cumbria, beside the River Eamont. The castle was founded in the early 13th century by the Vieuxpont family.",
     notes: "Founded 13th century, remains condition. Founded by Vieuxpont family.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Brougham_Castle_near_Penrith_-_geograph.org.uk_-_45557.jpg",
   },
   {
     id: "cum-5",
@@ -452,7 +452,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Carlisle, Cumbria, in the north of England, near the Scottish border. The castle has over 900 years of history and has been the scene of many historical episodes in British history.",
     notes: "Founded 1092, partly complete. Scene of many historical episodes in British history.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Carlisle_Castle_-_geograph.org.uk_-_957673.jpg",
   },
   {
     id: "cum-6",
@@ -463,7 +463,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A stone circle near Keswick in Cumbria, also known as the Keswick Stone Circle, and the Carsles. One of around 1,300 stone circles in Britain and France, it is one of the earliest, dating from around 3200 BC.",
     notes: "Built 3200 BC, complete condition. One of the earliest stone circles in Britain and France.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Castlerigg_Stone_Circle_-_geograph.org.uk_-_590652.jpg/1024px-Castlerigg_Stone_Circle_-_geograph.org.uk_-_590652.jpg",
   },
   {
     id: "cum-7",
@@ -474,7 +474,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A fortified manor house in the village of Clifton, Cumbria. Dating from the 15th century, it is constructed around a three-storey pele tower.",
     notes: "Built 15th century, remains condition. Constructed around a three-storey pele tower.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/86/CliftonHall.jpg",
   },
   {
     id: "cum-8",
@@ -485,7 +485,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An unusual historical monument located between Penrith and Appleby in Cumbria. It was erected in 1656 by Lady Anne Clifford to commemorate her last parting from her mother, Margaret, Countess of Cumberland, in 1616.",
     notes: "Erected 1656, complete condition. Commemorates Lady Anne Clifford's last parting from her mother.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/The_Countess%27s_Pillar_-_geograph.org.uk_-_3873876.jpg",
   },
   {
     id: "cum-9",
@@ -496,7 +496,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former monastery located north of Barrow-in-Furness, Lancashire (now Cumbria), England. It was founded in 1123 by Stephen, Count of Boulogne (later King Stephen of England).",
     notes: "Founded 1123, ruins condition. Founded by Stephen, Count of Boulogne (later King Stephen of England).",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/15/Furness_Abbey_-_geograph.org.uk_-_1594877.jpg",
   },
   {
     id: "cum-10",
@@ -506,7 +506,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the turrets along Hadrian's Wall, located near Banks, Cumbria.",
     notes: "Roman, remains condition. Turret along Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/db/Banks_East_Turret%2C_Hadrian%27s_Wall._-_geograph.org.uk_-_848200.jpg",
   },
   {
     id: "cum-11",
@@ -516,7 +516,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the best-preserved Roman forts on Hadrian's Wall. It is located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. One of the best-preserved Roman forts on Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/01/Birdoswald_Roman_Fort_-_geograph.org.uk_-_17585.jpg",
   },
   {
     id: "cum-12",
@@ -526,7 +526,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Hare Hill, Cumbria.",
     notes: "Roman, remains condition. Section of Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/Hadrian%27s_Wall_at_Hare_Hill_%282%29_-_geograph.org.uk_-_1337362.jpg",
   },
   {
     id: "cum-13",
@@ -536,7 +536,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A milecastle and section of Hadrian's Wall at Harrows Scar, Cumbria.",
     notes: "Roman, remains condition. Milecastle and section of Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Milecastle_49_%28Harrow%27s_Scar%29_%282%29_-_geograph.org.uk_-_1359274.jpg",
   },
   {
     id: "cum-14",
@@ -546,7 +546,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved milecastle on Hadrian's Wall, located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. Well-preserved milecastle on Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/84/Milecastle_48_%28Poltross_Burn%29_%284%29_-_geograph.org.uk_-_844544.jpg",
   },
   {
     id: "cum-15",
@@ -556,7 +556,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two turrets along Hadrian's Wall, located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. Two turrets along Hadrian's Wall.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Turret_51b_%28Lea_Hill%29_%282%29_-_geograph.org.uk_-_1337552.jpg",
   },
   {
     id: "cum-16",
@@ -566,7 +566,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman signal tower on Pike Hill, Cumbria, part of the Hadrian's Wall defenses.",
     notes: "Roman, remains condition. Roman signal tower, part of Hadrian's Wall defenses.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Pike_Hill_Tower_on_Hadrian%27s_Wall_-_geograph.org.uk_-_1337417.jpg",
   },
   {
     id: "cum-17",
@@ -576,7 +576,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall including a bridge and turrets at Willowford, Cumbria.",
     notes: "Roman, remains condition. Section of Hadrian's Wall including a bridge and turrets.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Turret_48a_%28Willowford_East%29_-_geograph.org.uk_-_1369281.jpg",
   },
   {
     id: "cum-18",
@@ -586,7 +586,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort on Hardknott Pass in Cumbria. It was built in the 2nd century AD.",
     notes: "Built 2nd century AD, remains condition. Roman fort on Hardknott Pass.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Hardknott_Roman_Fort%2C_Eskdale_-_geograph.org.uk_-_176106.jpg",
   },
   {
     id: "cum-19",
@@ -596,7 +596,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic earthwork henge in Eamont Bridge, Cumbria, traditionally associated with King Arthur.",
     notes: "Neolithic, remains condition. Earthwork henge associated with King Arthur.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Arthur%27s_Round_Table_3.JPG",
   },
   {
     id: "cum-20",
@@ -606,7 +606,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former Augustinian priory near Brampton, Cumbria. It was founded in 1169.",
     notes: "Founded 1169, ruins condition. Augustinian priory.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/89/Lanercost_Priory_-_geograph.org.uk_-_789897.jpg",
   },
   {
     id: "cum-21",
@@ -616,7 +616,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A large henge monument near Eamont Bridge, Cumbria. It dates from the late Neolithic period.",
     notes: "Neolithic, remains condition. Large henge monument.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/49/Mayburgh_Henge%2C_northern_part_with_standing-stone%2C_Yanwath_and_Eamont_Bridge_-_geograph.org.uk_-_273923.jpg",
   },
   {
     id: "cum-22",
@@ -626,7 +626,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Penrith, Cumbria. It was built in the late 14th century.",
     notes: "Built late 14th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Penrith_Castle_ruins.jpg/1024px-Penrith_Castle_ruins.jpg",
   },
   {
     id: "cum-23",
@@ -637,7 +637,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle on Piel Island, off the coast of Barrow-in-Furness, Cumbria. It was built in the 14th century by the Abbot of Furness Abbey.",
     notes: "Built 14th century, ruins condition. Built by Abbot of Furness Abbey.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/82/Piel_Island_02.jpg",
   },
   {
     id: "cum-24",
@@ -647,7 +647,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman bath house in Ravenglass, Cumbria. It was part of a Roman fort.",
     notes: "Roman, remains condition. Part of a Roman fort.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Roman_Bath_House_near_Ravenglass_-_geograph.org.uk_-_10547.jpg",
   },
   {
     id: "cum-25",
@@ -657,7 +657,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of an abbey near Shap, Cumbria. It was founded in the late 12th century.",
     notes: "Founded late 12th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Shap_Abbey_-_geograph.org.uk_-_1436301.jpg",
   },
   {
     id: "cum-26",
@@ -668,7 +668,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former bobbin mill near Newby Bridge, Cumbria. It produced wooden bobbins for the Lancashire textile industry.",
     notes: "Industrial, complete condition. Produced wooden bobbins for Lancashire textile industry.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Stott_Park_Bobbin_Mill_-_geograph.org.uk_-_502400.jpg",
   },
   {
     id: "cum-27",
@@ -678,7 +678,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former priory in Wetheral, Cumbria. It dates from the 15th century.",
     notes: "Built 15th century, complete condition. Gatehouse of a former priory.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Wetheral_Priory_Gatehouse_-_geograph.org.uk_-_68550.jpg",
   },
 
   // Derbyshire (9 properties)
@@ -690,7 +690,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Bakewell, Derbyshire. It includes a stone circle and a burial mound.",
     notes: "Neolithic, remains condition. Includes a stone circle and a burial mound.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/93/Arbor_Low_Henge_-_geograph.org.uk_-_1313430.jpg",
   },
   {
     id: "der-2",
@@ -701,7 +701,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Built between 1612 and 1617 by Sir Charles Cavendish, it stands on the earthworks of a 12th-century medieval castle. Designed by Robert Smythson, it's a masterpiece of Jacobean architecture.",
     notes: "Built 1612, partly complete. Masterpiece of Jacobean architecture, designed by Robert Smythson.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Bolsover_Castle%2C_Derbyshire_%28geograph_291425%29.jpg",
   },
   {
     id: "der-3",
@@ -711,7 +711,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small building near Bolsover Castle, Derbyshire, thought to have been used as a conduit house.",
     notes: "Unknown, remains condition. Thought to have been used as a conduit house.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/10/Bolsover_Cundy_House_-_geograph.org.uk_-_1155010.jpg",
   },
   {
     id: "der-4",
@@ -722,7 +722,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An Elizabethan country house near Chesterfield, Derbyshire. It was built by Bess of Hardwick in the late 16th century.",
     notes: "Built late 16th century, complete condition. Built by Bess of Hardwick.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a9/An_Autumnal_Stroll_-_geograph.org.uk_-_336443.jpg",
   },
   {
     id: "der-5",
@@ -732,7 +732,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial mound near Baslow, Derbyshire.",
     notes: "Bronze Age, remains condition. Burial mound.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/Hob_Hurst%27s_House_-_geograph.org.uk_-_180623.jpg",
   },
   {
     id: "der-6",
@@ -742,7 +742,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small Bronze Age stone circle on Stanton Moor, Derbyshire.",
     notes: "Bronze Age, remains condition. Small stone circle.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e5/Nine_Ladies_Stone_Circle_-_geograph.org.uk_-_109668.jpg",
   },
   {
     id: "der-7",
@@ -753,7 +753,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A ruined medieval castle overlooking the village of Castleton, Derbyshire. It was founded by William Peverel in the 11th century.",
     notes: "Founded 11th century, ruins condition. Founded by William Peverel.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Keep_of_Peveril_Castle%2C_2008.jpg/800px-Keep_of_Peveril_Castle%2C_2008.jpg",
   },
   {
     id: "der-8",
@@ -763,7 +763,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined country house near Chesterfield, Derbyshire. It was built in the early 18th century.",
     notes: "Built early 18th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/65/Sutton_Scarsdale_Hall_-_geograph.org.uk_-_205739.jpg",
   },
   {
     id: "der-9",
@@ -773,7 +773,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined manor house near South Wingfield, Derbyshire. It was built in the 15th century.",
     notes: "Built 15th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/49/Wingfield_Manor_-_geograph.org.uk_-_6280.jpg",
   },
 
   // Devon (13 properties)
