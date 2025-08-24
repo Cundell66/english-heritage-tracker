@@ -94,7 +94,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Donnington Castle is a ruined medieval castle, situated in the small village of Donnington, just north of the town of Newbury. It was destroyed in the English Civil War in 1646.",
     notes: "Built 1386, ruins condition. Destroyed in the English Civil War in 1646.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Donnington_Castle_-_UK_-_geograph.org.uk_-_7002.jpg/120px-Donnington_Castle_-_UK_-_geograph.org.uk_-_7002.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Donnington_Castle_-_UK_-_geograph.org.uk_-_7002.jpg/1024px-Donnington_Castle_-_UK_-_geograph.org.uk_-_7002.jpg",
   },
 
   // Bristol (1 property)
@@ -107,7 +107,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A ruined church building in central Bristol, which was founded in the mid-12th century by Robert of Gloucester and the Knights Templar. It served as the site for the famous exorcism of George Lukins conducted by Methodist and Anglican clergymen. It was bombed in the Second World War and largely destroyed.",
     notes: "Founded 1390, ruins condition. Founded by Knights Templar, bombed in WWII.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Temple_Church_Bristol_Jan10.jpg/120px-Temple_Church_Bristol_Jan10.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Temple_Church_Bristol_Jan10.jpg/1024px-Temple_Church_Bristol_Jan10.jpg",
   },
 
   // Cambridgeshire (4 properties)
