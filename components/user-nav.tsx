@@ -7,17 +7,49 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuItem,
-} from "your-dropdown-menu-library"
-import { Button } from "your-button-library"
-import { Avatar, AvatarImage, AvatarFallback } from "your-avatar-library"
-import { User } from "your-icon-library"
-import { Link } from "your-link-library"
-import { useUser } from "your-user-hook"
-import { signOut } from "your-auth-library"
+} from "@/components/ui/dropdown-menu"
+import { Button } from "@/components/ui/button"
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
+import { User } from "lucide-react"
+import Link from "next/link"
+import { createBrowserClient } from "@/lib/supabase/client"
+import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
 
 export function UserNav() {
-  const { user } = useUser()
-  const handleSignOut = () => signOut()
+  const [user, setUser] = useState<any>(null)
+  const router = useRouter()
+  const supabase = createBrowserClient()
+
+  useEffect(() => {
+    const getUser = async () => {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser()
+      setUser(user)
+    }
+    getUser()
+  }, [supabase])
+
+  const handleSignOut = async () => {
+    await supabase.auth.signOut()
+    router.push("/auth/login")
+  }
+
+  if (!user) {
+    return (
+      <div className="flex items-center gap-2">
+        <Link href="/auth/login">
+          <Button variant="ghost" size="sm">
+            Sign In
+          </Button>
+        </Link>
+        <Link href="/auth/signup">
+          <Button size="sm">Sign Up</Button>
+        </Link>
+      </div>
+    )
+  }
 
   return (
     <DropdownMenu>

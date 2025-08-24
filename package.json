@@ -60,13 +60,6 @@
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.9",
-    "your-auth-library": "latest",
-    "your-avatar-library": "latest",
-    "your-button-library": "latest",
-    "your-dropdown-menu-library": "latest",
-    "your-icon-library": "latest",
-    "your-link-library": "latest",
-    "your-user-hook": "latest",
     "zod": "3.25.67"
   },
   "devDependencies": {
