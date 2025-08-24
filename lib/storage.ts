@@ -32,13 +32,35 @@ export const saveVisitToDatabase = async (
 ) => {
   const supabase = createClient()
 
+  console.log("[v0] Attempting to save visit to database for property:", propertyId)
+
   const {
     data: { user },
+    error: authError,
   } = await supabase.auth.getUser()
-  if (!user) throw new Error("User not authenticated")
+
+  if (authError) {
+    console.error("[v0] Authentication error:", authError)
+    throw new Error(`Authentication failed: ${authError.message}`)
+  }
+
+  if (!user) {
+    console.error("[v0] No authenticated user found")
+    throw new Error("User not authenticated")
+  }
+
+  console.log("[v0] User authenticated:", user.id)
 
   if (visited) {
-    // Insert or update visit record
+    console.log("[v0] Upserting visit record with data:", {
+      property_id: propertyId,
+      property_name: propertyName,
+      county,
+      property_type: propertyType,
+      visited_date: visitDate || new Date().toISOString().split("T")[0],
+      user_id: user.id,
+    })
+
     const { error } = await supabase.from("visits").upsert(
       {
         property_id: propertyId,
@@ -62,12 +84,22 @@ export const saveVisitToDatabase = async (
       },
     )
 
-    if (error) throw error
+    if (error) {
+      console.error("[v0] Database upsert error:", error)
+      throw new Error(`Failed to save visit: ${error.message}`)
+    }
+
+    console.log("[v0] Visit saved successfully")
   } else {
-    // Remove visit record
+    console.log("[v0] Deleting visit record for property:", propertyId)
     const { error } = await supabase.from("visits").delete().eq("property_id", propertyId).eq("user_id", user.id)
 
-    if (error) throw error
+    if (error) {
+      console.error("[v0] Database delete error:", error)
+      throw new Error(`Failed to delete visit: ${error.message}`)
+    }
+
+    console.log("[v0] Visit deleted successfully")
   }
 }
 
@@ -153,35 +185,67 @@ export const loadVisitData = (): VisitData[] => {
 export const uploadVisitPhoto = async (file: File, propertyId: string): Promise<string> => {
   const supabase = createClient()
 
+  console.log("[v0] Attempting to upload photo for property:", propertyId, "File:", file.name)
+
   const {
     data: { user },
+    error: authError,
   } = await supabase.auth.getUser()
-  if (!user) throw new Error("User not authenticated")
+
+  if (authError) {
+    console.error("[v0] Photo upload authentication error:", authError)
+    throw new Error(`Authentication failed: ${authError.message}`)
+  }
+
+  if (!user) {
+    console.error("[v0] No authenticated user for photo upload")
+    throw new Error("User not authenticated")
+  }
 
   const fileExt = file.name.split(".").pop()
   const fileName = `${user.id}/${propertyId}/${Date.now()}.${fileExt}`
 
+  console.log("[v0] Uploading file to storage bucket 'visit-photos' with path:", fileName)
+
   const { data, error } = await supabase.storage.from("visit-photos").upload(fileName, file)
 
-  if (error) throw error
+  if (error) {
+    console.error("[v0] Storage upload error:", error)
+    if (error.message.includes("Bucket not found")) {
+      throw new Error("Photo storage is not configured. Please contact support.")
+    }
+    throw new Error(`Failed to upload photo: ${error.message}`)
+  }
+
+  console.log("[v0] Photo uploaded successfully:", data)
 
   const {
     data: { publicUrl },
   } = supabase.storage.from("visit-photos").getPublicUrl(fileName)
 
+  console.log("[v0] Generated public URL:", publicUrl)
   return publicUrl
 }
 
 export const deleteVisitPhoto = async (photoUrl: string): Promise<void> => {
   const supabase = createClient()
 
+  console.log("[v0] Attempting to delete photo:", photoUrl)
+
   // Extract file path from URL
   const urlParts = photoUrl.split("/")
   const fileName = urlParts.slice(-3).join("/")
 
+  console.log("[v0] Extracted file path:", fileName)
+
   const { error } = await supabase.storage.from("visit-photos").remove([fileName])
 
-  if (error) throw error
+  if (error) {
+    console.error("[v0] Photo deletion error:", error)
+    throw new Error(`Failed to delete photo: ${error.message}`)
+  }
+
+  console.log("[v0] Photo deleted successfully")
 }
 
 export const getVisitStats = async () => {
