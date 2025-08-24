@@ -45,6 +45,8 @@ export default function HomePage() {
   const [recentAchievements, setRecentAchievements] = useState<Achievement[]>([])
   const [newAchievements, setNewAchievements] = useState<Achievement[]>([])
   const [mounted, setMounted] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
 
   useEffect(() => {
     setMounted(true)
@@ -53,8 +55,9 @@ export default function HomePage() {
 
   const loadDashboardData = async () => {
     console.log("[v0] Starting dashboard data load...")
+    setIsLoading(true)
+
     try {
-      // Load user profile
       const supabase = createClient()
       const {
         data: { user },
@@ -63,77 +66,102 @@ export default function HomePage() {
 
       console.log("[v0] User auth result:", { user: !!user, error: userError })
 
-      if (user) {
-        setUserProfile({
-          id: user.id,
-          email: user.email || "",
-          full_name: user.user_metadata?.full_name,
-          avatar_url: user.user_metadata?.avatar_url,
-          created_at: user.created_at || "",
+      if (!user || userError) {
+        console.log("[v0] User not authenticated, showing login prompt")
+        setIsAuthenticated(false)
+        setIsLoading(false)
+        return
+      }
+
+      setIsAuthenticated(true)
+      setUserProfile({
+        id: user.id,
+        email: user.email || "",
+        full_name: user.user_metadata?.full_name,
+        avatar_url: user.user_metadata?.avatar_url,
+        created_at: user.created_at || "",
+      })
+
+      try {
+        console.log("[v0] Loading visits from database...")
+        const visits = await loadVisitsFromDatabase()
+        console.log("[v0] Loaded visits:", visits.length, "visits")
+        setVisitData(visits)
+
+        const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
+          const visit = visits.find((v) => v.propertyId === property.id)
+          return {
+            ...property,
+            visited: visit?.visited || false,
+            visitDate: visit?.visitDate,
+            notes: visit?.notes,
+            rating: visit?.rating,
+            photos: visit?.photos,
+          }
+        })
+        setProperties(updatedProperties)
+      } catch (visitError) {
+        console.error("[v0] Failed to load visits:", visitError)
+        // Don't reset existing data, just use default properties
+        if (properties.length === 0) {
+          setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+        }
+      }
+
+      try {
+        console.log("[v0] Loading visit stats...")
+        const stats = await getVisitStats()
+        console.log("[v0] Loaded stats:", stats)
+        setVisitStats(stats)
+      } catch (statsError) {
+        console.error("[v0] Failed to load visit stats:", statsError)
+        // Use default stats based on current visit data
+        const visitedCount = visitData.filter((v) => v.visited).length
+        const totalPhotos = visitData.reduce((sum, v) => sum + (v.photos?.length || 0), 0)
+        const ratings = visitData.filter((v) => v.rating).map((v) => v.rating!)
+        const averageRating = ratings.length > 0 ? ratings.reduce((sum, r) => sum + r, 0) / ratings.length : 0
+
+        setVisitStats({
+          totalVisits: visitedCount,
+          totalPhotos,
+          averageRating,
         })
       }
 
-      // Load visits and stats
-      console.log("[v0] Loading visits from database...")
-      const visits = await loadVisitsFromDatabase()
-      console.log("[v0] Loaded visits:", visits.length, "visits")
-      setVisitData(visits)
+      try {
+        console.log("[v0] Loading user achievements...")
+        const userAchievements = await getUserAchievements()
+        console.log("[v0] Loaded achievements:", userAchievements.length, "achievements")
 
-      console.log("[v0] Loading visit stats...")
-      const stats = await getVisitStats()
-      console.log("[v0] Loaded stats:", stats)
-      setVisitStats(stats)
+        const recent = userAchievements
+          .sort((a, b) => new Date(b.unlockedAt).getTime() - new Date(a.unlockedAt).getTime())
+          .slice(0, 3)
+          .map((ua) => ACHIEVEMENTS.find((a) => a.id === ua.achievementId))
+          .filter(Boolean) as Achievement[]
 
-      // Merge visit data with properties
-      const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
-        const visit = visits.find((v) => v.propertyId === property.id)
-        return {
-          ...property,
-          visited: visit?.visited || false,
-          visitDate: visit?.visitDate,
-          notes: visit?.notes,
-          rating: visit?.rating,
-          photos: visit?.photos,
+        setRecentAchievements(recent)
+
+        console.log("[v0] Checking for new achievements...")
+        const newAchs = await checkAchievements()
+        if (newAchs.length > 0) {
+          console.log("[v0] Found new achievements:", newAchs.length)
+          setNewAchievements(newAchs)
         }
-      })
-      setProperties(updatedProperties)
-
-      // Load recent achievements
-      console.log("[v0] Loading user achievements...")
-      const userAchievements = await getUserAchievements()
-      console.log("[v0] Loaded achievements:", userAchievements.length, "achievements")
-
-      const recent = userAchievements
-        .sort((a, b) => new Date(b.unlockedAt).getTime() - new Date(a.unlockedAt).getTime())
-        .slice(0, 3)
-        .map((ua) => ACHIEVEMENTS.find((a) => a.id === ua.achievementId))
-        .filter(Boolean) as Achievement[]
-
-      setRecentAchievements(recent)
-
-      // Check for new achievements
-      console.log("[v0] Checking for new achievements...")
-      const newAchs = await checkAchievements()
-      if (newAchs.length > 0) {
-        console.log("[v0] Found new achievements:", newAchs.length)
-        setNewAchievements(newAchs)
+      } catch (achievementError) {
+        console.error("[v0] Failed to load achievements:", achievementError)
+        // Don't reset achievements, just leave empty if none exist
+        console.log("[v0] Achievement system not available, continuing without achievements")
       }
 
       console.log("[v0] Dashboard data load completed successfully")
     } catch (error) {
       console.error("[v0] Failed to load dashboard data:", error)
-      // Only set fallback data if we don't have any existing data
-      if (visitData.length === 0) {
-        console.log("[v0] Setting fallback empty state")
-        setVisitData([])
-        setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
-      } else {
-        console.log("[v0] Keeping existing data due to error")
-      }
+    } finally {
+      setIsLoading(false)
     }
   }
 
-  if (!mounted) {
+  if (!mounted || isLoading) {
     return (
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-8 max-w-6xl">
@@ -141,6 +169,50 @@ export default function HomePage() {
             <h1 className="text-3xl font-bold text-primary mb-2">English Heritage Tracker</h1>
             <p className="text-muted-foreground">Loading your heritage journey...</p>
           </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="container mx-auto px-4 py-8 max-w-4xl">
+          <div className="text-center mb-8">
+            <h1 className="text-3xl font-bold text-primary mb-2">English Heritage Tracker</h1>
+            <p className="text-muted-foreground mb-8">Track your visits to England's historic sites</p>
+          </div>
+
+          <Card className="max-w-md mx-auto">
+            <CardHeader className="text-center">
+              <CardTitle className="flex items-center justify-center gap-2">
+                <User className="h-5 w-5" />
+                Welcome to Heritage Tracker
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="text-center space-y-4">
+              <p className="text-muted-foreground">
+                Sign in to start tracking your visits to {HERITAGE_PROPERTIES.length} English Heritage properties.
+              </p>
+              <div className="space-y-2">
+                <Link href="/auth/login">
+                  <Button className="w-full">Sign In</Button>
+                </Link>
+                <Link href="/auth/signup">
+                  <Button variant="outline" className="w-full bg-transparent">
+                    Create Account
+                  </Button>
+                </Link>
+              </div>
+              <div className="pt-4">
+                <Link href="/properties">
+                  <Button variant="ghost" size="sm">
+                    Browse Properties (No Account Required)
+                  </Button>
+                </Link>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     )
@@ -170,13 +242,11 @@ export default function HomePage() {
     return <Home className="h-4 w-4" />
   }
 
-  // Get recent visits
   const recentVisits = properties
     .filter((p) => p.visited && p.visitDate)
     .sort((a, b) => new Date(b.visitDate!).getTime() - new Date(a.visitDate!).getTime())
     .slice(0, 3)
 
-  // Get visit streak (consecutive days with visits)
   const getVisitStreak = () => {
     const visitDates = visitData
       .filter((v) => v.visited && v.visitDate)
@@ -202,13 +272,11 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      {/* Achievement Notifications */}
       {newAchievements.length > 0 && (
         <AchievementNotification achievements={newAchievements} onDismiss={() => setNewAchievements([])} />
       )}
 
       <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-6xl">
-        {/* Header with User Profile */}
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 sm:mb-8">
           <div className="flex items-center gap-4 mb-4 sm:mb-0">
             <Avatar className="h-12 w-12">
@@ -234,7 +302,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Stats Overview */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
           <Card>
             <CardContent className="p-4">
@@ -284,7 +351,6 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
-          {/* Progress Overview */}
           <Card className="lg:col-span-2">
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
@@ -311,7 +377,6 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          {/* Recent Achievements */}
           <Card>
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-2 text-lg">
@@ -349,7 +414,6 @@ export default function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-          {/* Property Types Overview */}
           <Card>
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-2 text-lg sm:text-xl">
@@ -380,7 +444,6 @@ export default function HomePage() {
             </CardContent>
           </Card>
 
-          {/* Recent Visits */}
           <Card>
             <CardHeader className="pb-4">
               <CardTitle className="flex items-center gap-2 text-lg">
@@ -436,7 +499,6 @@ export default function HomePage() {
           </Card>
         </div>
 
-        {/* Quick Actions */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           <Button
             size="lg"
