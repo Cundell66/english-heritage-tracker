@@ -64,12 +64,12 @@ export function VisitLogger({
     const files = event.target.files
     if (!files || files.length === 0) return
 
-    const maxFileSize = 5 * 1024 * 1024 // 5MB
+    const maxFileSize = 10 * 1024 * 1024 // 10MB
     const allowedTypes = ["image/jpeg", "image/jpg", "image/png", "image/webp"]
 
     for (const file of files) {
       if (file.size > maxFileSize) {
-        alert(`File ${file.name} is too large. Maximum size is 5MB.`)
+        alert(`File ${file.name} is too large. Maximum size is 10MB.`)
         return
       }
       if (!allowedTypes.includes(file.type)) {
