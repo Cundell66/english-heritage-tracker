@@ -26,14 +26,28 @@ export default function ProfilePage() {
   const [selectedAvatar, setSelectedAvatar] = useState("king")
   const [isLoading, setIsLoading] = useState(false)
   const [isSaving, setIsSaving] = useState(false)
+  const [supabase, setSupabase] = useState<any>(null)
   const router = useRouter()
-  const supabase = createBrowserClient()
 
   useEffect(() => {
-    loadUserProfile()
-  }, [])
+    try {
+      const client = createBrowserClient()
+      setSupabase(client)
+    } catch (error) {
+      console.error("Failed to create Supabase client:", error)
+      router.push("/auth/login")
+    }
+  }, [router])
+
+  useEffect(() => {
+    if (supabase) {
+      loadUserProfile()
+    }
+  }, [supabase])
 
   const loadUserProfile = async () => {
+    if (!supabase) return
+
     setIsLoading(true)
     try {
       const {
