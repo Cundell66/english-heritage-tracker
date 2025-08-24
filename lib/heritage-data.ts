@@ -42,10 +42,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Priory",
     visited: false,
     description:
-      "The Priory Church of Saint Mary, Bushmead, commonly called Bushmead Priory, was a monastic foundation for Augustinian Canons, located at Bushmead in the County of Bedfordshire in England.",
+      "The Priory Church of Saint Mary, Bushmead, commonly called Bushmead Priory, was a monastic foundation for Augustinian Canons, located at Bushmead in the County of Bedfordshire in England. Founded between 1185–1195, it served as a religious community until the Dissolution of the Monasteries.",
     notes:
-      "Founded 1185–1195, part complete condition. A monastic foundation for Augustinian Canons with surviving medieval architecture.",
-    imageUrl: "/medieval-priory-ruins.png",
+      "Founded 1185–1195, part complete condition. A monastic foundation for Augustinian Canons with surviving medieval architecture including the refectory and parts of the church.",
+    imageUrl: "/bedfordshire-priory-ruins.png",
   },
   {
     id: "bed-2",
@@ -54,10 +54,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Other",
     visited: false,
     description:
-      "The de Grey Mausoleum in Flitton, Bedfordshire, England, is one of the largest sepulchral chapels in the country.",
+      "The de Grey Mausoleum in Flitton, Bedfordshire, England, is one of the largest sepulchral chapels in the country. Built in 1614, it contains monuments to the de Grey family spanning several centuries.",
     notes:
-      "Built 1614, complete condition. One of the largest sepulchral chapels in England, built for the de Grey family.",
-    imageUrl: "/georgian-mausoleum-chapel.png",
+      "Built 1614, complete condition. One of the largest sepulchral chapels in England with elaborate family monuments.",
+    imageUrl: "/de-grey-mausoleum.png",
   },
   {
     id: "bed-3",
@@ -66,10 +66,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Country House",
     visited: false,
     description:
-      "Houghton House is a ruined house located near Houghton Conquest in Bedfordshire, on the ridge just north of Ampthill, and about 8 miles south of Bedford. The house was built for the writer, translator, and literary patron Mary Sidney Herbert, Dowager Countess of Pembroke.",
+      "Houghton House is a ruined house located near Houghton Conquest in Bedfordshire. The house was built for the writer, translator, and literary patron Mary Sidney Herbert, Dowager Countess of Pembroke, around 1615. It's known as the inspiration for 'House Beautiful' in John Bunyan's Pilgrim's Progress.",
     notes:
-      "Built 1615, ruins condition. Built for Mary Sidney Herbert, Dowager Countess of Pembroke, a prominent literary patron.",
-    imageUrl: "/ruined-jacobean-mansion.png",
+      "Built 1615, ruins condition. Built for Mary Sidney Herbert, inspired Bunyan's 'House Beautiful' in Pilgrim's Progress.",
+    imageUrl: "/houghton-house-ruins.png",
   },
   {
     id: "bed-4",
@@ -78,9 +78,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Country House",
     visited: false,
     description:
-      "Wrest Park is a country estate located near Silsoe, Bedfordshire, England. It comprises Wrest Park, a Grade I listed country house, and Wrest Park Gardens, also Grade I listed, formal gardens surrounding the mansion.",
-    notes: "Built 1834–1839, complete condition. Features both a Grade I listed country house and formal gardens.",
-    imageUrl: "/french-chateau-gardens.png",
+      "Wrest Park is a country estate located near Silsoe, Bedfordshire. It comprises Wrest Park, a Grade I listed country house built 1834–1839 in French château style, and Wrest Park Gardens, also Grade I listed, formal gardens surrounding the mansion.",
+    notes:
+      "Built 1834–1839, complete condition. Grade I listed French château style house with formal gardens designed by Capability Brown.",
+    imageUrl: "/wrest-park-house-gardens.png",
   },
 
   // Berkshire (1 property)
@@ -92,9 +93,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "Donnington Castle is a ruined medieval castle, situated in the small village of Donnington, just north of the town of Newbury. It was destroyed in the English Civil War in 1646.",
-    notes:
-      "Built 1386, ruins condition. Destroyed during the English Civil War, notable for its twin-towered gatehouse.",
-    imageUrl: "/medieval-castle-ruins-twin-towers-gatehouse.png",
+    notes: "Built 1386, ruins condition. Destroyed in the English Civil War in 1646.",
+    imageUrl: "/placeholder-1ihgx.png",
   },
 
   // Bristol (1 property)
@@ -106,9 +106,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A ruined church building in central Bristol, which was founded in the mid-12th century by Robert of Gloucester and the Knights Templar. It served as the site for the famous exorcism of George Lukins conducted by Methodist and Anglican clergymen. It was bombed in the Second World War and largely destroyed.",
-    notes:
-      "Built 1390, ruins condition. Founded by Knights Templar, bombed in WWII. Site of famous 18th-century exorcism.",
-    imageUrl: "/bristol-church-ruins.png",
+    notes: "Founded 1390, ruins condition. Founded by Knights Templar, bombed in WWII.",
+    imageUrl: "/placeholder-cway1.png",
   },
 
   // Cambridgeshire (4 properties)
@@ -120,19 +119,19 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A former abbey near Waterbeach, north of Cambridge. A group of Benedictine monks, governed from Ely, moved here in the 1150s. They built a church, Denny Priory, which opened in 1159. The crossing and transepts are the only parts of the original Priory that remain today. In 1169, the monks returned to Ely and the site was handed to the Knights Templar.",
-    notes: "Founded 1159, parts survive. Originally Benedictine, later Knights Templar, now includes farmland museum.",
-    imageUrl: "/medieval-abbey-ruins-museum.png",
+    notes: "Founded 1159, parts survive condition. Originally Benedictine, later Knights Templar.",
+    imageUrl: "/placeholder-t7o6w.png",
   },
   {
     id: "cam-2",
     name: "Duxford Chapel",
     county: "Cambridgeshire",
-    type: "Church",
+    type: "Other",
     visited: false,
     description:
       "A chapel that was once part of the Hospital of St. John at Duxford, in Cambridgeshire, England, the hospital since demolished. Built using flint rubble for the walls and limestone for the doorways and windows.",
-    notes: "Built 1337, complete condition. Former hospital chapel with flint and limestone construction.",
-    imageUrl: "/medieval-chapel.png",
+    notes: "Built 1337, complete condition. Part of former Hospital of St. John.",
+    imageUrl: "/duxford-chapel.png",
   },
   {
     id: "cam-3",
@@ -142,8 +141,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A Norman church, Located in Isleham, and part of the former St Margaret's Benedictine Alien Priory. Later converted into a barn, but it remains in an unaltered state.",
-    notes: "Built 1090, complete condition. Norman church, part of former Benedictine priory, later used as barn.",
-    imageUrl: "/norman-priory.png",
+    notes: "Built 1090, complete condition. Norman church, later converted to barn.",
+    imageUrl: "/isleham-priory-church.png",
   },
   {
     id: "cam-4",
@@ -153,9 +152,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A fourteenth-century, three-storey tower, originally part of a fortified manor house. Situated in the village of Longthorpe, now a residential area of Peterborough.",
-    notes:
-      "Built 1310, only tower remains. Famous for its medieval wall paintings, originally part of fortified manor.",
-    imageUrl: "/medieval-manor.png",
+    notes: "Built 1310, only tower remains condition. Part of fortified manor house.",
+    imageUrl: "/longthorpe-tower.png",
   },
 
   // Cheshire (4 properties)
@@ -167,9 +165,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A former Royal castle in Beeston, perched above the Cheshire Plain. Built by Ranulf de Blondeville, 6th Earl of Chester, on his return from the Crusades. In 1237, Henry III took over the ownership of Beeston, and it was kept in good repair until the 16th century. The castle was slighted in 1646. During the 18th century the site was used as a quarry.",
-    notes:
-      "Built 1220, ruins condition. Built by Earl of Chester after Crusades, later royal castle, slighted in Civil War.",
-    imageUrl: "/cheshire-castle-ruins.png",
+    notes: "Built 1220, ruins condition. Built by Earl of Chester after Crusades, slighted 1646.",
+    imageUrl: "/beeston-castle-ruins.png",
   },
   {
     id: "che-2",
@@ -179,9 +176,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "The castle overlooks the River Dee. In the castle complex are the remaining parts of the medieval castle together with the neoclassical buildings designed by Thomas Harrison which were built between 1788 and 1813. Parts of the neoclassical buildings are used today as Crown Courts and as a military museum.",
-    notes:
-      "Built 1070, partly complete. Medieval castle with neoclassical additions by Thomas Harrison, still in use as courts.",
-    imageUrl: "/chester-castle-neoclassical-dee.png",
+    notes: "Built 1070, partly complete condition. Medieval castle with neoclassical additions by Thomas Harrison.",
+    imageUrl: "/chester-castle-agricola-neoclassical.png",
   },
   {
     id: "che-3",
@@ -191,8 +187,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "Ruins of a large Roman stone amphitheatre. Today, only the northern half of the structure is exposed; the southern half is covered by buildings. The amphitheatre is the largest so far uncovered in Britain, and dates from the 1st century, when the Roman fort of Deva Victrix was founded. Rediscovered in 1929.",
-    notes: "Built 1st century, ruins condition. Largest Roman amphitheatre in Britain, served fort of Deva Victrix.",
-    imageUrl: "/roman-amphitheatre-ruins.png",
+    notes: "Built 1st century, ruins condition. Largest Roman amphitheatre uncovered in Britain.",
+    imageUrl: "/chester-amphitheatre-ruins.png",
   },
   {
     id: "che-4",
@@ -202,9 +198,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "Two Anglo-Saxon stone crosses now erected in the market place in the town of Sandbach. They are unusually large and elaborate examples of the type. They depict religious scenes, doll-like heads and beasts in panels, together with vine-scrolls, course interlace patterns and some dragons.",
-    notes:
-      "Built 9th century, complete condition. Two elaborate Anglo-Saxon crosses with intricate religious carvings.",
-    imageUrl: "/sandbach-crosses.png",
+    notes: "Built 9th century, complete condition. Unusually large and elaborate Anglo-Saxon crosses.",
+    imageUrl: "/sandbach-crosses-market.png",
   },
 
   // Cornwall (17 properties)
@@ -216,9 +211,8 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description:
       "A prehistoric funerary cairn (chambered tomb) situated on the cliff top at Ballowall Common, near St Just. It was first excavated in 1878 by William Copeland Borlase when it was discovered under mining debris. The site today is a confused mix of original and reconstructions introduced by Borlase.",
-    notes:
-      "Neolithic period, remains condition. Prehistoric chambered tomb excavated in 1878, mix of original and reconstruction.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    notes: "Neolithic, remains condition. Prehistoric funerary cairn on cliff top near St Just.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cor-2",
@@ -227,9 +221,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Village",
     visited: false,
     description:
-      "An Iron Age village near Sancreed, in Cornwall, England, UK. The village contains the best preserved fogou in Cornwall. The village was occupied from about 500 BC to 400 AD.",
-    notes: "Iron Age, remains condition. Contains best preserved fogou in Cornwall, occupied from 500 BC to 400 AD.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A Romano-British village near Sancreed, on the Penwith peninsula, with considerable evidence of Iron Age settlement as well. Carn Euny is best known for the well-preserved state of the large fogou, an underground passageway, which is more than 20m long.",
+    notes:
+      "Iron Age-Romano-British, remains condition. Village with well-preserved 20m long fogou (underground passage).",
+    imageUrl: "/carn-euny-fogou.png",
   },
   {
     id: "cor-3",
@@ -238,10 +233,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Village",
     visited: false,
     description:
-      "A late Iron Age village of courtyard houses found near Penzance, Cornwall. The village is one of nine known 'courtyard house' settlements in western Cornwall. The houses are of a unique design found only on the Land's End peninsula and the Isles of Scilly.",
+      "A Romano-British village of courtyard houses, believed to have been constructed and occupied between 100 BC and 400 AD. The village included eight stone dwellings, arranged in pairs along a street, each with its own garden plot.",
     notes:
-      "Iron Age, remains condition. Unique courtyard house settlement found only on Land's End peninsula and Isles of Scilly.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Iron Age-Romano-British (100 BC-400 AD), remains condition. Eight stone courtyard houses arranged along a street.",
+    imageUrl: "/chysauster-village.png",
   },
   {
     id: "cor-4",
@@ -250,9 +245,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Other",
     visited: false,
     description:
-      "A well and chapel built over it, located near Callington, Cornwall. The well is enclosed in a small building constructed of granite ashlar blocks, with a slate roof. The building is square in plan, and measures about 12 feet (3.7 m) on each side.",
-    notes: "Medieval, complete condition. Well and chapel built over it, constructed of granite ashlar blocks.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A wellhouse constructed over a local spring. Built of Cornish granite ashlar around 1510, it was probably built by the Augustinian canons of the nearby priory of St Germans.",
+    notes: "Built c.1510, complete condition. Granite wellhouse built by Augustinian canons of St Germans Priory.",
+    imageUrl: "/dupath-well-cornwall.png",
   },
   {
     id: "cor-5",
@@ -261,10 +256,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Other",
     visited: false,
     description:
-      "An Iron Age underground passage or fogou near Mawgan-in-Meneage, Cornwall. It is the largest and best-preserved fogou in Cornwall. The fogou is thought to have been used for ritual purposes, storage, or refuge.",
-    notes:
-      "Iron Age, remains condition. Largest and best-preserved fogou in Cornwall, used for ritual purposes, storage, or refuge.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Located on the Trelowarren estate near Helston, it consists of a long narrow tunnel leading to three sectioned chambers. It is the largest and best preserved of several mysterious tunnels associated with Cornish Iron Age settlements.",
+    notes: "Iron Age, remains condition. Largest and best preserved fogou in Cornwall with three chambers.",
+    imageUrl: "/halliggye-fogou.png",
   },
   {
     id: "cor-6",
@@ -273,10 +267,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Stone circle",
     visited: false,
     description:
-      "A group of three stone circles located near Minions on Bodmin Moor, Cornwall. The circles are thought to date from the late Neolithic or early Bronze Age. The name 'Hurlers' comes from a local legend that the stones were men petrified for playing Cornish hurling on a Sunday.",
-    notes:
-      "Neolithic/Bronze Age, remains condition. Three stone circles, legend says stones were men petrified for playing Cornish hurling on a Sunday.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A group of three stone circles on the eastern flank of Bodmin Moor. The circles have diameters of 35m, 42m and 33m. The two outer stone circles are circular, the middle and largest stone circle is slightly elliptical.",
+    notes: "Neolithic/Bronze Age, remains condition. Three stone circles (35m, 42m, 33m diameter) on Bodmin Moor.",
+    imageUrl: "/hurlers-stone-circles.png",
   },
   {
     id: "cor-7",
@@ -285,10 +278,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Other",
     visited: false,
     description:
-      "A 9th-century decorated cross fragment located near St Cleer, Cornwall. The stone is thought to commemorate King Doniert of Cornwall, who died in 875 AD. The stone is decorated with interlace patterns and inscriptions.",
-    notes:
-      "9th century, fragment condition. Commemorates King Doniert of Cornwall, decorated with interlace patterns and inscriptions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Consists of two pieces of a decorated 9th-century cross. The inscription is believed to commemorate Dungarth, King of Cornwall who died around 875.",
+    notes: "9th century, remains condition. Decorated cross commemorating Dungarth, King of Cornwall (d.875).",
+    imageUrl: "/king-doniert-stone.png",
   },
   {
     id: "cor-8",
@@ -297,9 +289,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Castle",
     visited: false,
     description:
-      "A castle in Launceston, Cornwall, England, UK. It was built by Robert the Count of Mortain after 1068, and is located within the town. Launceston Castle formed the administrative centre of the earldom of Cornwall until replaced by Lostwithiel in the 13th century.",
-    notes: "Built 1068, remains condition. Administrative centre of earldom of Cornwall until 13th century.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A Norman motte and bailey castle raised by Robert, Count of Mortain, half-brother of William the Conqueror. It became the administrative headquarters for the powerful Earls of Cornwall. During the 13th century, Richard, Earl of Cornwall began to rebuild the castle in stone.",
+    notes:
+      "Built 11th century, ruins condition. Norman motte and bailey, administrative headquarters for Earls of Cornwall.",
+    imageUrl: "/launceston-castle-ruins.png",
   },
   {
     id: "cor-9",
@@ -308,10 +301,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Device Fort",
     visited: false,
     description:
-      "An artillery fort built by Henry VIII near Falmouth, Cornwall, England. It formed part of the King's Device programme to protect against invasion from France and the Holy Roman Empire, and defended the Carrick Roads waterway.",
+      "One of Henry VIII's Device Forts built in 1539. Built to guard the entrance to the River Fal on its west bank, near Falmouth. The castle comprises a simple round tower and gate enclosed by a lower curtain wall.",
     notes:
-      "Built 1540, complete condition. Artillery fort built by Henry VIII to protect against invasion from France and Holy Roman Empire.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Built 1539, partly complete condition. Henry VIII's Device Fort guarding River Fal entrance with round tower.",
+    imageUrl: "/pendennis-castle-fort.png",
   },
   {
     id: "cor-10",
@@ -320,10 +313,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Manor house",
     visited: false,
     description:
-      "The site of a fortified medieval manor house near Jacobstow, Cornwall. The manor house was built in the 12th century, and was occupied until the 14th century. The site was excavated in the 1970s.",
-    notes:
-      "Built 12th century, remains condition. Fortified medieval manor house, occupied until 14th century, excavated in 1970s.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "The site of a former medieval manor house surrounded by a protective moat, abandoned during the mid-14th century. It consists of a quadrangle of buildings around a central courtyard.",
+    notes: "Built 12th century, ruins condition. One of only four moated medieval manor sites in Cornwall.",
+    imageUrl: "/penhallam-manor-ruins.png",
   },
   {
     id: "cor-11",
@@ -332,10 +324,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Castle",
     visited: false,
     description:
-      "A castle near Lostwithiel, Cornwall, England, UK. It is one of the four chief Norman castles of Cornwall. It is notable for its perfectly circular design. Once a luxurious residence of the Earl of Cornwall, it was twice visited by the Black Prince.",
+      "Situated on the River Fowey near Lostwithiel, it is one of the four chief Norman castles of Cornwall. The castle is notable for its perfectly circular design. Although once a luxurious residence to the Earl of Cornwall, the castle became ruined in the years after.",
     notes:
-      "Norman, remains condition. Circular design, luxurious residence of Earl of Cornwall, visited by Black Prince.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Built 12th century, ruins condition. Notable for perfectly circular design, one of four chief Norman castles of Cornwall.",
+    imageUrl: "/restormel-castle.png",
   },
   {
     id: "cor-12",
@@ -343,11 +335,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     county: "Cornwall",
     type: "Other",
     visited: false,
-    description:
-      "Cornwall's largest prehistoric standing stone, located on St Breock Downs. It stands 5 metres (16 ft) high and weighs an estimated 16.5 tonnes. The stone was deliberately felled in the late Bronze Age, and was re-erected in 1986.",
-    notes:
-      "Prehistoric, standing stone. Largest prehistoric standing stone in Cornwall, deliberately felled in late Bronze Age, re-erected in 1986.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    description: "A 5m-high prehistoric standing stone located near St Breock on the downs above the Camel valley.",
+    notes: "Neolithic, remains condition. 5m-high prehistoric standing stone on downs above Camel valley.",
+    imageUrl: "/st-breock-monolith.png",
   },
   {
     id: "cor-13",
@@ -356,9 +346,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Device Fort",
     visited: false,
     description:
-      "A small artillery fort overlooking the estuary of the River Fowey in Cornwall. It was built in the 1530s as part of Henry VIII's Device Forts programme.",
-    notes: "Built 1530s, remains condition. Small artillery fort built as part of Henry VIII's Device Forts programme.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A small fort commissioned by Henry VIII in the 1530s to protect Fowey Harbour. A twin battery of 64-pounder guns was added on a lower terrace in 1855.",
+    notes:
+      "Built 1530s, remains condition. Henry VIII fort protecting Fowey Harbour with Victorian gun battery additions.",
+    imageUrl: "/placeholder.svg?height=200&width=300",
   },
   {
     id: "cor-14",
@@ -367,10 +358,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Device Fort",
     visited: false,
     description:
-      "An artillery fort built by Henry VIII near St Mawes, Cornwall. It formed part of the King's Device programme to protect against invasion from France and the Holy Roman Empire.",
+      "St Mawes Castle and its larger sister castle, Pendennis, were built as part of a defensive chain of fortresses by Henry VIII to protect the south coast of Cornwall in the 1540s.",
     notes:
-      "Built 1540, complete condition. Artillery fort built by Henry VIII to protect against invasion from France and Holy Roman Empire.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "Built 1540s, remains condition. Part of Henry VIII's defensive chain with Pendennis Castle protecting Carrick Roads.",
+    imageUrl: "/placeholder.svg?height=200&width=300",
   },
   {
     id: "cor-15",
@@ -379,9 +370,10 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Castle",
     visited: false,
     description:
-      "A medieval fortification located on the peninsula of Tintagel Island. It saw settlement during the early medieval period, when it was probably one of the seasonal residences of the regional king of Dumnonia. After Cornwall had been subsumed into the kingdom of England, a castle was built on the site by Richard, Earl of Cornwall.",
-    notes: "Built 1233, ruins condition. Linked to legends of King Arthur, built by Richard, Earl of Cornwall.",
-    imageUrl: "/tintagel-castle-ruins.png",
+      "A medieval fortification located on the peninsula of Tintagel Island. It saw settlement during the early medieval period, when it was probably one of the seasonal residences of the regional king of Dumnonia. After Cornwall had been subsumed into the kingdom of England, a castle was built on the site by Richard, Earl of Cornwall in the 13th century.",
+    notes:
+      "Built 13th century, ruins condition. Medieval fortification on Tintagel Island with legendary Arthurian connections.",
+    imageUrl: "/placeholder.svg?height=200&width=300",
   },
   {
     id: "cor-16",
@@ -390,9 +382,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Megalithic tomb",
     visited: false,
     description:
-      "A Bronze Age chambered tomb near St Buryan, Cornwall. It is also known as the Giant's Quoit. The tomb consists of a large capstone supported by several upright stones.",
-    notes: "Bronze Age, remains condition. Chambered tomb with large capstone supported by upright stones.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      "A Neolithic or early Bronze Age chambered tomb, comprising an entrance passage, lined with stone slabs, leading to a central chamber, located near Lamorna in west Cornwall.",
+    notes: "Neolithic/Bronze Age, remains condition. Chambered tomb with entrance passage near Lamorna.",
+    imageUrl: "/placeholder.svg?height=200&width=300",
   },
   {
     id: "cor-17",
@@ -401,9 +393,9 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     type: "Megalithic tomb",
     visited: false,
     description:
-      "A well-preserved Neolithic dolmen near St Cleer, Cornwall. It is also known as the Giant's House. The dolmen consists of a large capstone supported by several upright stones.",
-    notes: "Neolithic, remains condition. Well-preserved dolmen with large capstone supported by upright stones.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+      'A well-preserved megalithic tomb located near St Cleer. It is known locally as "the giant\'s house" and stands 2.7m high, consisting of five standing stones capped by a large slab.',
+    notes: "Neolithic, remains condition. Well-preserved megalithic tomb known as 'the giant's house', 2.7m high.",
+    imageUrl: "/placeholder.svg?height=200&width=300",
   },
 
   // Cumbria (27 properties)
@@ -416,7 +408,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The remains of a Roman fort on the shore of Windermere at Waterhead, near Ambleside. The fort was built in the 1st century AD, and was occupied until the 5th century AD.",
     notes: "Built 1st century AD, remains condition. Roman fort on shore of Windermere, occupied until 5th century AD.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-2",
@@ -427,7 +419,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A packhorse bridge over the River Derwent in Borrowdale, Cumbria. The bridge dates from the 17th century.",
     notes: "Built 17th century, complete condition. Packhorse bridge over River Derwent.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-3",
@@ -438,7 +430,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A ruined castle in Brough, Cumbria. The castle was built by the Normans in the 11th century, and was rebuilt in the 17th century by Lady Anne Clifford.",
     notes: "Built 11th century, ruins condition. Rebuilt in 17th century by Lady Anne Clifford.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-4",
@@ -449,7 +441,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A medieval castle north of Penrith, Cumbria, beside the River Eamont. The castle was founded in the early 13th century by the Vieuxpont family.",
     notes: "Founded 13th century, remains condition. Founded by Vieuxpont family.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-5",
@@ -460,7 +452,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Carlisle, Cumbria, in the north of England, near the Scottish border. The castle has over 900 years of history and has been the scene of many historical episodes in British history.",
     notes: "Founded 1092, partly complete. Scene of many historical episodes in British history.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-6",
@@ -471,7 +463,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A stone circle near Keswick in Cumbria, also known as the Keswick Stone Circle, and the Carsles. One of around 1,300 stone circles in Britain and France, it is one of the earliest, dating from around 3200 BC.",
     notes: "Built 3200 BC, complete condition. One of the earliest stone circles in Britain and France.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-7",
@@ -482,7 +474,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A fortified manor house in the village of Clifton, Cumbria. Dating from the 15th century, it is constructed around a three-storey pele tower.",
     notes: "Built 15th century, remains condition. Constructed around a three-storey pele tower.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-8",
@@ -493,7 +485,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An unusual historical monument located between Penrith and Appleby in Cumbria. It was erected in 1656 by Lady Anne Clifford to commemorate her last parting from her mother, Margaret, Countess of Cumberland, in 1616.",
     notes: "Erected 1656, complete condition. Commemorates Lady Anne Clifford's last parting from her mother.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-9",
@@ -504,7 +496,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former monastery located north of Barrow-in-Furness, Lancashire (now Cumbria), England. It was founded in 1123 by Stephen, Count of Boulogne (later King Stephen of England).",
     notes: "Founded 1123, ruins condition. Founded by Stephen, Count of Boulogne (later King Stephen of England).",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-10",
@@ -514,7 +506,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the turrets along Hadrian's Wall, located near Banks, Cumbria.",
     notes: "Roman, remains condition. Turret along Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-11",
@@ -524,7 +516,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the best-preserved Roman forts on Hadrian's Wall. It is located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. One of the best-preserved Roman forts on Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-12",
@@ -534,7 +526,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Hare Hill, Cumbria.",
     notes: "Roman, remains condition. Section of Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-13",
@@ -544,7 +536,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A milecastle and section of Hadrian's Wall at Harrows Scar, Cumbria.",
     notes: "Roman, remains condition. Milecastle and section of Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-14",
@@ -554,7 +546,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved milecastle on Hadrian's Wall, located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. Well-preserved milecastle on Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-15",
@@ -564,7 +556,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two turrets along Hadrian's Wall, located near Gilsland, Cumbria.",
     notes: "Roman, remains condition. Two turrets along Hadrian's Wall.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-16",
@@ -574,7 +566,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman signal tower on Pike Hill, Cumbria, part of the Hadrian's Wall defenses.",
     notes: "Roman, remains condition. Roman signal tower, part of Hadrian's Wall defenses.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-17",
@@ -584,7 +576,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall including a bridge and turrets at Willowford, Cumbria.",
     notes: "Roman, remains condition. Section of Hadrian's Wall including a bridge and turrets.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-18",
@@ -594,7 +586,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort on Hardknott Pass in Cumbria. It was built in the 2nd century AD.",
     notes: "Built 2nd century AD, remains condition. Roman fort on Hardknott Pass.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-19",
@@ -604,7 +596,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic earthwork henge in Eamont Bridge, Cumbria, traditionally associated with King Arthur.",
     notes: "Neolithic, remains condition. Earthwork henge associated with King Arthur.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-20",
@@ -614,7 +606,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former Augustinian priory near Brampton, Cumbria. It was founded in 1169.",
     notes: "Founded 1169, ruins condition. Augustinian priory.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-21",
@@ -624,7 +616,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A large henge monument near Eamont Bridge, Cumbria. It dates from the late Neolithic period.",
     notes: "Neolithic, remains condition. Large henge monument.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-22",
@@ -634,7 +626,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Penrith, Cumbria. It was built in the late 14th century.",
     notes: "Built late 14th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-23",
@@ -645,7 +637,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle on Piel Island, off the coast of Barrow-in-Furness, Cumbria. It was built in the 14th century by the Abbot of Furness Abbey.",
     notes: "Built 14th century, ruins condition. Built by Abbot of Furness Abbey.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-24",
@@ -655,7 +647,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman bath house in Ravenglass, Cumbria. It was part of a Roman fort.",
     notes: "Roman, remains condition. Part of a Roman fort.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-25",
@@ -665,7 +657,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of an abbey near Shap, Cumbria. It was founded in the late 12th century.",
     notes: "Founded late 12th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-26",
@@ -676,7 +668,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former bobbin mill near Newby Bridge, Cumbria. It produced wooden bobbins for the Lancashire textile industry.",
     notes: "Industrial, complete condition. Produced wooden bobbins for Lancashire textile industry.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "cum-27",
@@ -686,7 +678,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former priory in Wetheral, Cumbria. It dates from the 15th century.",
     notes: "Built 15th century, complete condition. Gatehouse of a former priory.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Derbyshire (9 properties)
@@ -698,7 +690,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Bakewell, Derbyshire. It includes a stone circle and a burial mound.",
     notes: "Neolithic, remains condition. Includes a stone circle and a burial mound.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-2",
@@ -709,6 +701,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Built between 1612 and 1617 by Sir Charles Cavendish, it stands on the earthworks of a 12th-century medieval castle. Designed by Robert Smythson, it's a masterpiece of Jacobean architecture.",
     notes: "Built 1612, partly complete. Masterpiece of Jacobean architecture, designed by Robert Smythson.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-3",
@@ -718,7 +711,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small building near Bolsover Castle, Derbyshire, thought to have been used as a conduit house.",
     notes: "Unknown, remains condition. Thought to have been used as a conduit house.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-4",
@@ -729,7 +722,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An Elizabethan country house near Chesterfield, Derbyshire. It was built by Bess of Hardwick in the late 16th century.",
     notes: "Built late 16th century, complete condition. Built by Bess of Hardwick.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-5",
@@ -739,7 +732,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial mound near Baslow, Derbyshire.",
     notes: "Bronze Age, remains condition. Burial mound.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-6",
@@ -749,7 +742,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small Bronze Age stone circle on Stanton Moor, Derbyshire.",
     notes: "Bronze Age, remains condition. Small stone circle.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-7",
@@ -760,7 +753,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A ruined medieval castle overlooking the village of Castleton, Derbyshire. It was founded by William Peverel in the 11th century.",
     notes: "Founded 11th century, ruins condition. Founded by William Peverel.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-8",
@@ -770,7 +763,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined country house near Chesterfield, Derbyshire. It was built in the early 18th century.",
     notes: "Built early 18th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "der-9",
@@ -780,7 +773,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined manor house near South Wingfield, Derbyshire. It was built in the 15th century.",
     notes: "Built 15th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Devon (13 properties)
@@ -792,7 +785,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small artillery fort in Dartmouth, Devon. It was built in the 16th century.",
     notes: "Built 16th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-2",
@@ -802,7 +795,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Totnes, Devon. It was built in the 15th century.",
     notes: "Built 15th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-3",
@@ -812,7 +805,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Honiton, Devon.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-4",
@@ -822,7 +815,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Dartmouth, Devon. It was built in the 14th century.",
     notes: "Built 14th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-5",
@@ -832,7 +825,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age settlement on Dartmoor, Devon.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-6",
@@ -842,7 +835,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval village on Dartmoor, Devon.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-7",
@@ -852,7 +845,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A late medieval merchant's house in Paignton, Devon.",
     notes: "Late medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-8",
@@ -862,7 +855,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle and the remains of a Saxon town in Lydford, Devon.",
     notes: "Saxon/Medieval, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-9",
@@ -872,7 +865,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A prehistoric settlement on Dartmoor, Devon.",
     notes: "Prehistoric, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-10",
@@ -882,7 +875,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Okehampton, Devon. It was built in the 11th century.",
     notes: "Built 11th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-11",
@@ -892,7 +885,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 17th-century fortress in Plymouth, Devon.",
     notes: "Built 17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-12",
@@ -902,7 +895,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A motte-and-bailey castle in Totnes, Devon. It was built in the 11th century.",
     notes: "Built 11th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dev-13",
@@ -912,7 +905,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A historic landscape in the Upper Plym Valley, Devon.",
     notes: "Historic landscape, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Dorset (12 properties)
@@ -924,7 +917,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine monastery in Abbotsbury, Dorset.",
     notes: "Founded 1044, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-2",
@@ -934,7 +927,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Norman castle and a Norman house in Christchurch, Dorset.",
     notes: "Norman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-3",
@@ -944,7 +937,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house in Fiddleford, Dorset.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-4",
@@ -954,7 +947,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple on Jordan Hill, near Weymouth, Dorset.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-5",
@@ -964,7 +957,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A stone circle near Kingston Russell, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-6",
@@ -974,7 +967,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Norman church and prehistoric earthworks in Knowlton, Dorset.",
     notes: "Norman/Prehistoric, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-7",
@@ -984,7 +977,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort south of Dorchester, Dorset.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-8",
@@ -994,7 +987,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A stone circle near Winterbourne Abbas, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-9",
@@ -1004,7 +997,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on the Isle of Portland, Dorset. It was built in the 16th century.",
     notes: "Built 16th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-10",
@@ -1014,7 +1007,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small chapel on a hill near Abbotsbury, Dorset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-11",
@@ -1024,7 +1017,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Sherborne, Dorset.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dor-12",
@@ -1034,7 +1027,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A group of Bronze Age burial mounds near Winterbourne Abbas, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // County Durham (6 properties)
@@ -1046,7 +1039,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A deer house in the grounds of Auckland Castle, County Durham.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dur-2",
@@ -1056,7 +1049,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Barnard Castle, County Durham.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dur-3",
@@ -1066,7 +1059,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Bowes, County Durham.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dur-4",
@@ -1076,7 +1069,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a 18th-century steel furnace in Derwentcote, County Durham.",
     notes: "18th century, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dur-5",
@@ -1086,7 +1079,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Barnard Castle, County Durham.",
     notes: "Founded 1195, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "dur-6",
@@ -1096,7 +1089,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory near Durham, County Durham.",
     notes: "Founded 1110, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // East Riding of Yorkshire (3 properties)
@@ -1108,7 +1101,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A manor house in Burton Agnes, East Riding of Yorkshire.",
     notes: "12th century onwards, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ery-2",
@@ -1118,7 +1111,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a collegiate church in Howden, East Riding of Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ery-3",
@@ -1128,7 +1121,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a motte-and-bailey castle in Skipsea, East Riding of Yorkshire.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // East Sussex (5 properties)
@@ -1140,7 +1133,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Premonstratensian abbey near Lamberhurst, East Sussex.",
     notes: "Founded 1208, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ess-2",
@@ -1151,6 +1144,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A partially ruined abbey complex built on the scene of the Battle of Hastings in 1066. Founded by William the Conqueror to commemorate his victory, with the high altar marking the spot where King Harold fell.",
     notes: "Founded 1070, partly ruined. Built on Battle of Hastings site.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ess-3",
@@ -1160,7 +1154,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The site of the Battle of Hastings in 1066, near Battle, East Sussex.",
     notes: "Historic site, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ess-4",
@@ -1170,7 +1164,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort near Rye, East Sussex. It was built in the 16th century.",
     notes: "Built 1512-14, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ess-5",
@@ -1181,7 +1175,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Pevensey, East Sussex. It was built in the 11th century, within the walls of a Roman fort.",
     notes: "Roman/Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Essex (9 properties)
@@ -1194,6 +1188,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An early-17th-century country house, once a palace and now one-third of its original size. Built by Thomas Howard, 1st Earl of Suffolk, it was once one of the largest houses in England.",
     notes: "Built 1603-1614, partly complete. Once one of the largest houses in England.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-2",
@@ -1203,7 +1198,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Hadleigh, Essex.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-3",
@@ -1213,7 +1208,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of Iron Age earthworks and a Roman burial ground near Colchester, Essex.",
     notes: "Iron Age/Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-4",
@@ -1223,7 +1218,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The twin towers of a former church in Mistley, Essex.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-5",
@@ -1233,7 +1228,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn in Widdington, Essex.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-6",
@@ -1243,7 +1238,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory in Colchester, Essex.",
     notes: "Founded 1100, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-7",
@@ -1253,7 +1248,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Benedictine abbey in Colchester, Essex.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-8",
@@ -1264,6 +1259,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Device Fort built in 1539 on the north bank of the River Thames to defend London from sea attacks. Famous as the site where Elizabeth I delivered her speech to troops before the Spanish Armada.",
     notes: "Built 1539, complete condition. Site of Elizabeth I's speech to troops.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "esx-9",
@@ -1273,7 +1269,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse and bridge of Waltham Abbey, Essex.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Gloucestershire (16 properties)
@@ -1285,7 +1281,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Winchcombe, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-2",
@@ -1295,7 +1291,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former Dominican friary in Gloucester.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-3",
@@ -1305,7 +1301,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman amphitheatre in Cirencester, Gloucestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-4",
@@ -1315,7 +1311,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa near Great Witcombe, Gloucestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-5",
@@ -1325,7 +1321,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Franciscan friary in Gloucester.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-6",
@@ -1335,7 +1331,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Winchcombe, Gloucestershire.",
     notes: "Founded 1246, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-7",
@@ -1345,7 +1341,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Cistercian abbey near Wotton-under-Edge, Gloucestershire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-8",
@@ -1355,7 +1351,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Notgrove, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-9",
@@ -1365,7 +1361,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Nympsfield, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-10",
@@ -1375,7 +1371,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Saxon chapel near Deerhurst, Gloucestershire.",
     notes: "Saxon, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-11",
@@ -1386,7 +1382,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A large earthwork that runs along the border between England and Wales. Parts of it are in Gloucestershire.",
     notes: "8th century, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-12",
@@ -1396,7 +1392,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A bridge over the River Severn near Gloucester.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-13",
@@ -1406,7 +1402,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in St Briavels, Gloucestershire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-14",
@@ -1416,7 +1412,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Norman church in Kempley, Gloucestershire.",
     notes: "Norman, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-15",
@@ -1426,7 +1422,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Uley, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "glo-16",
@@ -1436,7 +1432,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Rodmarton, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Hampshire (16 properties)
@@ -1448,7 +1444,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval palace in Bishop's Waltham, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-2",
@@ -1458,7 +1454,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on Calshot Spit, Hampshire. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-3",
@@ -1468,7 +1464,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A group of Bronze Age burial mounds on Flowerdown, near Winchester, Hampshire.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-4",
@@ -1478,7 +1474,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Victorian fort near Gosport, Hampshire.",
     notes: "Victorian, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-5",
@@ -1488,7 +1484,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An 18th-century fort on Portsea Island, Hampshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-6",
@@ -1498,7 +1494,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on Hurst Spit, Hampshire. It was built in the 16th century.",
     notes: "Built 1541-44, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-7",
@@ -1508,7 +1504,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two of the historic gates of Portsmouth, Hampshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-8",
@@ -1518,7 +1514,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval merchant's house in Southampton, Hampshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-9",
@@ -1528,7 +1524,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Southampton, Hampshire.",
     notes: "Founded 1239, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-10",
@@ -1539,7 +1535,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Portchester, Hampshire. It was built in the 11th century, within the walls of a Roman fort.",
     notes: "Roman/Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-11",
@@ -1549,7 +1545,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined church in Portsmouth, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-12",
@@ -1560,7 +1556,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The remains of the Roman city of Calleva Atrebatum, including the city walls and amphitheatre, near Silchester, Hampshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-13",
@@ -1570,7 +1566,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A neoclassical country house near Northington, Hampshire.",
     notes: "Neoclassical, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-14",
@@ -1580,7 +1576,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Titchfield, Hampshire.",
     notes: "Founded 1222, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ham-15",
@@ -1590,7 +1586,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval bishop's palace in Winchester, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Herefordshire (7 properties)
@@ -1602,7 +1598,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic burial chamber near Dorstone, Herefordshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-2",
@@ -1612,7 +1608,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined church in Edvin Loach, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-3",
@@ -1622,7 +1618,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Ross-on-Wye, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-4",
@@ -1632,7 +1628,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Longtown, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-5",
@@ -1642,7 +1638,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a water mill near Mortimer's Cross, Herefordshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-6",
@@ -1652,7 +1648,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel near Rotherwas, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "her-7",
@@ -1662,7 +1658,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Wigmore, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Hertfordshire (3 properties)
@@ -1674,7 +1670,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a motte-and-bailey castle in Berkhamsted, Hertfordshire.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "hrt-2",
@@ -1684,7 +1680,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Tudor mansion near St Albans, Hertfordshire.",
     notes: "Tudor, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "hrt-3",
@@ -1694,7 +1690,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman city walls of Verulamium, near St Albans, Hertfordshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Isle of Wight (5 properties)
@@ -1706,7 +1702,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The shell of a large Baroque country house near Ventnor, Isle of Wight.",
     notes: "Baroque, shell condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "iow-2",
@@ -1717,6 +1713,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An 11th-century motte-and-bailey castle with traces of a Roman fort underneath. Famous as the prison of Charles I before his execution, featuring a unique donkey-powered well wheel.",
     notes: "Medieval, partly complete. Prison of Charles I.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "iow-3",
@@ -1727,6 +1724,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former royal residence built for Queen Victoria and Prince Albert between 1845 and 1851. Designed by Prince Albert in the style of an Italian Renaissance palazzo, it was the Queen's beloved retreat.",
     notes: "Victorian, complete condition. Queen Victoria's retreat.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "iow-4",
@@ -1736,7 +1734,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval lighthouse on St Catherine's Down, Isle of Wight.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "iow-5",
@@ -1746,7 +1744,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Yarmouth, Isle of Wight. It was built in the 16th century.",
     notes: "Built 1547, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Isles of Scilly (9 properties)
@@ -1758,7 +1756,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial chamber on St Mary's, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-2",
@@ -1768,7 +1766,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 17th-century artillery tower on Tresco, Isles of Scilly.",
     notes: "17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-3",
@@ -1778,7 +1776,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The defensive walls of Hugh Town on St Mary's, Isles of Scilly.",
     notes: "16th-17th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-4",
@@ -1788,7 +1786,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of an Iron Age village on St Mary's, Isles of Scilly.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-5",
@@ -1798,7 +1796,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The unfinished remains of an artillery fort on St Mary's, Isles of Scilly.",
     notes: "16th century, unfinished.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-6",
@@ -1808,7 +1806,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two Bronze Age burial chambers on Innisidgen, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-7",
@@ -1818,7 +1816,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a 17th-century castle on Tresco, Isles of Scilly.",
     notes: "17th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-8",
@@ -1828,7 +1826,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a 16th-century blockhouse on Tresco, Isles of Scilly.",
     notes: "16th century, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ios-9",
@@ -1838,7 +1836,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial chamber on St Mary's, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Kent (25 properties)
@@ -1850,7 +1848,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Deal, Kent. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-2",
@@ -1861,6 +1859,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Founded in the 12th century, Dover Castle is known as the 'Key to England' due to its defensive significance. It's the largest castle in England, with a Great Tower built by Henry II and extensive medieval tunnels.",
     notes: "Medieval, partly complete. Key to England.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-3",
@@ -1870,7 +1869,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Martello tower in Dymchurch, Kent.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-4",
@@ -1880,7 +1879,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Eynsford, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-5",
@@ -1890,7 +1889,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval chapel in Faversham, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-6",
@@ -1900,7 +1899,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel in Horne's Place, near Appledore, Kent.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-7",
@@ -1910,7 +1909,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic dolmen near Aylesford, Kent.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-8",
@@ -1920,7 +1919,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Knights Templar church in Dover, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-9",
@@ -1930,7 +1929,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic dolmen near Aylesford, Kent.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-10",
@@ -1940,7 +1939,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa near Lullingstone, Kent.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-11",
@@ -1950,7 +1949,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval hospital in Faversham, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-12",
@@ -1960,7 +1959,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former chapel in Gravesend, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-13",
@@ -1970,7 +1969,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house near Plaxtol, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-14",
@@ -1980,7 +1979,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort and the towers of a ruined church in Reculver, Kent.",
     notes: "Roman/Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-15",
@@ -1990,7 +1989,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort and amphitheatre in Richborough, Kent.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-16",
@@ -2000,7 +1999,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Rochester, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-17",
@@ -2010,7 +2009,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former abbey in Canterbury, Kent.",
     notes: "Founded 597, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-18",
@@ -2020,7 +2019,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit house in Canterbury, Kent.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-19",
@@ -2030,7 +2029,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A memorial cross near Ramsgate, Kent.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-20",
@@ -2040,7 +2039,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Knights Hospitaller commandery near Sutton-at-Hone, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-21",
@@ -2050,7 +2049,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Norman tower in West Malling, Kent.",
     notes: "Norman, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-22",
@@ -2060,7 +2059,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Sutton Valence, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-23",
@@ -2070,7 +2069,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house near Strood, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-24",
@@ -2080,7 +2079,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on the River Medway near Rochester, Kent. It was built in the 16th century.",
     notes: "Built 1559-67, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-25",
@@ -2090,7 +2089,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Walmer, Kent. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ken-26",
@@ -2100,7 +2099,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A series of fortifications overlooking Dover, Kent.",
     notes: "18th-19th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Lancashire (4 properties)
@@ -2112,7 +2111,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel in Goodshaw, Lancashire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lan-2",
@@ -2122,7 +2121,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Clitheroe, Lancashire.",
     notes: "Founded 1148, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lan-3",
@@ -2132,7 +2131,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval rectory in Warton, Lancashire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lan-4",
@@ -2142,7 +2141,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Cistercian abbey in Whalley, Lancashire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Leicestershire (3 properties)
@@ -2154,7 +2153,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Ashby de la Zouch, Leicestershire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lei-2",
@@ -2164,7 +2163,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman public bath in Leicester, Leicestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lei-3",
@@ -2174,7 +2173,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated castle in Kirby Muxloe, Leicestershire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Lincolnshire (8 properties)
@@ -2186,7 +2185,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Old Bolingbroke, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-2",
@@ -2196,7 +2195,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house in Gainsborough, Lincolnshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-3",
@@ -2206,7 +2205,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a deserted medieval village near Kirton in Lindsey, Lincolnshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-4",
@@ -2216,7 +2215,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval bishop's palace in Lincoln, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-5",
@@ -2226,7 +2225,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A windmill in Sibsey, Lincolnshire.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-6",
@@ -2236,7 +2235,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Saxon church in Barton-upon-Humber, Lincolnshire.",
     notes: "Saxon, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-7",
@@ -2246,7 +2245,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval college in Tattershall, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lin-8",
@@ -2256,7 +2255,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey and its gatehouse near Thornton Curtis, Lincolnshire.",
     notes: "Founded 1139, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // London (14 properties)
@@ -2268,7 +2267,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The former home of the Duke of Wellington in London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-2",
@@ -2278,7 +2277,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Part of Westminster Abbey in London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-3",
@@ -2288,7 +2287,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Palladian villa in Chiswick, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-4",
@@ -2298,7 +2297,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit in Kingston upon Thames, London.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-5",
@@ -2309,6 +2308,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The home of Charles Darwin from 1842 to 1882, where he wrote 'On the Origin of Species'. The house and gardens remain much as Darwin left them, including his famous 'thinking path'.",
     notes: "19th century, complete condition. Home of Charles Darwin.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-6",
@@ -2318,7 +2318,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval palace in Eltham, London.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-7",
@@ -2328,7 +2328,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn in Harmondsworth, London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-8",
@@ -2338,7 +2338,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval tower in Westminster, London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-9",
@@ -2348,7 +2348,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A neoclassical villa in Hampstead, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-10",
@@ -2358,7 +2358,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of the Roman city wall of London.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-11",
@@ -2368,7 +2368,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Palladian villa in Twickenham, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-12",
@@ -2378,7 +2378,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Georgian mansion in Greenwich, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-13",
@@ -2388,7 +2388,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A triumphal arch in London.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "lon-14",
@@ -2398,7 +2398,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval palace in Southwark, London.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Norfolk (21 properties)
@@ -2410,7 +2410,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated manor house in Baconsthorpe, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-2",
@@ -2420,7 +2420,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A windmill near Great Yarmouth, Norfolk.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-3",
@@ -2430,7 +2430,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Binham, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-4",
@@ -2440,7 +2440,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory in Binham, Norfolk.",
     notes: "Founded 1091, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-5",
@@ -2450,7 +2450,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval guildhall in Blakeney, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-6",
@@ -2460,7 +2460,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Great Yarmouth, Norfolk.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-7",
@@ -2470,7 +2470,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Caister-on-Sea, Norfolk.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-8",
@@ -2480,7 +2480,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of Castle Acre Castle in Norfolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-9",
@@ -2490,7 +2490,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Norman castle in Castle Acre, Norfolk.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-10",
@@ -2500,7 +2500,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Castle Acre, Norfolk.",
     notes: "Founded 1089, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-11",
@@ -2510,7 +2510,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved Norman castle in Castle Rising, Norfolk.",
     notes: "Norman, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-12",
@@ -2520,7 +2520,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 14th-century artillery tower in Norwich, Norfolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-13",
@@ -2530,7 +2530,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey in North Creake, Norfolk.",
     notes: "Founded 1231, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-14",
@@ -2540,7 +2540,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A series of narrow alleyways and houses in Great Yarmouth, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-15",
@@ -2550,7 +2550,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Franciscan friary in Great Yarmouth, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-16",
@@ -2560,7 +2560,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic flint mining complex near Thetford, Norfolk.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-17",
@@ -2570,7 +2570,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel in North Elmham, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-18",
@@ -2580,7 +2580,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Great Yarmouth, Norfolk.",
     notes: "Founded 1216, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-19",
@@ -2590,7 +2590,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former church in Thetford, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-20",
@@ -2600,7 +2600,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Thetford, Norfolk.",
     notes: "Founded 1104, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-21",
@@ -2610,7 +2610,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval warren lodge near Thetford, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nor-22",
@@ -2620,7 +2620,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated manor house in Weeting, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // North Yorkshire (27 properties)
@@ -2632,7 +2632,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman town of Isurium Brigantum in Aldborough, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-2",
@@ -2642,7 +2642,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa in Beadlam, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-3",
@@ -2652,7 +2652,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Coxwold, North Yorkshire.",
     notes: "Founded 1177, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-4",
@@ -2662,7 +2662,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval keep in York, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-5",
@@ -2672,7 +2672,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Richmond, North Yorkshire.",
     notes: "Founded 1152, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-6",
@@ -2683,6 +2683,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Cistercian monastery founded in 1132, it's one of the largest and best-preserved ruined Cistercian monasteries in England. The abbey features stunning Gothic architecture and beautiful water gardens.",
     notes: "Founded 1132, ruins condition. One of the largest and best-preserved Cistercian monasteries in England.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-7",
@@ -2692,7 +2693,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory in Guisborough, North Yorkshire.",
     notes: "Founded 1119, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-8",
@@ -2702,7 +2703,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Helmsley, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-9",
@@ -2712,7 +2713,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Kirkham, North Yorkshire.",
     notes: "Founded 1120s, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-10",
@@ -2722,7 +2723,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 15th-century gatehouse near West Tanfield, North Yorkshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-11",
@@ -2732,7 +2733,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Middleham, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-12",
@@ -2742,7 +2743,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Carthusian priory near Northallerton, North Yorkshire.",
     notes: "Founded 1398, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-13",
@@ -2752,7 +2753,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A motte-and-bailey castle in Pickering, North Yorkshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-14",
@@ -2762,7 +2763,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman bridge near Piercebridge, North Yorkshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-15",
@@ -2772,7 +2773,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved Norman castle in Richmond, North Yorkshire.",
     notes: "Norman, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-16",
@@ -2782,7 +2783,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Helmsley, North Yorkshire.",
     notes: "Founded 1132, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-17",
@@ -2792,7 +2793,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A church in the grounds of Studley Royal Park, North Yorkshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-18",
@@ -2802,7 +2803,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Scarborough, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-19",
@@ -2812,7 +2813,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Spofforth, North Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-20",
@@ -2822,7 +2823,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of an Iron Age hillfort near Aldborough, North Yorkshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-21",
@@ -2832,7 +2833,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 14th-century gatehouse near South Milford, North Yorkshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-22",
@@ -2842,7 +2843,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Three large henges near Thornborough, North Yorkshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-23",
@@ -2852,7 +2853,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a deserted medieval village near Wharram Percy, North Yorkshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-24",
@@ -2862,7 +2863,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Roman road near Whitby, North Yorkshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-25",
@@ -2872,7 +2873,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Whitby, North Yorkshire.",
     notes: "Founded 657, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ny-26",
@@ -2882,7 +2883,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Cold War bunker in York, North Yorkshire.",
     notes: "Cold War, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Northamptonshire (5 properties)
@@ -2894,7 +2895,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A country house in Apethorpe, Northamptonshire.",
     notes: "15th-17th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nth-2",
@@ -2904,7 +2905,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval college in Higham Ferrers, Northamptonshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nth-3",
@@ -2914,7 +2915,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the three surviving Eleanor crosses in England, located in Geddington, Northamptonshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nth-4",
@@ -2924,7 +2925,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a country house near Corby, Northamptonshire.",
     notes: "16th-17th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nth-5",
@@ -2934,7 +2935,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A triangular building near Rushton, Northamptonshire.",
     notes: "16th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Northumberland (25 properties)
@@ -2946,7 +2947,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified manor house near Corbridge, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-2",
@@ -2956,7 +2957,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A country house, castle and gardens in Belsay, Northumberland.",
     notes: "Medieval/19th century, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-3",
@@ -2966,7 +2967,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An 18th-century barracks in Berwick-upon-Tweed, Northumberland.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-4",
@@ -2976,7 +2977,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a castle and the town ramparts in Berwick-upon-Tweed, Northumberland.",
     notes: "Medieval/16th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-5",
@@ -2986,7 +2987,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified farmhouse near Bellingham, Northumberland.",
     notes: "16th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-6",
@@ -2996,7 +2997,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Rothbury, Northumberland.",
     notes: "Founded 1135, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-7",
@@ -3006,7 +3007,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle on the coast of Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-8",
@@ -3016,7 +3017,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a fortified manor house in Edlingham, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-9",
@@ -3026,7 +3027,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Etal, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-10",
@@ -3036,7 +3037,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-11",
@@ -3046,7 +3047,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-12",
@@ -3056,7 +3057,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Cawfields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-13",
@@ -3066,7 +3067,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort and bridge near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-14",
@@ -3076,7 +3077,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman town near Corbridge, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-15",
@@ -3086,7 +3087,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Heddon-on-the-Wall, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-16",
@@ -3096,7 +3097,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Housesteads, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-17",
@@ -3106,7 +3107,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Planetrees, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-18",
@@ -3116,7 +3117,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Sewingshields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-19",
@@ -3126,7 +3127,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple near Carrawburgh, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-20",
@@ -3136,7 +3137,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Walltown Crags, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-21",
@@ -3146,7 +3147,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Winshields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-22",
@@ -3156,7 +3157,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory on Lindisfarne, Northumberland.",
     notes: "Founded 635, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-23",
@@ -3166,7 +3167,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Norham, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-24",
@@ -3176,7 +3177,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Prudhoe, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-25",
@@ -3186,7 +3187,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Warkworth, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "nbl-26",
@@ -3196,7 +3197,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval hermitage near Warkworth Castle, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Nottinghamshire (2 properties)
@@ -3208,7 +3209,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Gilbertine priory near Mattersey, Nottinghamshire.",
     notes: "Founded 1185, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "not-2",
@@ -3218,7 +3219,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Rufford, Nottinghamshire.",
     notes: "Founded 1147, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Oxfordshire (10 properties)
@@ -3230,7 +3231,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A museum in Abingdon, Oxfordshire.",
     notes: "17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-2",
@@ -3240,7 +3241,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval castle in Deddington, Oxfordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-3",
@@ -3250,7 +3251,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a manor house and a dovecote in Minster Lovell, Oxfordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-4",
@@ -3260,7 +3261,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit house in North Hinksey, Oxfordshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-5",
@@ -3270,7 +3271,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa in North Leigh, Oxfordshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-6",
@@ -3280,7 +3281,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A complex of Neolithic and Bronze Age monuments near Long Compton, Oxfordshire.",
     notes: "Neolithic/Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-7",
@@ -3290,7 +3291,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Uffington, Oxfordshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-8",
@@ -3301,7 +3302,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A natural chalk hill near Uffington, Oxfordshire, associated with the legend of St George and the Dragon.",
     notes: "Natural feature, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-9",
@@ -3311,7 +3312,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A prehistoric hill figure near Uffington, Oxfordshire.",
     notes: "Prehistoric, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "oxf-10",
@@ -3321,7 +3322,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Ashbury, Oxfordshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Rutland (1 property)
@@ -3333,7 +3334,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former hospital and almshouse in Lyddington, Rutland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Shropshire (16 properties)
@@ -3345,7 +3346,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a fortified manor house in Acton Burnell, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-2",
@@ -3355,7 +3356,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A historic house and the site of the Royal Oak in Boscobel, Shropshire.",
     notes: "17th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-3",
@@ -3365,7 +3366,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Ironbridge, Shropshire.",
     notes: "Founded 1135, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-4",
@@ -3375,7 +3376,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A cast-iron bridge near Condover, Shropshire.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-5",
@@ -3385,7 +3386,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Clun, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-6",
@@ -3395,7 +3396,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey near Shrewsbury, Shropshire.",
     notes: "Founded 1130s, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-7",
@@ -3406,6 +3407,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Constructed between 1777 and 1781, it was the first major bridge in the world to be made of cast iron. A symbol of the Industrial Revolution, it spans the River Severn in the Ironbridge Gorge.",
     notes: "18th century, complete condition. First major cast-iron bridge.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-8",
@@ -3415,7 +3417,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel near Acton Burnell, Shropshire.",
     notes: "17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-9",
@@ -3425,7 +3427,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Lilleshall, Shropshire.",
     notes: "Founded 1148, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-10",
@@ -3435,7 +3437,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age stone circle near Chirbury, Shropshire.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-11",
@@ -3445,7 +3447,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Moreton Corbet, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-12",
@@ -3455,7 +3457,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Oswestry, Shropshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-13",
@@ -3465,7 +3467,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified manor house in Stokesay, Shropshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-14",
@@ -3475,7 +3477,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Much Wenlock, Shropshire.",
     notes: "Founded 1079, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-15",
@@ -3485,7 +3487,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Boscobel, Shropshire.",
     notes: "Founded 1190, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "shr-16",
@@ -3495,7 +3497,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman city of Viroconium Cornoviorum near Wroxeter, Shropshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Somerset (12 properties)
@@ -3507,7 +3509,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Washford, Somerset.",
     notes: "Founded 1188, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-2",
@@ -3517,7 +3519,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Dunster, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-3",
@@ -3527,7 +3529,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A packhorse bridge in Dunster, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-4",
@@ -3537,7 +3539,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market hall in Dunster, Somerset.",
     notes: "17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-5",
@@ -3547,7 +3549,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Farleigh Hungerford, Somerset.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-6",
@@ -3557,7 +3559,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval courthouse in Glastonbury, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-7",
@@ -3567,7 +3569,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval building in Meare, Somerset, used for storing fish.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-8",
@@ -3577,7 +3579,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Muchelney, Somerset.",
     notes: "Founded 7th century, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-9",
@@ -3587,7 +3589,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A moated castle in Nunney, Somerset.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-10",
@@ -3597,7 +3599,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A monument commemorating Sir Bevil Grenville near Lansdown, Somerset.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-11",
@@ -3607,7 +3609,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A complex of Neolithic and Bronze Age monuments near Stanton Drew, Somerset.",
     notes: "Neolithic/Bronze Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "som-12",
@@ -3617,7 +3619,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Wellow, Somerset.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // South Yorkshire (4 properties)
@@ -3629,7 +3631,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Victorian country house and gardens near Brodsworth, South Yorkshire.",
     notes: "Victorian, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "sy-2",
@@ -3639,7 +3641,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Conisbrough, South Yorkshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "sy-3",
@@ -3649,7 +3651,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory near Barnsley, South Yorkshire.",
     notes: "Founded 1154, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "sy-4",
@@ -3659,7 +3661,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Maltby, South Yorkshire.",
     notes: "Founded 1147, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Staffordshire (2 properties)
@@ -3671,7 +3673,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Croxden, Staffordshire.",
     notes: "Founded 1176, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "sta-2",
@@ -3681,7 +3683,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman settlement of Letocetum near Wall, Staffordshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Suffolk (8 properties)
@@ -3693,7 +3695,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Bury St Edmunds, Suffolk.",
     notes: "Founded 1020, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-2",
@@ -3703,7 +3705,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Framlingham, Suffolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-3",
@@ -3713,7 +3715,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort near Felixstowe, Suffolk.",
     notes: "16th-19th century, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-4",
@@ -3723,7 +3725,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Leiston, Suffolk.",
     notes: "Founded 1183, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-5",
@@ -3733,7 +3735,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A packhorse bridge in Moulton, Suffolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-6",
@@ -3743,7 +3745,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Orford, Suffolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-7",
@@ -3753,7 +3755,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A post mill in Saxtead Green, Suffolk.",
     notes: "18th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "suf-8",
@@ -3763,7 +3765,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel in Lindsey, Suffolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Surrey (2 properties)
@@ -3775,7 +3777,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The keep of Farnham Castle in Farnham, Surrey.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "sur-2",
@@ -3785,7 +3787,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Farnham, Surrey.",
     notes: "Founded 1128, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Tyne and Wear (6 properties)
@@ -3797,7 +3799,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A pair of Jacobean merchant's houses in Newcastle upon Tyne, Tyne and Wear.",
     notes: "17th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "tw-2",
@@ -3807,7 +3809,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple and a section of the Vallum near Benwell, Tyne and Wear.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "tw-3",
@@ -3817,7 +3819,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Denton Hall, Tyne and Wear.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "tw-4",
@@ -3827,7 +3829,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Hylton, Sunderland, Tyne and Wear.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "tw-5",
@@ -3837,7 +3839,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a former Benedictine monastery in Jarrow, Tyne and Wear.",
     notes: "Founded 681, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "tw-6",
@@ -3847,7 +3849,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a priory and a castle in Tynemouth, Tyne and Wear.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Warwickshire (1 property)
@@ -3859,7 +3861,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Kenilworth, Warwickshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // West Midlands (2 properties)
@@ -3871,7 +3873,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey in Halesowen, West Midlands.",
     notes: "Founded 1218, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wm-2",
@@ -3881,7 +3883,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former silver factory in Birmingham, West Midlands.",
     notes: "19th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // West Sussex (2 properties)
@@ -3893,7 +3895,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory in Boxgrove, West Sussex.",
     notes: "Founded 1105, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "ws-2",
@@ -3903,7 +3905,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a motte-and-bailey castle in Bramber, West Sussex.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
 
   // Wiltshire (19 properties)
@@ -3915,7 +3917,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A museum in Avebury, Wiltshire, dedicated to the archaeology of the area.",
     notes: "20th century, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-2",
@@ -3925,7 +3927,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument in Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-3",
@@ -3935,7 +3937,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval tithe barn in Bradford-on-Avon, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-4",
@@ -3945,7 +3947,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Bratton, Wiltshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-5",
@@ -3955,7 +3957,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel near Great Bedwyn, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-6",
@@ -3965,7 +3967,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Marden, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-7",
@@ -3975,7 +3977,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Ludgershall, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-8",
@@ -3985,7 +3987,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Ludgershall, Wiltshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-9",
@@ -3995,7 +3997,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A dovecote in Netheravon, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-10",
@@ -4005,7 +4007,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle and a cathedral in Old Sarum, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-11",
@@ -4015,7 +4017,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Tisbury, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-12",
@@ -4025,7 +4027,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a stone circle near Avebury, Wiltshire.",
     notes: "Neolithic, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-13",
@@ -4036,6 +4038,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Neolithic artificial hill, one of the largest man-made monuments in Europe, constructed around 2400 BC.",
     notes: "Neolithic, complete condition. Largest man-made mound in Europe.",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-14",
@@ -4057,7 +4060,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a stone avenue near Avebury, Wiltshire.",
     notes: "Neolithic, ruins condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-16",
@@ -4067,7 +4070,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-17",
@@ -4077,7 +4080,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A hill figure near Westbury, Wiltshire.",
     notes: "18th century, various conditions.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-18",
@@ -4087,7 +4090,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic causewayed enclosure near Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/ballowall-barrow.png",
   },
   {
     id: "wil-19",
@@ -4097,7 +4100,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Amesbury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/placeholder.svg?key=gxh69",
   },
 
   // Worcestershire (2 properties)
@@ -4109,7 +4112,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn near Worcester, Worcestershire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/neolithic-burial-chamber-cornwall.png",
+    imageUrl: "/placeholder.svg?key=gxh69",
   },
   {
     id: "wor-2",
@@ -4120,6 +4123,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An Italianate mansion built in 1655, enormously expanded in the early 19th century and later underwent massive reconstruction in the mid-19th century. Famous for its spectacular fountain and formal gardens.",
     notes: "17th-19th century, ruins condition. Famous for its fountain and gardens.",
+    imageUrl: "/placeholder.svg?key=gxh69",
   },
 ]
 
@@ -4147,12 +4151,4 @@ export const getPropertiesByType = () => {
     },
     {} as Record<PropertyType, HeritageProperty[]>,
   )
-}
-
-export const getVisitedCount = () => {
-  return HERITAGE_PROPERTIES.filter((p) => p.visited).length
-}
-
-export const getTotalCount = () => {
-  return HERITAGE_PROPERTIES.length
 }
