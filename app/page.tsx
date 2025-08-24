@@ -52,12 +52,17 @@ export default function HomePage() {
   }, [])
 
   const loadDashboardData = async () => {
+    console.log("[v0] Starting dashboard data load...")
     try {
       // Load user profile
       const supabase = createClient()
       const {
         data: { user },
+        error: userError,
       } = await supabase.auth.getUser()
+
+      console.log("[v0] User auth result:", { user: !!user, error: userError })
+
       if (user) {
         setUserProfile({
           id: user.id,
@@ -69,10 +74,14 @@ export default function HomePage() {
       }
 
       // Load visits and stats
+      console.log("[v0] Loading visits from database...")
       const visits = await loadVisitsFromDatabase()
+      console.log("[v0] Loaded visits:", visits.length, "visits")
       setVisitData(visits)
 
+      console.log("[v0] Loading visit stats...")
       const stats = await getVisitStats()
+      console.log("[v0] Loaded stats:", stats)
       setVisitStats(stats)
 
       // Merge visit data with properties
@@ -90,7 +99,10 @@ export default function HomePage() {
       setProperties(updatedProperties)
 
       // Load recent achievements
+      console.log("[v0] Loading user achievements...")
       const userAchievements = await getUserAchievements()
+      console.log("[v0] Loaded achievements:", userAchievements.length, "achievements")
+
       const recent = userAchievements
         .sort((a, b) => new Date(b.unlockedAt).getTime() - new Date(a.unlockedAt).getTime())
         .slice(0, 3)
@@ -100,15 +112,24 @@ export default function HomePage() {
       setRecentAchievements(recent)
 
       // Check for new achievements
+      console.log("[v0] Checking for new achievements...")
       const newAchs = await checkAchievements()
       if (newAchs.length > 0) {
+        console.log("[v0] Found new achievements:", newAchs.length)
         setNewAchievements(newAchs)
       }
+
+      console.log("[v0] Dashboard data load completed successfully")
     } catch (error) {
       console.error("[v0] Failed to load dashboard data:", error)
-      // Fallback to empty state if database fails
-      setVisitData([])
-      setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+      // Only set fallback data if we don't have any existing data
+      if (visitData.length === 0) {
+        console.log("[v0] Setting fallback empty state")
+        setVisitData([])
+        setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+      } else {
+        console.log("[v0] Keeping existing data due to error")
+      }
     }
   }
 

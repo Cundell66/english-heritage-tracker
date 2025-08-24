@@ -10,6 +10,7 @@ import { loadVisitsFromDatabase, type VisitData } from "@/lib/storage"
 import { ArrowLeft, MapPin, Calendar, Trophy, Info } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { VisitLogger } from "@/components/visit-logger"
 
 export default function VisitedPage() {
   const [visitedProperties, setVisitedProperties] = useState<HeritageProperty[]>([])
@@ -100,6 +101,39 @@ export default function VisitedPage() {
     return typeImageMap[property.type] || "/placeholder.svg?height=200&width=300&text=Heritage+Site"
   }
 
+  const handleVisitUpdate = async () => {
+    try {
+      const visits = await loadVisitsFromDatabase()
+      setVisitData(visits)
+
+      // Get only visited properties with their visit data
+      const visited = HERITAGE_PROPERTIES.filter((property) => {
+        const visit = visits.find((v) => v.propertyId === property.id)
+        return visit?.visited
+      }).map((property) => {
+        const visit = visits.find((v) => v.propertyId === property.id)
+        return {
+          ...property,
+          visited: true,
+          visitDate: visit?.visitDate,
+          notes: visit?.notes,
+        }
+      })
+
+      // Sort by visit date (most recent first)
+      visited.sort((a, b) => {
+        if (!a.visitDate && !b.visitDate) return 0
+        if (!a.visitDate) return 1
+        if (!b.visitDate) return -1
+        return new Date(b.visitDate).getTime() - new Date(a.visitDate).getTime()
+      })
+
+      setVisitedProperties(visited)
+    } catch (error) {
+      console.error("[v0] Failed to refresh visits:", error)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -135,125 +169,139 @@ export default function VisitedPage() {
           </Card>
         ) : (
           <div className="space-y-4">
-            {visitedProperties.map((property) => (
-              <Card key={property.id} className="ring-2 ring-accent/20 overflow-hidden">
-                <div className="flex flex-col sm:flex-row">
-                  <div className="relative h-48 sm:h-32 sm:w-48 flex-shrink-0 overflow-hidden">
-                    <Image
-                      src={getPropertyImage(property) || "/placeholder.svg"}
-                      alt={property.name}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 192px"
-                    />
-                  </div>
+            {visitedProperties.map((property) => {
+              const visitInfo = visitData.find((v) => v.propertyId === property.id)
 
-                  <div className="flex-1">
-                    <CardHeader>
-                      <div className="flex items-start justify-between">
-                        <div className="flex-1">
-                          <CardTitle className="text-xl mb-2">{property.name}</CardTitle>
-                          <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                            <div className="flex items-center gap-1">
-                              <MapPin className="h-4 w-4" />
-                              {property.county}
-                            </div>
-                            {property.visitDate && (
+              return (
+                <Card key={property.id} className="ring-2 ring-accent/20 overflow-hidden">
+                  <div className="flex flex-col sm:flex-row">
+                    <div className="relative h-48 sm:h-32 sm:w-48 flex-shrink-0 overflow-hidden">
+                      <Image
+                        src={getPropertyImage(property) || "/placeholder.svg"}
+                        alt={property.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 192px"
+                      />
+                    </div>
+
+                    <div className="flex-1">
+                      <CardHeader>
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <CardTitle className="text-xl mb-2">{property.name}</CardTitle>
+                            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                               <div className="flex items-center gap-1">
-                                <Calendar className="h-4 w-4" />
-                                Visited {new Date(property.visitDate).toLocaleDateString()}
+                                <MapPin className="h-4 w-4" />
+                                {property.county}
                               </div>
-                            )}
-                          </div>
-                          <div className="flex items-center gap-2">
-                            <Badge className={getTypeColor(property.type)} variant="outline">
-                              {property.type}
-                            </Badge>
-                            <Dialog>
-                              <DialogTrigger asChild>
-                                <Button variant="outline" size="sm" className="px-3 h-8 bg-transparent">
-                                  <Info className="h-3 w-3 mr-1" />
-                                  More Info
-                                </Button>
-                              </DialogTrigger>
-                              <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
-                                <DialogHeader>
-                                  <DialogTitle className="text-lg sm:text-xl font-bold text-primary pr-8">
-                                    {property.name}
-                                  </DialogTitle>
-                                </DialogHeader>
-                                <div className="space-y-4">
-                                  <div className="relative h-64 w-full overflow-hidden rounded-lg">
-                                    <Image
-                                      src={getPropertyImage(property) || "/placeholder.svg"}
-                                      alt={property.name}
-                                      fill
-                                      className="object-cover"
-                                      sizes="(max-width: 768px) 100vw, 600px"
-                                    />
-                                  </div>
-
-                                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
-                                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                                      <MapPin className="h-4 w-4" />
-                                      {property.county}
-                                    </div>
-                                    <Badge className={getTypeColor(property.type)} variant="outline">
-                                      {property.type}
-                                    </Badge>
-                                  </div>
-                                  {property.description ? (
-                                    <div>
-                                      <h3 className="font-semibold text-heritage-blue mb-2">Historical Information</h3>
-                                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                                        {property.description}
-                                      </p>
-                                    </div>
-                                  ) : (
-                                    <div>
-                                      <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
-                                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                                        This {property.type.toLowerCase()} is located in {property.county} and is part
-                                        of English Heritage's collection of historic sites spanning over 5,000 years of
-                                        history.
-                                      </p>
-                                    </div>
-                                  )}
-                                  {property.visited && property.visitDate && (
-                                    <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
-                                      <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
-                                      <div className="flex items-center gap-2 text-sm">
-                                        <Calendar className="h-4 w-4" />
-                                        Visited on {new Date(property.visitDate).toLocaleDateString()}
-                                      </div>
-                                      {property.notes && (
-                                        <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>
-                                      )}
-                                    </div>
-                                  )}
-                                  <div className="text-xs text-muted-foreground border-t pt-4">
-                                    Information sourced from Wikipedia and English Heritage records.
-                                  </div>
+                              {property.visitDate && (
+                                <div className="flex items-center gap-1">
+                                  <Calendar className="h-4 w-4" />
+                                  Visited {new Date(property.visitDate).toLocaleDateString()}
                                 </div>
-                              </DialogContent>
-                            </Dialog>
+                              )}
+                            </div>
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <Badge className={getTypeColor(property.type)} variant="outline">
+                                {property.type}
+                              </Badge>
+                              <Dialog>
+                                <DialogTrigger asChild>
+                                  <Button variant="outline" size="sm" className="px-3 h-8 bg-transparent">
+                                    <Info className="h-3 w-3 mr-1" />
+                                    More Info
+                                  </Button>
+                                </DialogTrigger>
+                                <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto mx-4">
+                                  <DialogHeader>
+                                    <DialogTitle className="text-lg sm:text-xl font-bold text-primary pr-8">
+                                      {property.name}
+                                    </DialogTitle>
+                                  </DialogHeader>
+                                  <div className="space-y-4">
+                                    <div className="relative h-64 w-full overflow-hidden rounded-lg">
+                                      <Image
+                                        src={getPropertyImage(property) || "/placeholder.svg"}
+                                        alt={property.name}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 100vw, 600px"
+                                      />
+                                    </div>
+
+                                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+                                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                                        <MapPin className="h-4 w-4" />
+                                        {property.county}
+                                      </div>
+                                      <Badge className={getTypeColor(property.type)} variant="outline">
+                                        {property.type}
+                                      </Badge>
+                                    </div>
+                                    {property.description ? (
+                                      <div>
+                                        <h3 className="font-semibold text-heritage-blue mb-2">
+                                          Historical Information
+                                        </h3>
+                                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                                          {property.description}
+                                        </p>
+                                      </div>
+                                    ) : (
+                                      <div>
+                                        <h3 className="font-semibold text-heritage-blue mb-2">About this Property</h3>
+                                        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                                          This {property.type.toLowerCase()} is located in {property.county} and is part
+                                          of English Heritage's collection of historic sites spanning over 5,000 years
+                                          of history.
+                                        </p>
+                                      </div>
+                                    )}
+                                    {property.visited && property.visitDate && (
+                                      <div className="bg-accent/10 p-4 rounded-lg border border-accent/20">
+                                        <h3 className="font-semibold text-accent mb-2">Your Visit</h3>
+                                        <div className="flex items-center gap-2 text-sm">
+                                          <Calendar className="h-4 w-4" />
+                                          Visited on {new Date(property.visitDate).toLocaleDateString()}
+                                        </div>
+                                        {property.notes && (
+                                          <p className="text-sm text-muted-foreground mt-2">{property.notes}</p>
+                                        )}
+                                      </div>
+                                    )}
+                                    <div className="text-xs text-muted-foreground border-t pt-4">
+                                      Information sourced from Wikipedia and English Heritage records.
+                                    </div>
+                                  </div>
+                                </DialogContent>
+                              </Dialog>
+                              <VisitLogger
+                                propertyId={property.id}
+                                propertyName={property.name}
+                                county={property.county}
+                                propertyType={property.type}
+                                currentVisit={visitInfo}
+                                onVisitUpdate={handleVisitUpdate}
+                              />
+                            </div>
                           </div>
+                          <Badge className="bg-accent text-accent-foreground">Visited</Badge>
                         </div>
-                        <Badge className="bg-accent text-accent-foreground">Visited</Badge>
-                      </div>
-                    </CardHeader>
-                    {property.notes && (
-                      <CardContent>
-                        <div className="bg-muted/50 rounded-lg p-3">
-                          <p className="text-sm font-medium mb-1">Your Notes:</p>
-                          <p className="text-sm text-muted-foreground">{property.notes}</p>
-                        </div>
-                      </CardContent>
-                    )}
+                      </CardHeader>
+                      {property.notes && (
+                        <CardContent>
+                          <div className="bg-muted/50 rounded-lg p-3">
+                            <p className="text-sm font-medium mb-1">Your Notes:</p>
+                            <p className="text-sm text-muted-foreground">{property.notes}</p>
+                          </div>
+                        </CardContent>
+                      )}
+                    </div>
                   </div>
-                </div>
-              </Card>
-            ))}
+                </Card>
+              )
+            })}
           </div>
         )}
       </div>
