@@ -62,16 +62,39 @@ export function VisitLogger({
 
   const handlePhotoUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files
-    if (!files) return
+    if (!files || files.length === 0) return
+
+    const maxFileSize = 5 * 1024 * 1024 // 5MB
+    const allowedTypes = ["image/jpeg", "image/jpg", "image/png", "image/webp"]
+
+    for (const file of files) {
+      if (file.size > maxFileSize) {
+        alert(`File ${file.name} is too large. Maximum size is 5MB.`)
+        return
+      }
+      if (!allowedTypes.includes(file.type)) {
+        alert(`File ${file.name} is not a supported image format. Please use JPEG, PNG, or WebP.`)
+        return
+      }
+    }
 
     setIsLoading(true)
     try {
+      console.log("[v0] Starting photo upload for", files.length, "files")
       const uploadPromises = Array.from(files).map((file) => uploadVisitPhoto(file, propertyId))
       const uploadedUrls = await Promise.all(uploadPromises)
       setPhotos((prev) => [...prev, ...uploadedUrls])
+      console.log("[v0] Successfully uploaded", uploadedUrls.length, "photos")
+
+      event.target.value = ""
     } catch (error) {
-      console.error("Failed to upload photos:", error)
-      alert("Failed to upload photos. Please try again.")
+      console.error("[v0] Failed to upload photos:", error)
+      const errorMessage = error instanceof Error ? error.message : "Unknown error occurred"
+      if (errorMessage.includes("Photo storage is not configured")) {
+        alert("Photo storage is not set up yet. Please run the photo storage setup script first.")
+      } else {
+        alert(`Failed to upload photos: ${errorMessage}`)
+      }
     } finally {
       setIsLoading(false)
     }
@@ -202,7 +225,7 @@ export function VisitLogger({
               <div className="flex items-center gap-2">
                 <Input
                   type="file"
-                  accept="image/*"
+                  accept="image/jpeg,image/jpg,image/png,image/webp"
                   multiple
                   onChange={handlePhotoUpload}
                   className="hidden"
@@ -211,11 +234,11 @@ export function VisitLogger({
                 <Label htmlFor="photo-upload" className="cursor-pointer">
                   <Button type="button" variant="outline" size="sm" disabled={isLoading}>
                     <Upload className="h-4 w-4 mr-2" />
-                    Upload Photos
+                    {isLoading ? "Uploading..." : "Upload Photos"}
                   </Button>
                 </Label>
                 <span className="text-sm text-muted-foreground">
-                  {photos.length} photo{photos.length !== 1 ? "s" : ""}
+                  {photos.length} photo{photos.length !== 1 ? "s" : ""} {isLoading && "(uploading...)"}
                 </span>
               </div>
 
