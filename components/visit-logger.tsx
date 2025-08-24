@@ -231,11 +231,12 @@ export function VisitLogger({
                   className="hidden"
                   id="photo-upload"
                 />
-                <Label htmlFor="photo-upload" className="cursor-pointer">
-                  <Button type="button" variant="outline" size="sm" disabled={isLoading}>
-                    <Upload className="h-4 w-4 mr-2" />
-                    {isLoading ? "Uploading..." : "Upload Photos"}
-                  </Button>
+                <Label
+                  htmlFor="photo-upload"
+                  className="cursor-pointer inline-flex items-center justify-center rounded-md border border-input bg-background px-3 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50"
+                >
+                  <Upload className="h-4 w-4 mr-2" />
+                  {isLoading ? "Uploading..." : "Upload Photos"}
                 </Label>
                 <span className="text-sm text-muted-foreground">
                   {photos.length} photo{photos.length !== 1 ? "s" : ""} {isLoading && "(uploading...)"}
