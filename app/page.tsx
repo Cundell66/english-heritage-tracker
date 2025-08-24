@@ -133,11 +133,24 @@ export default function HomePage() {
         const userAchievements = await getUserAchievements()
         console.log("[v0] Loaded achievements:", userAchievements.length, "achievements")
 
-        const recent = userAchievements
-          .sort((a, b) => new Date(b.unlockedAt).getTime() - new Date(a.unlockedAt).getTime())
-          .slice(0, 3)
-          .map((ua) => ACHIEVEMENTS.find((a) => a.id === ua.achievementId))
-          .filter(Boolean) as Achievement[]
+        const visitedCount = visitData.filter((v) => v.visited).length
+        const calculatedAchievements = ACHIEVEMENTS.filter((achievement) => {
+          if (achievement.category === "visits") {
+            return visitedCount >= achievement.requirement
+          }
+          // Add other achievement types as needed
+          return false
+        })
+
+        // Use database achievements if available, otherwise use calculated ones
+        const achievementsToShow =
+          userAchievements.length > 0
+            ? (userAchievements
+                .map((ua) => ACHIEVEMENTS.find((a) => a.id === ua.achievementId))
+                .filter(Boolean) as Achievement[])
+            : calculatedAchievements
+
+        const recent = achievementsToShow.slice(0, 3) // Show first 3 achievements
 
         setRecentAchievements(recent)
 
@@ -149,8 +162,16 @@ export default function HomePage() {
         }
       } catch (achievementError) {
         console.error("[v0] Failed to load achievements:", achievementError)
-        // Don't reset achievements, just leave empty if none exist
-        console.log("[v0] Achievement system not available, continuing without achievements")
+        const visitedCount = visitData.filter((v) => v.visited).length
+        const calculatedAchievements = ACHIEVEMENTS.filter((achievement) => {
+          if (achievement.category === "visits") {
+            return visitedCount >= achievement.requirement
+          }
+          return false
+        }).slice(0, 3)
+
+        setRecentAchievements(calculatedAchievements)
+        console.log("[v0] Using calculated achievements:", calculatedAchievements.length, "achievements")
       }
 
       console.log("[v0] Dashboard data load completed successfully")
