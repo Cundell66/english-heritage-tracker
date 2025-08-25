@@ -1133,7 +1133,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Premonstratensian abbey near Lamberhurst, East Sussex.",
     notes: "Founded 1208, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bayham_Abbey1.jpg/1024px-Bayham_Abbey1.jpg",
   },
   {
     id: "ess-2",
@@ -1144,7 +1144,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A partially ruined abbey complex built on the scene of the Battle of Hastings in 1066. Founded by William the Conqueror to commemorate his victory, with the high altar marking the spot where King Harold fell.",
     notes: "Founded 1070, partly ruined. Built on Battle of Hastings site.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Battleabbey-wyrdlight-0190.jpg",
   },
   {
     id: "ess-3",
@@ -1154,7 +1154,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The site of the Battle of Hastings in 1066, near Battle, East Sussex.",
     notes: "Historic site, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Schlachtfeld_Schlacht_bei_Hastings_juni09.JPG/1024px-Schlachtfeld_Schlacht_bei_Hastings_juni09.JPG",
   },
   {
     id: "ess-4",
@@ -1164,7 +1164,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort near Rye, East Sussex. It was built in the 16th century.",
     notes: "Built 1512-14, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/ff/Camber_Castle%2C_Rye_Harbour%2C_East_Sussex_-_geograph.org.uk_-_1341825.jpg",
   },
   {
     id: "ess-5",
@@ -1175,7 +1175,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Pevensey, East Sussex. It was built in the 11th century, within the walls of a Roman fort.",
     notes: "Roman/Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pevensey_castle-09.jpg/1024px-Pevensey_castle-09.jpg",
   },
 
   // Essex (9 properties)
@@ -1188,7 +1188,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An early-17th-century country house, once a palace and now one-third of its original size. Built by Thomas Howard, 1st Earl of Suffolk, it was once one of the largest houses in England.",
     notes: "Built 1603-1614, partly complete. Once one of the largest houses in England.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Audley_End_House_-_geograph.org.uk_-_70520.jpg",
   },
   {
     id: "esx-2",
@@ -1198,7 +1198,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Hadleigh, Essex.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/02/Hadleigh_Castle%2Cthe_twin_towers_-_geograph.org.uk_-_1111729.jpg",
   },
   {
     id: "esx-3",
@@ -1208,7 +1208,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of Iron Age earthworks and a Roman burial ground near Colchester, Essex.",
     notes: "Iron Age/Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/13/Bluebottle_Grove%2C_Colchester_-_geograph.org.uk_-_142655.jpg",
   },
   {
     id: "esx-4",
@@ -1218,7 +1218,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The twin towers of a former church in Mistley, Essex.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Mistley_Towers_-_geograph.org.uk_-_748610.jpg",
   },
   {
     id: "esx-5",
@@ -1228,7 +1228,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn in Widdington, Essex.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/50/Prior%27s_Hall_Barn%2C_Widdington%2C_Essex_-_geograph.org.uk_-_148378.jpg",
   },
   {
     id: "esx-6",
@@ -1238,7 +1238,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory in Colchester, Essex.",
     notes: "Founded 1100, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Ruins_of_Priory_Church_of_St_Botolph_1.JPG/1024px-Ruins_of_Priory_Church_of_St_Botolph_1.JPG",
   },
   {
     id: "esx-7",
@@ -1248,7 +1248,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Benedictine abbey in Colchester, Essex.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/St_Johns_Abbey_Gatehouse.jpg/1024px-St_Johns_Abbey_Gatehouse.jpg",
   },
   {
     id: "esx-8",
@@ -1259,7 +1259,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Device Fort built in 1539 on the north bank of the River Thames to defend London from sea attacks. Famous as the site where Elizabeth I delivered her speech to troops before the Spanish Armada.",
     notes: "Built 1539, complete condition. Site of Elizabeth I's speech to troops.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0b/The_Water_Gate_at_Tilbury_Fort_-_geograph.org.uk_-_1555916.jpg",
   },
   {
     id: "esx-9",
@@ -1269,7 +1269,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse and bridge of Waltham Abbey, Essex.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/17/Waltham_Abbey_Gateway_-_geograph.org.uk_-_1030421.jpg",
   },
 
   // Gloucestershire (16 properties)
@@ -1281,7 +1281,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Winchcombe, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Belas-knap.jpg/1024px-Belas-knap.jpg",
   },
   {
     id: "glo-2",
@@ -1291,7 +1291,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former Dominican friary in Gloucester.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Gloucester_Blackfriars_20.08.11.JPG/1024px-Gloucester_Blackfriars_20.08.11.JPG",
   },
   {
     id: "glo-3",
@@ -1301,7 +1301,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman amphitheatre in Cirencester, Gloucestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Roman_Amphitheatre_-_geograph.org.uk_-_154140.jpg",
   },
   {
     id: "glo-4",
@@ -1311,7 +1311,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa near Great Witcombe, Gloucestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/af/Great_Witcombe_Roman_Villa_-_geograph.org.uk_-_485594.jpg",
   },
   {
     id: "glo-5",
@@ -1321,7 +1321,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Franciscan friary in Gloucester.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Greyfriars%2C_Gloucester_-_geograph.org.uk_-_61881.jpg",
   },
   {
     id: "glo-6",
@@ -1331,7 +1331,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Winchcombe, Gloucestershire.",
     notes: "Founded 1246, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hailes_Abbey_Landscape.jpg/1024px-Hailes_Abbey_Landscape.jpg",
   },
   {
     id: "glo-7",
@@ -1341,7 +1341,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Cistercian abbey near Wotton-under-Edge, Gloucestershire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Kingswood_Abbey_Gatehouse.JPG/1024px-Kingswood_Abbey_Gatehouse.JPG",
   },
   {
     id: "glo-8",
@@ -1351,7 +1351,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Notgrove, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Notgrove_Long_Barrow_-_geograph.org.uk_-_93007.jpg",
   },
   {
     id: "glo-9",
@@ -1361,7 +1361,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Nympsfield, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Nympsfield_Long_Barrow_%28geograph_1040823%29.jpg",
   },
   {
     id: "glo-10",
@@ -1371,7 +1371,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Saxon chapel near Deerhurst, Gloucestershire.",
     notes: "Saxon, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Odda%27s_Chapel_and_Abbot%27s_Court_%2C_Deerhurst_-_geograph.org.uk_-_1729843.jpg",
   },
   {
     id: "glo-11",
@@ -1382,7 +1382,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A large earthwork that runs along the border between England and Wales. Parts of it are in Gloucestershire.",
     notes: "8th century, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/31/Offa%27s_Dyke_Path_near_the_Devil%27s_Pulpit_-_geograph.org.uk_-_803694.jpg",
   },
   {
     id: "glo-12",
@@ -1392,7 +1392,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A bridge over the River Severn near Gloucester.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/74/Over_Bridge_-_geograph.org.uk_-_1937314.jpg",
   },
   {
     id: "glo-13",
@@ -1402,7 +1402,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in St Briavels, Gloucestershire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b8/St_Briavels_Castle_Youth_Hostel_-_geograph.org.uk_-_1519128.jpg",
   },
   {
     id: "glo-14",
@@ -1412,7 +1412,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Norman church in Kempley, Gloucestershire.",
     notes: "Norman, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Kempley_Church_-_geograph.org.uk_-_1373625.jpg",
   },
   {
     id: "glo-15",
@@ -1422,7 +1422,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Uley, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Uley_Long_Barrow_-_view_from_the_east.JPG/1024px-Uley_Long_Barrow_-_view_from_the_east.JPG",
   },
   {
     id: "glo-16",
@@ -1432,7 +1432,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Rodmarton, Gloucestershire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/82/Entrance_Portal_Rodmarton_Long_Barrow_-_geograph.org.uk_-_1002575.jpg",
   },
 
   // Hampshire (16 properties)
@@ -1444,7 +1444,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval palace in Bishop's Waltham, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Bishop%27s_Waltham_Palace_and_moat.jpg",
   },
   {
     id: "ham-2",
@@ -1454,7 +1454,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on Calshot Spit, Hampshire. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/050103_2353_calshot.jpg",
   },
   {
     id: "ham-3",
@@ -1464,7 +1464,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A group of Bronze Age burial mounds on Flowerdown, near Winchester, Hampshire.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/00/Flowerdown_Barrow%2C_Littleton_-_geograph.org.uk_-_56445.jpg",
   },
   {
     id: "ham-4",
@@ -1474,7 +1474,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Victorian fort near Gosport, Hampshire.",
     notes: "Victorian, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Fort_Brockhurst_entrance.JPG/1024px-Fort_Brockhurst_entrance.JPG",
   },
   {
     id: "ham-5",
@@ -1484,7 +1484,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An 18th-century fort on Portsea Island, Hampshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Inside_Fort_Cumberland_-_geograph.org.uk_-_411752.jpg",
   },
   {
     id: "ham-6",
@@ -1494,7 +1494,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on Hurst Spit, Hampshire. It was built in the 16th century.",
     notes: "Built 1541-44, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/HurstCastle20090713Y146.jpg/1024px-HurstCastle20090713Y146.jpg",
   },
   {
     id: "ham-7",
@@ -1504,7 +1504,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two of the historic gates of Portsmouth, Hampshire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/The_Old_Land_Port_-_geograph.org.uk_-_977925.jpg",
   },
   {
     id: "ham-8",
@@ -1514,7 +1514,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval merchant's house in Southampton, Hampshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Medieval_Merchant%27s_House_-_geograph.org.uk_-_166280.jpg",
   },
   {
     id: "ham-9",
@@ -1524,7 +1524,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Southampton, Hampshire.",
     notes: "Founded 1239, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Netnave.jpg",
   },
   {
     id: "ham-10",
@@ -1535,7 +1535,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A castle in Portchester, Hampshire. It was built in the 11th century, within the walls of a Roman fort.",
     notes: "Roman/Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Portchester_castle_04.jpg",
   },
   {
     id: "ham-11",
@@ -1545,7 +1545,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined church in Portsmouth, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Domus_Dei_Oct_2007.jpg/1024px-Domus_Dei_Oct_2007.jpg",
   },
   {
     id: "ham-12",
@@ -1556,7 +1556,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The remains of the Roman city of Calleva Atrebatum, including the city walls and amphitheatre, near Silchester, Hampshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/66/Calleva_Atrebatum_-_geograph.org.uk_-_1341175.jpg",
   },
   {
     id: "ham-13",
@@ -1566,7 +1566,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A neoclassical country house near Northington, Hampshire.",
     notes: "Neoclassical, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Northington_Grange_-_Hampshire.jpg/1024px-Northington_Grange_-_Hampshire.jpg",
   },
   {
     id: "ham-14",
@@ -1576,7 +1576,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Titchfield, Hampshire.",
     notes: "Founded 1222, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Titchfield_Abbey.jpg/1024px-Titchfield_Abbey.jpg",
   },
   {
     id: "ham-15",
@@ -1586,7 +1586,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval bishop's palace in Winchester, Hampshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Wolvesey_Castle_-_East_Hall_and_Wymond%27s_Tower_-_geograph.org.uk_-_1316569.jpg",
   },
 
   // Herefordshire (7 properties)
@@ -1598,7 +1598,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic burial chamber near Dorstone, Herefordshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Arthur%27s_stone_-_geograph.org.uk_-_941844.jpg",
   },
   {
     id: "her-2",
@@ -1608,7 +1608,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined church in Edvin Loach, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8b/The_ruined_Saxon_church_at_Edvin_Loach_-_geograph.org.uk_-_2453.jpg",
   },
   {
     id: "her-3",
@@ -1618,7 +1618,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Ross-on-Wye, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c9/Goodrich_Castle_01.jpg",
   },
   {
     id: "her-4",
@@ -1628,7 +1628,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Longtown, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Longtown_Castle_-_geograph.org.uk_-_392612.jpg",
   },
   {
     id: "her-5",
@@ -1638,7 +1638,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a water mill near Mortimer's Cross, Herefordshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mortimer%27s_Cross_Water_Mill_-_geograph.org.uk_-_1899259.jpg,
   },
   {
     id: "her-6",
@@ -1648,7 +1648,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel near Rotherwas, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Rotherwas_Chapel_-_geograph.org.uk_-_132037.jpg",
   },
   {
     id: "her-7",
@@ -1658,7 +1658,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Wigmore, Herefordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Entrance_to_Wigmore_Castle_-_geograph.org.uk_-_1248482.jpg",
   },
 
   // Hertfordshire (3 properties)
@@ -1670,7 +1670,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a motte-and-bailey castle in Berkhamsted, Hertfordshire.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Berkhamsted_Castle_2.jpg",
   },
   {
     id: "hrt-2",
@@ -1680,7 +1680,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Tudor mansion near St Albans, Hertfordshire.",
     notes: "Tudor, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Old-Gorhambury-House-20051002-034.jpg/1024px-Old-Gorhambury-House-20051002-034.jpg",
   },
   {
     id: "hrt-3",
@@ -1690,7 +1690,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman city walls of Verulamium, near St Albans, Hertfordshire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/StAlbansRomanWall-PS02.JPG/1024px-StAlbansRomanWall-PS02.JPG",
   },
 
   // Isle of Wight (5 properties)
@@ -1702,7 +1702,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The shell of a large Baroque country house near Ventnor, Isle of Wight.",
     notes: "Baroque, shell condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Appuldurcombe_House.jpg/1024px-Appuldurcombe_House.jpg",
   },
   {
     id: "iow-2",
@@ -1713,7 +1713,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An 11th-century motte-and-bailey castle with traces of a Roman fort underneath. Famous as the prison of Charles I before his execution, featuring a unique donkey-powered well wheel.",
     notes: "Medieval, partly complete. Prison of Charles I.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Carisbrooke_Castle_-_geograph.org.uk_-_1042859.jpg",
   },
   {
     id: "iow-3",
@@ -1724,7 +1724,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A former royal residence built for Queen Victoria and Prince Albert between 1845 and 1851. Designed by Prince Albert in the style of an Italian Renaissance palazzo, it was the Queen's beloved retreat.",
     notes: "Victorian, complete condition. Queen Victoria's retreat.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Osborne_House_-_geograph.org.uk_-_22302.jpg",
   },
   {
     id: "iow-4",
@@ -1734,7 +1734,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval lighthouse on St Catherine's Down, Isle of Wight.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Tower_of_St_Catherine%27s_Oratory_%282%29_-_geograph.org.uk_-_1414128.jpg",
   },
   {
     id: "iow-5",
@@ -1744,7 +1744,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Yarmouth, Isle of Wight. It was built in the 16th century.",
     notes: "Built 1547, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Castle_at_Yarmouth_-_geograph.org.uk_-_1535282.jpg",
   },
 
   // Isles of Scilly (9 properties)
@@ -1756,7 +1756,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial chamber on St Mary's, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Bant%27s_Cairn%2C_St_Mary%27s_-_geograph.org.uk_-_1197663.jpg",
   },
   {
     id: "ios-2",
@@ -1766,7 +1766,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 17th-century artillery tower on Tresco, Isles of Scilly.",
     notes: "17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/35/King_of_the_Castle_-_geograph.org.uk_-_822249.jpg",
   },
   {
     id: "ios-3",
@@ -1776,7 +1776,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The defensive walls of Hugh Town on St Mary's, Isles of Scilly.",
     notes: "16th-17th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Morning_Point%2C_the_Garrison_-_geograph.org.uk_-_72897.jpg",
   },
   {
     id: "ios-4",
@@ -1786,7 +1786,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of an Iron Age village on St Mary's, Isles of Scilly.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Iron_Age_House%2C_Halangy_Down%2C_St._Mary%27s_-_geograph.org.uk_-_929468.jpg",
   },
   {
     id: "ios-5",
@@ -1796,7 +1796,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The unfinished remains of an artillery fort on St Mary's, Isles of Scilly.",
     notes: "16th century, unfinished.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/11/Harry%27s_Walls%2C_St._Mary%27s_-_geograph.org.uk_-_936169.jpg",
   },
   {
     id: "ios-6",
@@ -1806,7 +1806,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Two Bronze Age burial chambers on Innisidgen, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/87/Innisidgen_Burial_Chamber_-_geograph.org.uk_-_1035.jpg",
   },
   {
     id: "ios-7",
@@ -1816,7 +1816,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a 17th-century castle on Tresco, Isles of Scilly.",
     notes: "17th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/Interior_of_King_Charles%27_Castle_-_geograph.org.uk_-_834051.jpg",
   },
   {
     id: "ios-8",
@@ -1826,7 +1826,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a 16th-century blockhouse on Tresco, Isles of Scilly.",
     notes: "16th century, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/66/Old_Blockhouse%2C_Tresco_-_geograph.org.uk_-_1765210.jpg",
   },
   {
     id: "ios-9",
@@ -1836,7 +1836,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age burial chamber on St Mary's, Isles of Scilly.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Porth_Hellick_Down_-_geograph.org.uk_-_1036.jpg",
   },
 
   // Kent (25 properties)
@@ -1848,7 +1848,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Deal, Kent. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/43/Deal_Castle%2C_Kent_-_geograph.org.uk_-_1711722.jpg",
   },
   {
     id: "ken-2",
@@ -1859,7 +1859,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Founded in the 12th century, Dover Castle is known as the 'Key to England' due to its defensive significance. It's the largest castle in England, with a Great Tower built by Henry II and extensive medieval tunnels.",
     notes: "Medieval, partly complete. Key to England.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Dover_Castle_05.jpg/1024px-Dover_Castle_05.jpg",
   },
   {
     id: "ken-3",
@@ -1869,7 +1869,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Martello tower in Dymchurch, Kent.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/61/Martello_24_-_geograph.org.uk_-_412645.jpg",
   },
   {
     id: "ken-4",
@@ -1879,7 +1879,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Eynsford, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Eynsford_Castle.jpg/1024px-Eynsford_Castle.jpg",
   },
   {
     id: "ken-5",
@@ -1889,7 +1889,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval chapel in Faversham, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/28/Faversham_Stone_Chapel_-_geograph.org.uk_-_12889.jpg",
   },
   {
     id: "ken-6",
@@ -1899,7 +1899,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel in Horne's Place, near Appledore, Kent.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Hornes_Place_and_Chapel%2C_near_Appledore_Kent_-_geograph.org.uk_-_41648.jpg",
   },
   {
     id: "ken-7",
@@ -1909,7 +1909,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic dolmen near Aylesford, Kent.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Kits_Coty_House_-_geograph.org.uk_-_1381288.jpg",
   },
   {
     id: "ken-8",
@@ -1919,7 +1919,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Knights Templar church in Dover, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/DoverTemplarChurch_CMOKT.JPG/1024px-DoverTemplarChurch_CMOKT.JPG",
   },
   {
     id: "ken-9",
@@ -1929,7 +1929,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic dolmen near Aylesford, Kent.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/be/The_Countless_Stones_-_geograph.org.uk_-_3138.jpg",
   },
   {
     id: "ken-10",
@@ -1939,7 +1939,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa near Lullingstone, Kent.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d9/The_Roman_Villa_at_Lullingstone%2C_Kent_-_geograph.org.uk_-_40566.jpg",
   },
   {
     id: "ken-11",
@@ -1949,7 +1949,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval hospital in Faversham, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Maison_Dieu%2C_Ospringe%2C_Kent_-_geograph.org.uk_-_41929.jpg",
   },
   {
     id: "ken-12",
@@ -1959,7 +1959,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former chapel in Gravesend, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Milton_Chantry_-_geograph.org.uk_-_913536.jpg",
   },
   {
     id: "ken-13",
@@ -1969,7 +1969,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house near Plaxtol, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Old_Soar_Manor%2C_Plaxtol%2C_Kent_-_geograph.org.uk_-_1238065.jpg",
   },
   {
     id: "ken-14",
@@ -1979,17 +1979,17 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort and the towers of a ruined church in Reculver, Kent.",
     notes: "Roman/Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Reculver_-Kent-6a.jpg/1024px-Reculver_-Kent-6a.jpg",
   },
   {
     id: "ken-15",
-    name: "Richborough Castle and Amphitheatre",
+    name: "Richborough Fort and Amphitheatre",
     county: "Kent",
-    type: "Castle",
+    type: "Roman Fort",
     visited: false,
     description: "The remains of a Roman fort and amphitheatre in Richborough, Kent.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Richborough_Roman_Fort.JPG/1024px-Richborough_Roman_Fort.JPG",
   },
   {
     id: "ken-16",
@@ -1999,7 +1999,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Rochester, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rochester_castle.jpg",
   },
   {
     id: "ken-17",
@@ -2009,7 +2009,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former abbey in Canterbury, Kent.",
     notes: "Founded 597, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/65/Ruins_of_St_Augustine%27s_Abbey_-_geograph.org.uk_-_715983.jpg",
   },
   {
     id: "ken-18",
@@ -2019,7 +2019,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit house in Canterbury, Kent.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Conduit_House_of_St._Augustine%27s_Abbey%2C_Canterbury_02.jpg/1024px-Conduit_House_of_St._Augustine%27s_Abbey%2C_Canterbury_02.jpg",
   },
   {
     id: "ken-19",
@@ -2029,7 +2029,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A memorial cross near Ramsgate, Kent.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/47/St_Augustines_Cross_-_geograph.org.uk_-_1475019.jpg",
   },
   {
     id: "ken-20",
@@ -2039,7 +2039,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Knights Hospitaller commandery near Sutton-at-Hone, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/31/St_Johns_Commandery%2C_near_Densole%2C_Kent_-_geograph.org.uk_-_41649.jpg",
   },
   {
     id: "ken-21",
@@ -2049,7 +2049,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Norman tower in West Malling, Kent.",
     notes: "Norman, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "/https://upload.wikimedia.org/wikipedia/commons/0/02/St_leonards_tower.jpg",
   },
   {
     id: "ken-22",
@@ -2059,7 +2059,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval castle in Sutton Valence, Kent.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/17/Sutton_Valence_Castle_-_geograph.org.uk_-_1015828.jpg",
   },
   {
     id: "ken-23",
@@ -2069,7 +2069,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house near Strood, Kent.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/05/Temple_Manor%2C_Strood_-_geograph.org.uk_-_1397511.jpg",
   },
   {
     id: "ken-24",
@@ -2079,7 +2079,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on the River Medway near Rochester, Kent. It was built in the 16th century.",
     notes: "Built 1559-67, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Upnor_Castle_01.jpg",
   },
   {
     id: "ken-25",
@@ -2089,7 +2089,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort in Walmer, Kent. It was built in the 16th century.",
     notes: "Built 1539-40, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Walmer_Castle_-_geograph.org.uk_-_1289754.jpg",
   },
   {
     id: "ken-26",
@@ -2099,7 +2099,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A series of fortifications overlooking Dover, Kent.",
     notes: "18th-19th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/89/Western_Heights_Coastal_Defence_-_geograph.org.uk_-_20414.jpg",
   },
 
   // Lancashire (4 properties)
