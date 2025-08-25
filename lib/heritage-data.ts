@@ -2111,7 +2111,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel in Goodshaw, Lancashire.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Goodshaw_Chapel_-_geograph.org.uk_-_801963.jpg",
   },
   {
     id: "lan-2",
@@ -2121,7 +2121,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Clitheroe, Lancashire.",
     notes: "Founded 1148, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Sawley_Abbey_-_geograph.org.uk_-_1453949.jpg",
   },
   {
     id: "lan-3",
@@ -2131,7 +2131,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval rectory in Warton, Lancashire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/12/Doorways_to_service_rooms%2C_Old_Rectory%2C_Warton_-_geograph.org.uk_-_166428.jpg",
   },
   {
     id: "lan-4",
@@ -2141,7 +2141,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of a former Cistercian abbey in Whalley, Lancashire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/63/Gatehouse%2C_Whalley_Abbey_-_geograph.org.uk_-_431466.jpg",
   },
 
   // Leicestershire (3 properties)
@@ -2153,7 +2153,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Ashby de la Zouch, Leicestershire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Ashby_de_la_Zouch_castle_main_buildings.JPG/1024px-Ashby_de_la_Zouch_castle_main_buildings.JPG",
   },
   {
     id: "lei-2",
@@ -2163,7 +2163,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman public bath in Leicester, Leicestershire.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Jewry_Wall_and_St_Nicholas.jpg/1024px-Jewry_Wall_and_St_Nicholas.jpg",
   },
   {
     id: "lei-3",
@@ -2173,7 +2173,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated castle in Kirby Muxloe, Leicestershire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Kirby_Muxloe.jpg/1024px-Kirby_Muxloe.jpg",
   },
 
   // Lincolnshire (8 properties)
@@ -2185,7 +2185,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Old Bolingbroke, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/02/Old-Bolingbroke-Castle.jpg",
   },
   {
     id: "lin-2",
@@ -2195,7 +2195,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house in Gainsborough, Lincolnshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Gainsborough_Old_Hall.jpg/1024px-Gainsborough_Old_Hall.jpg",
   },
   {
     id: "lin-3",
@@ -2205,7 +2205,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a deserted medieval village near Kirton in Lindsey, Lincolnshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Gainsthorpe_Deserted_Medieval_Village_-_geograph.org.uk_-_1563862.jpg",
   },
   {
     id: "lin-4",
@@ -2215,7 +2215,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval bishop's palace in Lincoln, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2a/The_Old_Palace%2C_Lincoln_-_geograph.org.uk_-_586268.jpg",
   },
   {
     id: "lin-5",
@@ -2225,7 +2225,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A windmill in Sibsey, Lincolnshire.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sibsey%2C_Trader_Mill.jpg",
   },
   {
     id: "lin-6",
@@ -2235,7 +2235,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Saxon church in Barton-upon-Humber, Lincolnshire.",
     notes: "Saxon, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/db/St.Peter%27s_church_-_geograph.org.uk_-_880061.jpg",
   },
   {
     id: "lin-7",
@@ -2245,7 +2245,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval college in Tattershall, Lincolnshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tattershall_College.jpg",
   },
   {
     id: "lin-8",
@@ -2255,7 +2255,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey and its gatehouse near Thornton Curtis, Lincolnshire.",
     notes: "Founded 1139, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/82/Thornton_Abbey_Gatehouse_-_geograph.org.uk_-_1246329.jpg",
   },
 
   // London (14 properties)
@@ -2267,7 +2267,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The former home of the Duke of Wellington in London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Apsley_House_1.JPG/1024px-Apsley_House_1.JPG",
   },
   {
     id: "lon-2",
@@ -2277,7 +2277,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "Part of Westminster Abbey in London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Entrance_to_Chapter_House_Westminster_Abbey_-_geograph.org.uk_-_1125747.jpg",
   },
   {
     id: "lon-3",
@@ -2287,7 +2287,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Palladian villa in Chiswick, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Chiswick_House_view_from_forecourt.jpg/1024px-Chiswick_House_view_from_forecourt.jpg",
   },
   {
     id: "lon-4",
@@ -2297,7 +2297,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit in Kingston upon Thames, London.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Coombe_Conduit.jpg/1024px-Coombe_Conduit.jpg",
   },
   {
     id: "lon-5",
@@ -2308,7 +2308,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "The home of Charles Darwin from 1842 to 1882, where he wrote 'On the Origin of Species'. The house and gardens remain much as Darwin left them, including his famous 'thinking path'.",
     notes: "19th century, complete condition. Home of Charles Darwin.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Down_House%2C_Downe_-_geograph.org.uk_-_1659819.jpg",
   },
   {
     id: "lon-6",
@@ -2318,7 +2318,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval palace in Eltham, London.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/40/Eltham_Palace_-_Southern_fa%C3%A7ade_-_geograph.org.uk_-_1033399.jpg",
   },
   {
     id: "lon-7",
@@ -2328,7 +2328,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn in Harmondsworth, London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Harmondswoth_Barn.jpg/1024px-Harmondswoth_Barn.jpg",
   },
   {
     id: "lon-8",
@@ -2338,7 +2338,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval tower in Westminster, London.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/The_Jewel_Tower%2C_Abingdon_Street%2C_London_SW1_-_geograph.org.uk_-_750510.jpg",
   },
   {
     id: "lon-9",
@@ -2348,7 +2348,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A neoclassical villa in Hampstead, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/25/Kenwood_House_-_London_-_geograph.org.uk_-_1123814.jpg",
   },
   {
     id: "lon-10",
@@ -2358,7 +2358,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of the Roman city wall of London.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/London_01_2013_Roman_wall_5335.JPG/1024px-London_01_2013_Roman_wall_5335.JPG",
   },
   {
     id: "lon-11",
@@ -2368,7 +2368,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Palladian villa in Twickenham, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/16/Marble_Hill_House-River%28south%29front.jpg",
   },
   {
     id: "lon-12",
@@ -2378,7 +2378,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Georgian mansion in Greenwich, London.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Rangers_House_Greenwich_from_Shooters_Hill_20070819_20-09.jpg/1024px-Rangers_House_Greenwich_from_Shooters_Hill_20070819_20-09.jpg",
   },
   {
     id: "lon-13",
@@ -2388,7 +2388,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A triumphal arch in London.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Wellington_Arch_-_01.jpg/800px-Wellington_Arch_-_01.jpg",
   },
   {
     id: "lon-14",
@@ -2398,7 +2398,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a medieval palace in Southwark, London.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/63/The_Rose_window_at_Winchester_Palace_-_geograph.org.uk_-_1258642.jpg",
   },
 
   // Norfolk (21 properties)
