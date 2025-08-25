@@ -1638,7 +1638,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a water mill near Mortimer's Cross, Herefordshire.",
     notes: "Medieval, remains condition.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mortimer%27s_Cross_Water_Mill_-_geograph.org.uk_-_1899259.jpg,
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Mortimer%27s_Cross_Water_Mill_-_geograph.org.uk_-_1899259.jpg",
   },
   {
     id: "her-6",
