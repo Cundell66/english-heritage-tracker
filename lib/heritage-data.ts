@@ -33,6 +33,8 @@ export type PropertyType =
   | "Gatehouse"
   | "Other"
 
+//https://en.wikipedia.org/wiki/List_of_English_Heritage_properties
+
 export const HERITAGE_PROPERTIES: HeritageProperty[] = [
   // Bedfordshire (4 properties)
   {
@@ -2895,7 +2897,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A country house in Apethorpe, Northamptonshire.",
     notes: "15th-17th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apethorpe1.JPG/1024px-Apethorpe1.JPG",
   },
   {
     id: "nth-2",
@@ -2905,7 +2907,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval college in Higham Ferrers, Northamptonshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Chichele_College_Outside.jpg/1024px-Chichele_College_Outside.jpg",
   },
   {
     id: "nth-3",
@@ -2915,7 +2917,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "One of the three surviving Eleanor crosses in England, located in Geddington, Northamptonshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Eleanor_Cross_-_geograph.org.uk_-_1451702.jpg",
   },
   {
     id: "nth-4",
@@ -2925,7 +2927,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a country house near Corby, Northamptonshire.",
     notes: "16th-17th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/KirbyHall-Northamptonshire-3.jpg/1024px-KirbyHall-Northamptonshire-3.jpg",
   },
   {
     id: "nth-5",
@@ -2935,7 +2937,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A triangular building near Rushton, Northamptonshire.",
     notes: "16th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Rushton_Triangular_Lodge1.jpg",
   },
 
   // Northumberland (25 properties)
@@ -2947,7 +2949,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified manor house near Corbridge, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f3/The_courtyard_of_Aydon_Castle_%282%29_-_geograph.org.uk_-_527638.jpg",
   },
   {
     id: "nbl-2",
@@ -2957,7 +2959,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A country house, castle and gardens in Belsay, Northumberland.",
     notes: "Medieval/19th century, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Belsay_Hall.jpg",
   },
   {
     id: "nbl-3",
@@ -2967,7 +2969,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An 18th-century barracks in Berwick-upon-Tweed, Northumberland.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/ba/The_Barracks_-_geograph.org.uk_-_1254528.jpg",
   },
   {
     id: "nbl-4",
@@ -2977,7 +2979,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a castle and the town ramparts in Berwick-upon-Tweed, Northumberland.",
     notes: "Medieval/16th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Fortifications%2C_Berwick_upon_Tweed.jpg/1024px-Fortifications%2C_Berwick_upon_Tweed.jpg",
   },
   {
     id: "nbl-5",
@@ -2987,7 +2989,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified farmhouse near Bellingham, Northumberland.",
     notes: "16th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Black_Middens_Bastle_-_geograph.org.uk_-_1224658.jpg",
   },
   {
     id: "nbl-6",
@@ -2997,7 +2999,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Rothbury, Northumberland.",
     notes: "Founded 1135, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/47/Priory_At_Brinkburn_-_geograph.org.uk_-_653992.jpg",
   },
   {
     id: "nbl-7",
@@ -3007,7 +3009,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle on the coast of Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Dunstanburgh_Castle_-_geograph.org.uk_-_1716545.jpg",
   },
   {
     id: "nbl-8",
@@ -3017,7 +3019,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a fortified manor house in Edlingham, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Edlingham_Castle_-_geograph.org.uk_-_952421.jpg",
   },
   {
     id: "nbl-9",
@@ -3027,7 +3029,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Etal, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Etal_Castle_-_geograph.org.uk_-_1289632.jpg",
   },
   {
     id: "nbl-10",
@@ -3037,7 +3039,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Turret_29a_-_Black_Carts_-_geograph.org.uk_-_1129280.jpg",
   },
   {
     id: "nbl-11",
@@ -3047,7 +3049,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/94/Turret_26b_%28Brunton%29_%282%29_-_geograph.org.uk_-_1220037.jpg",
   },
   {
     id: "nbl-12",
@@ -3057,7 +3059,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Cawfields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Hadrian%27s_Wall%2C_Cawfields_-_geograph.org.uk_-_1068632.jpg",
   },
   {
     id: "nbl-13",
@@ -3067,7 +3069,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort and bridge near Chollerford, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/70/The_Commandant%27s_House%2C_Chesters_Fort_%284%29_-_geograph.org.uk_-_1057779.jpg",
   },
   {
     id: "nbl-14",
@@ -3077,7 +3079,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman town near Corbridge, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Corbridge_Roman_Ruins.jpg/1024px-Corbridge_Roman_Ruins.jpg",
   },
   {
     id: "nbl-15",
@@ -3087,7 +3089,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Heddon-on-the-Wall, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/c2/The_Wall_at_Heddon-on-the-Wall_-_geograph.org.uk_-_1038492.jpg",
   },
   {
     id: "nbl-16",
@@ -3097,7 +3099,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Housesteads, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Housesteads_Roman_Fort_2014_09.jpg/1024px-Housesteads_Roman_Fort_2014_09.jpg",
   },
   {
     id: "nbl-17",
@@ -3107,7 +3109,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Planetrees, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Hadrian%27s_Wall_at_Planetrees_%285%29_-_geograph.org.uk_-_1246703.jpg",
   },
   {
     id: "nbl-18",
@@ -3117,7 +3119,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Sewingshields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/53/Hadrian%27s_Wall_above_Sewingshield_Crags_-_geograph.org.uk_-_494404.jpg",
   },
   {
     id: "nbl-19",
@@ -3127,7 +3129,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple near Carrawburgh, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/01/Temple_of_Mithras%2C_Brocolitia_-_geograph.org.uk_-_4062.jpg",
   },
   {
     id: "nbl-20",
@@ -3137,7 +3139,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Walltown Crags, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Hadrian%27s_Wall_at_Walltown_Crags_-_geograph.org.uk_-_999438.jpg",
   },
   {
     id: "nbl-21",
@@ -3147,7 +3149,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A section of Hadrian's Wall at Winshields, Northumberland.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/85/Hadrian%27s_Wall%2C_Winshield_Crags_-_geograph.org.uk_-_1068693.jpg",
   },
   {
     id: "nbl-22",
@@ -3157,7 +3159,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory on Lindisfarne, Northumberland.",
     notes: "Founded 635, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Lindisfarne_Priory_-_geograph.org.uk_-_741692.jpg",
   },
   {
     id: "nbl-23",
@@ -3167,7 +3169,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Norham, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Norham_Castle_-_geograph.org.uk_-_940099.jpg",
   },
   {
     id: "nbl-24",
@@ -3177,7 +3179,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Prudhoe, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/96/Prudhoe_Castle_-_geograph.org.uk_-_1254147.jpg",
   },
   {
     id: "nbl-25",
@@ -3187,7 +3189,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Warkworth, Northumberland.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Warkworth_Castle_-_geograph.org.uk_-_931212.jpg",
   },
   {
     id: "nbl-26",
@@ -3197,7 +3199,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval hermitage near Warkworth Castle, Northumberland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_Hermitage%2C_Warkworth_-_geograph.org.uk_-_735173.jpg",
   },
 
   // Nottinghamshire (2 properties)
@@ -3209,7 +3211,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Gilbertine priory near Mattersey, Nottinghamshire.",
     notes: "Founded 1185, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mattersey_Priory_1.jpg",
   },
   {
     id: "not-2",
@@ -3219,7 +3221,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Rufford, Nottinghamshire.",
     notes: "Founded 1147, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Rufford_Abbey_%281%29.jpg/1024px-Rufford_Abbey_%281%29.jpg",
   },
 
   // Oxfordshire (10 properties)
