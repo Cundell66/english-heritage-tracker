@@ -2410,7 +2410,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated manor house in Baconsthorpe, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/07/The_gatehouses%2C_Baconsthorpe_Castle%2C_Baconsthorpe_-_geograph.org.uk_-_1043155.jpg",
   },
   {
     id: "nor-2",
@@ -2420,7 +2420,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A windmill near Great Yarmouth, Norfolk.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/15/Berney_Arms_with_sails.jpg",
   },
   {
     id: "nor-3",
@@ -2430,7 +2430,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Binham, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/92/Binham_Wayside_Cross_-_geograph.org.uk_-_1404179.jpg",
   },
   {
     id: "nor-4",
@@ -2440,7 +2440,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory in Binham, Norfolk.",
     notes: "Founded 1091, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/82/Binham_Priory_-_geograph.org.uk_-_174376.jpg",
   },
   {
     id: "nor-5",
@@ -2450,7 +2450,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval guildhall in Blakeney, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Blakeney_-_geograph.org.uk_-_848312.jpg",
   },
   {
     id: "nor-6",
@@ -2460,7 +2460,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Great Yarmouth, Norfolk.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Burgh_Castle_Bastion_and_Wall_-_geograph.org.uk_-_1951380.jpg",
   },
   {
     id: "nor-7",
@@ -2470,7 +2470,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman fort near Caister-on-Sea, Norfolk.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Caister-on-Sea_Roman_Fort_-_geograph.org.uk_-_771617.jpg",
   },
   {
     id: "nor-8",
@@ -2480,7 +2480,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The gatehouse of Castle Acre Castle in Norfolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Castle_Acre_Bailey_Gate_-_geograph.org.uk_-_1718512.jpg/1024px-Castle_Acre_Bailey_Gate_-_geograph.org.uk_-_1718512.jpg",
   },
   {
     id: "nor-9",
@@ -2490,7 +2490,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Norman castle in Castle Acre, Norfolk.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Castle_Acre_-_geograph.org.uk_-_578489.jpg",
   },
   {
     id: "nor-10",
@@ -2500,7 +2500,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Castle Acre, Norfolk.",
     notes: "Founded 1089, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Castle_Acre_Priory.jpg",
   },
   {
     id: "nor-11",
@@ -2510,7 +2510,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A well-preserved Norman castle in Castle Rising, Norfolk.",
     notes: "Norman, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Castle-rising-castle.JPG/1024px-Castle-rising-castle.JPG",
   },
   {
     id: "nor-12",
@@ -2520,7 +2520,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 14th-century artillery tower in Norwich, Norfolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Cow_Tower_-_Norwich.jpg/800px-Cow_Tower_-_Norwich.jpg",
   },
   {
     id: "nor-13",
@@ -2530,7 +2530,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey in North Creake, Norfolk.",
     notes: "Founded 1231, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/93/Creake_Abbey_-_geograph.org.uk_-_121461.jpg",
   },
   {
     id: "nor-14",
@@ -2540,7 +2540,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A series of narrow alleyways and houses in Great Yarmouth, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/38/Row_111_House_Museum_-_geograph.org.uk_-_1018593.jpg",
   },
   {
     id: "nor-15",
@@ -2550,7 +2550,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Franciscan friary in Great Yarmouth, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Greyfriars_Cloisters_-_geograph.org.uk_-_1018609.jpg",
   },
   {
     id: "nor-16",
@@ -2560,7 +2560,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic flint mining complex near Thetford, Norfolk.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Grimes_Graves%2C_near_Thetford%2C_Norfolk_-_geograph.org.uk_-_41510.jpg",
   },
   {
     id: "nor-17",
@@ -2570,7 +2570,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel in North Elmham, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Ruins_of_the_Bishop%27s_Chapel_-_geograph.org.uk_-_525209.jpg",
   },
   {
     id: "nor-18",
@@ -2580,7 +2580,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Great Yarmouth, Norfolk.",
     notes: "Founded 1216, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/24/St_Olave%27s_Priory_in_St_Olaves_-_geograph.org.uk_-_1801631.jpg",
   },
   {
     id: "nor-19",
@@ -2590,7 +2590,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former church in Thetford, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ThetfordHolySepulchre.jpg/1024px-ThetfordHolySepulchre.jpg",
   },
   {
     id: "nor-20",
@@ -2600,7 +2600,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Thetford, Norfolk.",
     notes: "Founded 1104, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/2004_thetford_03.JPG/1024px-2004_thetford_03.JPG",
   },
   {
     id: "nor-21",
@@ -2610,7 +2610,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval warren lodge near Thetford, Norfolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/41/Thetford_Warren_Lodge_-_geograph.org.uk_-_2377164.jpg",
   },
   {
     id: "nor-22",
@@ -2620,7 +2620,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a moated manor house in Weeting, Norfolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/21/Weeting_Castle_-_geograph.org.uk_-_2377286.jpg",
   },
 
   // North Yorkshire (27 properties)
