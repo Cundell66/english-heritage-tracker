@@ -785,7 +785,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small artillery fort in Dartmouth, Devon. It was built in the 16th century.",
     notes: "Built 16th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bayards_Cove_Fort04.JPG/1024px-Bayards_Cove_Fort04.JPG",
   },
   {
     id: "dev-2",
@@ -795,7 +795,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Totnes, Devon. It was built in the 15th century.",
     notes: "Built 15th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Berry_Pomeroy_Castle_-_geograph.org.uk_-_411651.jpg",
   },
   {
     id: "dev-3",
@@ -805,7 +805,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Honiton, Devon.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Entrance_banks_at_Blackbury_Camp_-_geograph.org.uk_-_1285616.jpg",
   },
   {
     id: "dev-4",
@@ -815,7 +815,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Dartmouth, Devon. It was built in the 14th century.",
     notes: "Built 14th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Dartmouth_Castle_-_geograph.org.uk_-_725989.jpg",
   },
   {
     id: "dev-5",
@@ -825,7 +825,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age settlement on Dartmoor, Devon.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/81/A_Dartmoor_Sheep_shelters_in_a_Grimspound_Hut_Circle_-_geograph.org.uk_-_653641.jpg",
   },
   {
     id: "dev-6",
@@ -835,7 +835,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval village on Dartmoor, Devon.",
     notes: "Medieval, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/20/Manaton%2C_Hundatona_-_geograph.org.uk_-_991381.jpg",
   },
   {
     id: "dev-7",
@@ -845,7 +845,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A late medieval merchant's house in Paignton, Devon.",
     notes: "Late medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5f/Kirkham_House%2C_Paignton_-_geograph.org.uk_-_622635.jpg",
   },
   {
     id: "dev-8",
@@ -855,7 +855,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle and the remains of a Saxon town in Lydford, Devon.",
     notes: "Saxon/Medieval, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Lydford_Castle_-_geograph.org.uk_-_1020339.jpg",
   },
   {
     id: "dev-9",
@@ -865,7 +865,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A prehistoric settlement on Dartmoor, Devon.",
     notes: "Prehistoric, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Merrivale%2C_moorland_-_geograph.org.uk_-_1987394.jpg/1024px-Merrivale%2C_moorland_-_geograph.org.uk_-_1987394.jpg",
   },
   {
     id: "dev-10",
@@ -875,7 +875,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle near Okehampton, Devon. It was built in the 11th century.",
     notes: "Built 11th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/05/Okehampton_Castle_Motte%2C_2009_-_geograph.org.uk_-_1574337.jpg",
   },
   {
     id: "dev-11",
@@ -885,7 +885,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A 17th-century fortress in Plymouth, Devon.",
     notes: "Built 17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Royal_Citadel_main_gate.jpg/1024px-Royal_Citadel_main_gate.jpg",
   },
   {
     id: "dev-12",
@@ -895,7 +895,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A motte-and-bailey castle in Totnes, Devon. It was built in the 11th century.",
     notes: "Built 11th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Totnes_Castle1.JPG/1024px-Totnes_Castle1.JPG",
   },
   {
     id: "dev-13",
@@ -905,7 +905,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A historic landscape in the Upper Plym Valley, Devon.",
     notes: "Historic landscape, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/41/Drizzlecombe_Stone_Row_-_geograph.org.uk_-_1158964.jpg",
   },
 
   // Dorset (12 properties)
@@ -917,7 +917,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine monastery in Abbotsbury, Dorset.",
     notes: "Founded 1044, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/The_Abbey_Abbotsbury_England.jpg/1024px-The_Abbey_Abbotsbury_England.jpg",
   },
   {
     id: "dor-2",
@@ -927,7 +927,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Norman castle and a Norman house in Christchurch, Dorset.",
     notes: "Norman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/11/Christchurch_-_Castle_-_geograph.org.uk_-_1763987.jpg",
   },
   {
     id: "dor-3",
@@ -937,7 +937,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval manor house in Fiddleford, Dorset.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/15/Fiddleford_Manor_-_geograph.org.uk_-_703827.jpg",
   },
   {
     id: "dor-4",
@@ -947,7 +947,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple on Jordan Hill, near Weymouth, Dorset.",
     notes: "Roman, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e1/JordanHillRomanTempleC.jpg",
   },
   {
     id: "dor-5",
@@ -957,7 +957,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A stone circle near Kingston Russell, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Kingston_Russell_Stone_Circle_-_geograph.org.uk_-_1122916.jpg",
   },
   {
     id: "dor-6",
@@ -967,7 +967,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a Norman church and prehistoric earthworks in Knowlton, Dorset.",
     notes: "Norman/Prehistoric, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/60/Remains_of_Knowlton_church_and_henge_-_geograph.org.uk_-_1295979.jpg",
   },
   {
     id: "dor-7",
@@ -977,7 +977,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort south of Dorchester, Dorset.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/58/Maiden_Castle%2C_Dorchester..jpg",
   },
   {
     id: "dor-8",
@@ -987,7 +987,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A stone circle near Winterbourne Abbas, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/50/Winterbourne_Abbas_Nine_Stones_-_geograph.org.uk_-_862715.jpg",
   },
   {
     id: "dor-9",
@@ -997,7 +997,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort on the Isle of Portland, Dorset. It was built in the 16th century.",
     notes: "Built 16th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Portland_Castle%2C_Seen_from_harbour_side_-_geograph.org.uk_-_1759008.jpg",
   },
   {
     id: "dor-10",
@@ -1007,7 +1007,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A small chapel on a hill near Abbotsbury, Dorset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Abbotsbury%2C_St._Catherine%27s_Chapel_-_geograph.org.uk_-_500351.jpg",
   },
   {
     id: "dor-11",
@@ -1017,7 +1017,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Sherborne, Dorset.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Sherborne_Old_Castle_-_geograph.org.uk_-_458355.jpg",
   },
   {
     id: "dor-12",
@@ -1027,7 +1027,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A group of Bronze Age burial mounds near Winterbourne Abbas, Dorset.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Junction_of_a_minor_road_with_the_A35_at_the_Poor_Lot_barrow_cemetery_-_geograph.org.uk_-_25011.jpg",
   },
 
   // County Durham (6 properties)
@@ -1039,7 +1039,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A deer house in the grounds of Auckland Castle, County Durham.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Auckland_Castle_013.jpg/1024px-Auckland_Castle_013.jpg",
   },
   {
     id: "dur-2",
@@ -1049,7 +1049,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Barnard Castle, County Durham.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Barnard_Castle.jpg",
   },
   {
     id: "dur-3",
@@ -1059,7 +1059,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined castle in Bowes, County Durham.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/63/Bowes_Castle.jpg",
   },
   {
     id: "dur-4",
@@ -1069,7 +1069,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a 18th-century steel furnace in Derwentcote, County Durham.",
     notes: "18th century, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Derwentcote_Cementation_Furnace_-_geograph.org.uk_-_1369081.jpg",
   },
   {
     id: "dur-5",
@@ -1079,7 +1079,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Barnard Castle, County Durham.",
     notes: "Founded 1195, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Egglestone_Abbey_-_geograph.org.uk_-_125027.jpg",
   },
   {
     id: "dur-6",
@@ -1089,7 +1089,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory near Durham, County Durham.",
     notes: "Founded 1110, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Fichale.jpg",
   },
 
   // East Riding of Yorkshire (3 properties)
@@ -1101,7 +1101,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A manor house in Burton Agnes, East Riding of Yorkshire.",
     notes: "12th century onwards, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/Norman_Manor_House%2C_Burton_Agnes_Hall_-_geograph.org.uk_-_1933154.jpg",
   },
   {
     id: "ery-2",
@@ -1111,7 +1111,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a collegiate church in Howden, East Riding of Yorkshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Howden_Minster_-_geograph.org.uk_-_1266114.jpg",
   },
   {
     id: "ery-3",
@@ -1121,7 +1121,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a motte-and-bailey castle in Skipsea, East Riding of Yorkshire.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/16/Skipsea_Castle_1.jpg",
   },
 
   // East Sussex (5 properties)
