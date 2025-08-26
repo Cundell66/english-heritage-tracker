@@ -3697,7 +3697,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Bury St Edmunds, Suffolk.",
     notes: "Founded 1020, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/2004_st_edmundsbury_01.JPG/1024px-2004_st_edmundsbury_01.JPG",
   },
   {
     id: "suf-2",
@@ -3707,7 +3707,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Framlingham, Suffolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Castle_Wall_-_geograph.org.uk_-_947413.jpg",
   },
   {
     id: "suf-3",
@@ -3717,7 +3717,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An artillery fort near Felixstowe, Suffolk.",
     notes: "16th-19th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/26/Landguard_Fort_-_geograph.org.uk_-_942560.jpg",
   },
   {
     id: "suf-4",
@@ -3727,7 +3727,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey near Leiston, Suffolk.",
     notes: "Founded 1183, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b5/The_Ruins_Of_Leiston_Abbey.jpg",
   },
   {
     id: "suf-5",
@@ -3737,7 +3737,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A packhorse bridge in Moulton, Suffolk.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Moulton_Pack_Horse_bridge_-_geograph.org.uk_-_829526.jpg",
   },
   {
     id: "suf-6",
@@ -3747,7 +3747,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Orford, Suffolk.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Suffolk_Orford_Castle.jpg/1024px-Suffolk_Orford_Castle.jpg",
   },
   {
     id: "suf-7",
@@ -3757,7 +3757,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A post mill in Saxtead Green, Suffolk.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Saxstead_Green_Postmill_-_geograph.org.uk_-_2389895.jpg",
   },
   {
     id: "suf-8",
@@ -3767,7 +3767,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A ruined chapel in Lindsey, Suffolk.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/66/St_James%27s_Chapel_-_geograph.org.uk_-_2520820.jpg",
   },
 
   // Surrey (2 properties)
@@ -3779,7 +3779,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The keep of Farnham Castle in Farnham, Surrey.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Farnham_Castle_keep.jpg/1024px-Farnham_Castle_keep.jpg",
   },
   {
     id: "sur-2",
@@ -3789,7 +3789,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Farnham, Surrey.",
     notes: "Founded 1128, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/Waverley_Abbey_ruins_-_geograph.org.uk_-_1167081.jpg",
   },
 
   // Tyne and Wear (6 properties)
@@ -3801,7 +3801,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A pair of Jacobean merchant's houses in Newcastle upon Tyne, Tyne and Wear.",
     notes: "17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Bessie_Surtees_House_%28geograph_2739708%29.jpg",
   },
   {
     id: "tw-2",
@@ -3811,7 +3811,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman temple and a section of the Vallum near Benwell, Tyne and Wear.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/ef/%28Roman%29_Temple_of_Antenociticus_%283%29_-_geograph.org.uk_-_837888.jpg",
   },
   {
     id: "tw-3",
@@ -3821,7 +3821,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a turret on Hadrian's Wall near Denton Hall, Tyne and Wear.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Denton_Turret_%282%29_-_geograph.org.uk_-_837946.jpg",
   },
   {
     id: "tw-4",
@@ -3831,7 +3831,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Hylton, Sunderland, Tyne and Wear.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Hylton_Castle.jpg/1024px-Hylton_Castle.jpg",
   },
   {
     id: "tw-5",
@@ -3841,7 +3841,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a former Benedictine monastery in Jarrow, Tyne and Wear.",
     notes: "Founded 681, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/48/Jarrow.jpg",
   },
   {
     id: "tw-6",
@@ -3851,7 +3851,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a priory and a castle in Tynemouth, Tyne and Wear.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/76/Tynemouth_Castle_-_geograph.org.uk_-_232159.jpg",
   },
 
   // Warwickshire (1 property)
@@ -3863,7 +3863,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Kenilworth, Warwickshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Kenilworth_Castle_-_geograph.org.uk_-_103123.jpg",
   },
 
   // West Midlands (2 properties)
@@ -3875,7 +3875,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Premonstratensian abbey in Halesowen, West Midlands.",
     notes: "Founded 1218, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Halesowen_Abbey_-_geograph.org.uk_-_2433248.jpg",
   },
   {
     id: "wm-2",
@@ -3885,7 +3885,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former silver factory in Birmingham, West Midlands.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2f/JW_Evans_Silver_Factory%2C_Albion_Street%2C_Jewellery_Quarter_Birmingham.jpg",
   },
 
   // West Sussex (2 properties)
@@ -3897,7 +3897,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine priory in Boxgrove, West Sussex.",
     notes: "Founded 1105, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Boxgrove_Priory_Ruins1.jpg",
   },
   {
     id: "ws-2",
@@ -3907,7 +3907,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a motte-and-bailey castle in Bramber, West Sussex.",
     notes: "Norman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Bramber_castle.jpg/1024px-Bramber_castle.jpg",
   },
 
   // Wiltshire (19 properties)
