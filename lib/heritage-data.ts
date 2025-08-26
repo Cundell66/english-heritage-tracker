@@ -3919,7 +3919,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A museum in Avebury, Wiltshire, dedicated to the archaeology of the area.",
     notes: "20th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/wiltshire/places/avebury/library/built-heritage-history-and-collections/alexander-keiller-museum-stable-gallery-avebury-manor-wiltshire-904331.jpg",
   },
   {
     id: "wil-2",
@@ -3929,7 +3929,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument in Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Avebury_Stones_-_geograph.org.uk_-_682284.jpg",
   },
   {
     id: "wil-3",
@@ -3939,7 +3939,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval tithe barn in Bradford-on-Avon, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tithe_Barn_at_Bradford_on_Avon.JPG/1024px-Tithe_Barn_at_Bradford_on_Avon.JPG",
   },
   {
     id: "wil-4",
@@ -3949,7 +3949,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Bratton, Wiltshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Bratton_Camp_-_geograph.org.uk_-_1473489.jpg",
   },
   {
     id: "wil-5",
@@ -3959,7 +3959,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel near Great Bedwyn, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/St._Martin%27s_Chapel%2C_Chisbury_Manor_Farm_-_geograph.org.uk_-_99682.jpg",
   },
   {
     id: "wil-6",
@@ -3969,7 +3969,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Marden, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Marden_Henge_-_panoramio.jpg/1024px-Marden_Henge_-_panoramio.jpg",
   },
   {
     id: "wil-7",
@@ -3979,7 +3979,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Ludgershall, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Ludgershall_-_Castle_-_geograph.org.uk_-_820522.jpg",
   },
   {
     id: "wil-8",
@@ -3989,7 +3989,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Ludgershall, Wiltshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bc/The_Ludgershall_Cross%2C_High_Street%2C_Ludgershall_-_geograph.org.uk_-_861874.jpg",
   },
   {
     id: "wil-9",
@@ -3999,7 +3999,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A dovecote in Netheravon, Wiltshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/73/Dovecote_near_All_Saints_Church%2C_Netheravon_-_geograph.org.uk_-_362642.jpg",
   },
   {
     id: "wil-10",
@@ -4009,7 +4009,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle and a cathedral in Old Sarum, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/23/Old_Sarum_central_mound_-_geograph.org.uk_-_1188425.jpg",
   },
   {
     id: "wil-11",
@@ -4019,7 +4019,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Tisbury, Wiltshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Old_Wardour_Castle_55.JPG/1024px-Old_Wardour_Castle_55.JPG",
   },
   {
     id: "wil-12",
@@ -4029,7 +4029,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a stone circle near Avebury, Wiltshire.",
     notes: "Neolithic, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Thesanctuary.jpg/1024px-Thesanctuary.jpg",
   },
   {
     id: "wil-13",
@@ -4040,7 +4040,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A Neolithic artificial hill, one of the largest man-made monuments in Europe, constructed around 2400 BC.",
     notes: "Neolithic, complete condition. Largest man-made mound in Europe.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Silbury_Hill_02.jpg/1024px-Silbury_Hill_02.jpg",
   },
   {
     id: "wil-14",
@@ -4062,7 +4062,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a stone avenue near Avebury, Wiltshire.",
     notes: "Neolithic, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Stone_Avenue_at_Avebury_-_geograph.org.uk_-_681695.jpg",
   },
   {
     id: "wil-16",
@@ -4072,7 +4072,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/49/Westkennet.jpg",
   },
   {
     id: "wil-17",
@@ -4082,7 +4082,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A hill figure near Westbury, Wiltshire.",
     notes: "18th century, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/06/Paragliding_above_Westbury_White_Horse_-_geograph.org.uk_-_539764.jpg",
   },
   {
     id: "wil-18",
@@ -4092,7 +4092,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic causewayed enclosure near Avebury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/25/Windmill_Hill_from_the_White_Horse_Trail%2C_Winterbourne_Monkton_-_geograph.org.uk_-_1010976.jpg",
   },
   {
     id: "wil-19",
@@ -4102,7 +4102,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic henge monument near Amesbury, Wiltshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/placeholder.svg?key=gxh69",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/60/Woodhenge_-_geograph.org.uk_-_659.jpg",
   },
 
   // Worcestershire (2 properties)
@@ -4114,7 +4114,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval barn near Worcester, Worcestershire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/placeholder.svg?key=gxh69",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Leigh_Court_Barn_-_geograph.org.uk_-_1427744.jpg",
   },
   {
     id: "wor-2",
@@ -4125,7 +4125,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "An Italianate mansion built in 1655, enormously expanded in the early 19th century and later underwent massive reconstruction in the mid-19th century. Famous for its spectacular fountain and formal gardens.",
     notes: "17th-19th century, ruins condition. Famous for its fountain and gardens.",
-    imageUrl: "/placeholder.svg?key=gxh69",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/2013_04_19_Whitly_Court_05.jpg/1024px-2013_04_19_Whitly_Court_05.jpg",
   },
 ]
 
