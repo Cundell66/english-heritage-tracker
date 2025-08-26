@@ -3233,7 +3233,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A museum in Abingdon, Oxfordshire.",
     notes: "17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/54/County_Hall_-_geograph.org.uk_-_670904.jpg",
   },
   {
     id: "oxf-2",
@@ -3243,7 +3243,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a medieval castle in Deddington, Oxfordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/97/DeddingtonCastle.jpg",
   },
   {
     id: "oxf-3",
@@ -3253,7 +3253,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a manor house and a dovecote in Minster Lovell, Oxfordshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Minster_Lovell_Hall%2C_Oxon_-_Ruins_-_geograph.org.uk_-_1630370.jpg",
   },
   {
     id: "oxf-4",
@@ -3263,7 +3263,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval conduit house in North Hinksey, Oxfordshire.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Conduit_House_Harcourt_Hill_Geograph-2162812-by-Des-Blenkinsopp.jpg/1024px-Conduit_House_Harcourt_Hill_Geograph-2162812-by-Des-Blenkinsopp.jpg",
   },
   {
     id: "oxf-5",
@@ -3273,7 +3273,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of a Roman villa in North Leigh, Oxfordshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/21/North_Leigh_Roman_Villa_-_geograph.org.uk_-_11995.jpg",
   },
   {
     id: "oxf-6",
@@ -3283,7 +3283,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A complex of Neolithic and Bronze Age monuments near Long Compton, Oxfordshire.",
     notes: "Neolithic/Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/39/Rollright_Stones_%28part%29%2C_Oxfordshire_-_geograph.org.uk_-_605694.jpg",
   },
   {
     id: "oxf-7",
@@ -3293,7 +3293,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Uffington, Oxfordshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/84/Earthworks_-_geograph.org.uk_-_817322.jpg",
   },
   {
     id: "oxf-8",
@@ -3304,7 +3304,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "A natural chalk hill near Uffington, Oxfordshire, associated with the legend of St George and the Dragon.",
     notes: "Natural feature, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dragon_Hill_-_geograph.org.uk_-_1370693.jpg",
   },
   {
     id: "oxf-9",
@@ -3314,7 +3314,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A prehistoric hill figure near Uffington, Oxfordshire.",
     notes: "Prehistoric, various conditions.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f3/Aerial_view_from_Paramotor_of_Uffington_White_Horse_-_geograph.org.uk_-_305467.jpg",
   },
   {
     id: "oxf-10",
@@ -3324,7 +3324,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Ashbury, Oxfordshire.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/09/Wayland_Smithy_-_geograph.org.uk_-_1143643.jpg",
   },
 
   // Rutland (1 property)
@@ -3336,7 +3336,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A former hospital and almshouse in Lyddington, Rutland.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/27/Lyddington_Bede_House_-_geograph.org.uk_-_1429628.jpg",
   },
 
   // Shropshire (16 properties)
@@ -3348,7 +3348,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a fortified manor house in Acton Burnell, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Acton_Burnell_Castle_from_churchyard_-_geograph.org.uk_-_789847.jpg",
   },
   {
     id: "shr-2",
@@ -3358,7 +3358,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A historic house and the site of the Royal Oak in Boscobel, Shropshire.",
     notes: "17th century, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Boscobel_-_19th_century_farm.jpg/1024px-Boscobel_-_19th_century_farm.jpg",
   },
   {
     id: "shr-3",
@@ -3368,7 +3368,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Ironbridge, Shropshire.",
     notes: "Founded 1135, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/82/Buildwas_Abbey_-_tower_and_part_of_north_side_of_nave_-_geograph.org.uk_-_1312704.jpg",
   },
   {
     id: "shr-4",
@@ -3378,7 +3378,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A cast-iron bridge near Condover, Shropshire.",
     notes: "19th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cantlop_Bridge_2016.jpg/1024px-Cantlop_Bridge_2016.jpg",
   },
   {
     id: "shr-5",
@@ -3388,7 +3388,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle in Clun, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2a/Clun_Castle_-_geograph.org.uk_-_1149538.jpg",
   },
   {
     id: "shr-6",
@@ -3398,7 +3398,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian abbey near Shrewsbury, Shropshire.",
     notes: "Founded 1130s, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Haughmond_Abbey_west_side_01.JPG/1024px-Haughmond_Abbey_west_side_01.JPG",
   },
   {
     id: "shr-7",
@@ -3409,7 +3409,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     description:
       "Constructed between 1777 and 1781, it was the first major bridge in the world to be made of cast iron. A symbol of the Industrial Revolution, it spans the River Severn in the Ironbridge Gorge.",
     notes: "18th century, complete condition. First major cast-iron bridge.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Ironbridge_04.jpg",
   },
   {
     id: "shr-8",
@@ -3419,7 +3419,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A chapel near Acton Burnell, Shropshire.",
     notes: "17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/28/Langley_Chapel_-_geograph.org.uk_-_720750.jpg",
   },
   {
     id: "shr-9",
@@ -3429,7 +3429,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Lilleshall, Shropshire.",
     notes: "Founded 1148, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/56/Lilleshall_Abbey_-_geograph.org.uk_-_1313407.jpg",
   },
   {
     id: "shr-10",
@@ -3439,7 +3439,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Bronze Age stone circle near Chirbury, Shropshire.",
     notes: "Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Mitchell%27s_Fold_3.jpg",
   },
   {
     id: "shr-11",
@@ -3449,7 +3449,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Moreton Corbet, Shropshire.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6f/Moreton_Corbet_Castle_-_geograph.org.uk_-_1500028.jpg",
   },
   {
     id: "shr-12",
@@ -3459,7 +3459,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "An Iron Age hillfort near Oswestry, Shropshire.",
     notes: "Iron Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Old_Oswestry_Hillfort_%28aerial%29.jpg",
   },
   {
     id: "shr-13",
@@ -3469,7 +3469,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A fortified manor house in Stokesay, Shropshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/83/Stokesay_Castle_-_geograph.org.uk_-_1507125.jpg",
   },
   {
     id: "shr-14",
@@ -3479,7 +3479,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory in Much Wenlock, Shropshire.",
     notes: "Founded 1079, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Transcepts%2C_Wenlock_Priory.jpg/1024px-Transcepts%2C_Wenlock_Priory.jpg",
   },
   {
     id: "shr-15",
@@ -3489,7 +3489,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Augustinian priory near Boscobel, Shropshire.",
     notes: "Founded 1190, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/a/a6/White_Ladies_Priory_-_Northern_wall_-_geograph.org.uk_-_1292826.jpg",
   },
   {
     id: "shr-16",
@@ -3499,7 +3499,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman city of Viroconium Cornoviorum near Wroxeter, Shropshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Wroxeter_baths%2C_2011.jpg/1024px-Wroxeter_baths%2C_2011.jpg",
   },
 
   // Somerset (12 properties)
