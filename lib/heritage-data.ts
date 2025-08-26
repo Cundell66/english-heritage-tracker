@@ -3511,7 +3511,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Washford, Somerset.",
     notes: "Founded 1188, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Cleeve_Abbey_04.jpg",
   },
   {
     id: "som-2",
@@ -3521,7 +3521,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market cross in Dunster, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/67/Dunster_Butter_Cross_-_geograph.org.uk_-_1702292.jpg",
   },
   {
     id: "som-3",
@@ -3531,7 +3531,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A packhorse bridge in Dunster, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gallox_Bridge.jpg",
   },
   {
     id: "som-4",
@@ -3541,7 +3541,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A market hall in Dunster, Somerset.",
     notes: "17th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Dunster_Market-2.jpg/1024px-Dunster_Market-2.jpg",
   },
   {
     id: "som-5",
@@ -3551,7 +3551,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a castle near Farleigh Hungerford, Somerset.",
     notes: "Medieval, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Farleigh_Hungerford_East_Gate.jpg/1024px-Farleigh_Hungerford_East_Gate.jpg",
   },
   {
     id: "som-6",
@@ -3561,7 +3561,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval courthouse in Glastonbury, Somerset.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Glastonbury_Tribunal.jpeg",
   },
   {
     id: "som-7",
@@ -3571,7 +3571,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A medieval building in Meare, Somerset, used for storing fish.",
     notes: "Medieval, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/de/Meare_Fish_House.jpg",
   },
   {
     id: "som-8",
@@ -3581,7 +3581,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Benedictine abbey in Muchelney, Somerset.",
     notes: "Founded 7th century, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Muchelney_Parish_church%2C_abbey_foreground_ruins.jpg",
   },
   {
     id: "som-9",
@@ -3591,7 +3591,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A moated castle in Nunney, Somerset.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nunney_Castle_-_geograph.org.uk_-_111007.jpg",
   },
   {
     id: "som-10",
@@ -3601,7 +3601,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A monument commemorating Sir Bevil Grenville near Lansdown, Somerset.",
     notes: "18th century, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/3/37/Lansdown_Battlefield_Monument_-_geograph.org.uk_-_128538.jpg",
   },
   {
     id: "som-11",
@@ -3611,7 +3611,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A complex of Neolithic and Bronze Age monuments near Stanton Drew, Somerset.",
     notes: "Neolithic/Bronze Age, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/68/Somerset_sd_stone_circle_06.jpg",
   },
   {
     id: "som-12",
@@ -3621,7 +3621,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Neolithic long barrow near Wellow, Somerset.",
     notes: "Neolithic, remains condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Stoney_Littleton.jpg",
   },
 
   // South Yorkshire (4 properties)
@@ -3633,7 +3633,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A Victorian country house and gardens near Brodsworth, South Yorkshire.",
     notes: "Victorian, complete condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Brodsworth_Hall_-_geograph.org.uk_-_1206980.jpg",
   },
   {
     id: "sy-2",
@@ -3643,7 +3643,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "A castle in Conisbrough, South Yorkshire.",
     notes: "Medieval, partly complete.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Conisbrough_Castle_-_geograph.org.uk_-_631344.jpg",
   },
   {
     id: "sy-3",
@@ -3653,7 +3653,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cluniac priory near Barnsley, South Yorkshire.",
     notes: "Founded 1154, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Two_doorways%2C_Monk_Bretton_Priory.jpg/1024px-Two_doorways%2C_Monk_Bretton_Priory.jpg",
   },
   {
     id: "sy-4",
@@ -3663,7 +3663,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Maltby, South Yorkshire.",
     notes: "Founded 1147, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Roche_Abbey_-_geograph.org.uk_-_28328.jpg",
   },
 
   // Staffordshire (2 properties)
@@ -3675,7 +3675,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The ruins of a former Cistercian abbey near Croxden, Staffordshire.",
     notes: "Founded 1176, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/CroxdenAbbey.jpg/1024px-CroxdenAbbey.jpg",
   },
   {
     id: "sta-2",
@@ -3685,7 +3685,7 @@ export const HERITAGE_PROPERTIES: HeritageProperty[] = [
     visited: false,
     description: "The remains of the Roman settlement of Letocetum near Wall, Staffordshire.",
     notes: "Roman, ruins condition.",
-    imageUrl: "/ballowall-barrow.png",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Letocetum_Mansio_1.jpg/1024px-Letocetum_Mansio_1.jpg",
   },
 
   // Suffolk (8 properties)
