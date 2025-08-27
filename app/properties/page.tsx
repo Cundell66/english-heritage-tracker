@@ -11,6 +11,7 @@ import { loadVisitsFromDatabase, updatePropertyVisit, type VisitData } from "@/l
 import { ArrowLeft, MapPin, Calendar, Check, X, Search } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
+import { createClient } from "@/lib/supabase/client"
 
 export default function PropertiesPage() {
   const [properties, setProperties] = useState<HeritageProperty[]>([])
@@ -21,42 +22,59 @@ export default function PropertiesPage() {
   const [selectedCounty, setSelectedCounty] = useState<string>("all")
   const [selectedType, setSelectedType] = useState<string>("all")
   const [visitFilter, setVisitFilter] = useState<string>("all")
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null)
 
   useEffect(() => {
-    const loadVisits = async () => {
-      try {
-        const visits = await loadVisitsFromDatabase()
-        setVisitData(visits)
+    const loadData = async () => {
+      const supabase = createClient()
+      const {
+        data: { user },
+        error,
+      } = await supabase.auth.getUser()
 
-        const visitMap = new Map<string, VisitData>()
-        visits.forEach((visit) => {
-          if (visit.propertyId) {
-            visitMap.set(visit.propertyId, visit)
-          }
-        })
-        setFullVisitData(visitMap)
+      const authenticated = !!(user && !error)
+      setIsAuthenticated(authenticated)
 
-        // Merge visit data with properties
-        const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
-          const visit = visits.find((v) => v.propertyId === property.id)
-          return {
-            ...property,
-            visited: visit?.visited || false,
-            visitDate: visit?.visitDate,
-            notes: visit?.notes,
-          }
-        })
-        setProperties(updatedProperties)
-        setFilteredProperties(updatedProperties)
-      } catch (error) {
-        console.error("Failed to load visits:", error)
-        // Fallback to empty state if database fails
-        setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
-        setFilteredProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+      if (authenticated) {
+        // Load visit data for authenticated users
+        try {
+          const visits = await loadVisitsFromDatabase()
+          setVisitData(visits)
+
+          const visitMap = new Map<string, VisitData>()
+          visits.forEach((visit) => {
+            if (visit.propertyId) {
+              visitMap.set(visit.propertyId, visit)
+            }
+          })
+          setFullVisitData(visitMap)
+
+          // Merge visit data with properties
+          const updatedProperties = HERITAGE_PROPERTIES.map((property) => {
+            const visit = visits.find((v) => v.propertyId === property.id)
+            return {
+              ...property,
+              visited: visit?.visited || false,
+              visitDate: visit?.visitDate,
+              notes: visit?.notes,
+            }
+          })
+          setProperties(updatedProperties)
+          setFilteredProperties(updatedProperties)
+        } catch (error) {
+          console.error("Failed to load visits:", error)
+          // Fallback to empty state if database fails
+          setProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+          setFilteredProperties(HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false })))
+        }
+      } else {
+        const unauthenticatedProperties = HERITAGE_PROPERTIES.map((p) => ({ ...p, visited: false }))
+        setProperties(unauthenticatedProperties)
+        setFilteredProperties(unauthenticatedProperties)
       }
     }
 
-    loadVisits()
+    loadData()
   }, [])
 
   // Filter properties based on search and filters
@@ -93,6 +111,12 @@ export default function PropertiesPage() {
   }, [properties, searchTerm, selectedCounty, selectedType, visitFilter])
 
   const handleVisitToggle = async (propertyId: string, visited: boolean) => {
+    if (!isAuthenticated) {
+      alert("Please sign in to track your visits to heritage sites.")
+      window.location.href = "/auth/login"
+      return
+    }
+
     console.log("[v0] Visit toggle clicked:", { propertyId, visited })
 
     const property = properties.find((p) => p.id === propertyId)
@@ -474,14 +498,16 @@ export default function PropertiesPage() {
                         ) : null}
 
                         <div className="flex gap-2 mt-4">
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => handleVisitToggle(property.id, false)}
-                            className="flex-1"
-                          >
-                            Mark as Not Visited
-                          </Button>
+                          {isAuthenticated && (
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => handleVisitToggle(property.id, false)}
+                              className="flex-1"
+                            >
+                              Mark as Not Visited
+                            </Button>
+                          )}
                         </div>
                       </>
                     )
@@ -514,9 +540,27 @@ export default function PropertiesPage() {
                     )}
 
                     <div className="flex gap-2 mt-4">
-                      <Button onClick={() => handleVisitToggle(property.id, true)} className="flex-1" size="sm">
-                        Mark as Visited
-                      </Button>
+                      {isAuthenticated ? (
+                        <Button onClick={() => handleVisitToggle(property.id, true)} className="flex-1" size="sm">
+                          Mark as Visited
+                        </Button>
+                      ) : (
+                        <div className="text-center py-2">
+                          <p className="text-sm text-muted-foreground mb-2">
+                            Sign in to track your visits and add photos, ratings, and notes
+                          </p>
+                          <Link href="/auth/login">
+                            <Button size="sm" className="mr-2">
+                              Sign In
+                            </Button>
+                          </Link>
+                          <Link href="/auth/signup">
+                            <Button variant="outline" size="sm">
+                              Create Account
+                            </Button>
+                          </Link>
+                        </div>
+                      )}
                     </div>
                   </>
                 )}
