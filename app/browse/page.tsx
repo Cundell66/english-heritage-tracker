@@ -42,6 +42,13 @@ export default function BrowsePropertiesPage() {
     })
   }, [searchTerm, selectedCounty, selectedType])
 
+  const getPropertyImage = (property: any) => {
+    if (property.imageUrl) {
+      return property.imageUrl
+    }
+    return `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(property.name + " English Heritage site")}`
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
@@ -113,10 +120,7 @@ export default function BrowsePropertiesPage() {
             <Card key={property.id} className="overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src={
-                    property.image ||
-                    `/placeholder.svg?height=200&width=300&query=${encodeURIComponent(property.name + " English Heritage site")}`
-                  }
+                  src={getPropertyImage(property) || "/placeholder.svg"}
                   alt={property.name}
                   fill
                   className="object-cover"
@@ -169,10 +173,7 @@ export default function BrowsePropertiesPage() {
                           <div className="space-y-4">
                             <div className="relative h-64 rounded-lg overflow-hidden">
                               <Image
-                                src={
-                                  selectedProperty.image ||
-                                  `/placeholder.svg?height=300&width=500&query=${encodeURIComponent(selectedProperty.name + " English Heritage site")}`
-                                }
+                                src={getPropertyImage(selectedProperty) || "/placeholder.svg"}
                                 alt={selectedProperty.name}
                                 fill
                                 className="object-cover"
