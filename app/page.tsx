@@ -226,7 +226,7 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="pt-4">
-                <Link href="/properties">
+                <Link href="/browse">
                   <Button variant="ghost" size="sm">
                     Browse Properties (No Account Required)
                   </Button>
