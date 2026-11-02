@@ -14,7 +14,7 @@ export async function GET(request: Request) {
     console.log("[Cron] Keep-alive job started at", new Date().toISOString())
 
     // Make a simple query to keep the database active
-    const supabase = createClient()
+    const supabase = await createClient()
     const { data, error } = await supabase.from("visits").select("id").limit(1)
 
     if (error) {
